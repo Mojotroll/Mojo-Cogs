@@ -1,0 +1,7 @@
+{
+    "AUTHOR" : "Mojotroll",
+    "INSTALL_MSG" : "This Cog Requires Beautiful Soup 4. Any issues please contact me at Mojotroll#6791",
+    "NAME" : "bschar",
+    "SHORT" : "Character Search for Blade and Soul",
+    "DESCRIPTION" : "This is a character search for Blade & Soul using RedBot"
+}
