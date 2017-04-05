@@ -216,6 +216,34 @@ class bb:
         if ctx.invoked_subcommand is None:
             await send_cmd_help(ctx)
 			
+    @commands.group(pass_context=True)
+    async def li(self, ctx):
+        """The Doctor has a stick"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)
+			
+    @li.group(pass_context=True)
+    async def m(self, ctx):
+        """Litchi w/ Staff Specials/Distortions"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)
+			
+    @li.group(pass_context=True)
+    async def e(self, ctx):
+        """Litchi w/o Staff Specials/Distortions"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)
+			
+    @e.group(pass_context=True)
+    async def reach(self, ctx):
+        """Reach Group Commands: a,b,c,d,63214b,63214c, 46d(Astral)"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)
+			
 #########################################################################################################################################
 
     @am.command(name="5a", pass_context=False)  # Amane from blazblue
@@ -33131,7 +33159,2135 @@ class bb:
             
             await self.bot.say(embed=embed)
         except:
+            await self.bot.say("No Frame Data Found.....")	
+
+###################################################################################################################################################################################################
+    @li.command(name="5a", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _5a_li(self):
+        """Clap Em"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[1]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('p').get_text()
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mp = "```" + "*" + mp1 + "```"        
+			
+            embed = discord.Embed()
+            embed.title = "5a"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/2/2c/BBCS_Litchi_5A.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mp, inline='true')
+		
+            await self.bot.say(embed=embed)
+            
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @li.command(name="5b", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _5b_li(self):   
+        #"""Insert tag here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[3]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 = table_body.find_all('tr')[4]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp2 = info1.find('p').get_text()
+            mp1 = info.find('p').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+			
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```" 
+            mpB = "```" + "*" + mp2 + "```" 			
+			
+            embed = discord.Embed()
+            embed.title = "5b(m)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/0/0f/BBCS_Litchi_5Bm.png')
+            embed.add_field(name="Staff Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed()
+            embed1.title = "5b(e)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/b/b5/BBCS_Litchi_5B.png')
+            embed1.add_field(name="Staffless Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)				
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @li.command(name="5c", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _5c_li(self): 
+        #"""Insert tag here"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[5]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 = table_body.find_all('tr')[4]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp2 = info1.find('p').get_text()
+            mp1 = info.find('p').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+			
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```" 
+            mpB = "```" + "*" + mp2 + "```" 
+			
+            embed = discord.Embed(description='Poke Poke~')
+            embed.title = "5c(m)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/2/2f/BBCS_Litchi_5Cm.png')
+            embed.add_field(name="Staff Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed(description='Little Puff Ball')
+            embed1.title = "5c(e)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/9/91/BBCS_Litchi_5C.png')
+            embed1.add_field(name="Staffless Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+	
+    @li.command(name="2a", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _2a_li(self):   
+        """Slap them knee caps"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[7]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('p').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mp = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "2A"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/4/42/BBCS_Litchi_2A.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mp, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @li.command(name="2b", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _2b_li(self): 
+        #"""Insert tag here"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[9]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 = table_body.find_all('tr')[4]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp2 = info1.find('p').get_text()
+            mp1 = info.find('p').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+			
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```" 
+            mpB = "```" + "*" + mp2 + "```" 
+			
+            embed = discord.Embed(description='Split Kick!(Extend)')
+            embed.title = "2b(m)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/9/94/BBCS_Litchi_2Bm.png')
+            embed.add_field(name="Staff Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed(description='Split Kick!')
+            embed1.title = "2b(e)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/0/03/BBCS_Litchi_2B.png')
+            embed1.add_field(name="Staffless Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @li.command(name="2c", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _2c_li(self):   
+        #"""Insert tag here"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[11]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 = table_body.find_all('tr')[4]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp2 = info1.find('p').get_text()
+            mp1 = info.find('p').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+			
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```" 
+            mpB = "```" + "*" + mp2 + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "2c(m)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/f/fb/BBCS_Litchi_2Cm.png')
+            embed.add_field(name="Staff Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            embed1 = discord.Embed()
+            embed1.title = "2c(e)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/3/3a/BBCS_Litchi_2C.png')
+            embed1.add_field(name="Staffless Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @li.command(name="6a", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _6a_li(self):  
+        #"""Insert Tag here"""		
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[13]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 = table_body.find_all('tr')[4]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp2 = info1.find('li').get_text()
+            mp1 = info.find('p').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+			
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```" 
+            mpB = "```" + "*" + mp2 + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "6A(m)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/5/5a/BBCS_Litchi_6Am.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed()
+            embed1.title = "6A(e)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/0/04/BBCS_Litchi_6A.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @li.command(name="6b", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _6b_li(self):  
+        #"""Insert tag here"""		
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[15]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 = table_body.find_all('tr')[4]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp2 = info1.find('p').get_text()
+            mp1 = info.find('p').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+			
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```" 
+            mpB = "```" + "*" + mp2 + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "6b(m)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/2/24/BBCS_Litchi_6Bm.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed()
+            embed1.title = "6b(e)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/6/6b/BBCS_Litchi_6B.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+
+    @li.command(name="6c", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _6c_li(self):  
+        #"""Insert tag here"""		
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[17]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 = table_body.find_all('tr')[4]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp2 = [op.get_text() for op in info1.find_all('p')]
+            mp1 = info.find('p').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+			
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```" 
+            mpB = "```" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "6c(m)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/9/92/BBCS_Litchi_6Cm.png')
+            embed.add_field(name="Staff Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed()
+            embed1.title = "6c(e)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/8/89/BBCS_Litchi_6C.png')
+            embed1.add_field(name="Staffless Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @li.command(name="4b", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _4b_li(self):  
+        #"""Insert tag here"""		
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[19]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 = table_body.find_all('tr')[4]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp2 = info1.find('p').get_text()
+            mp1 = info.find('p').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```" 
+            mpB = "```" + "*" + mp2 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "4B(m)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/2/22/BBCP_Litchi_4Bm.png')
+            embed.add_field(name="Staff Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed()
+            embed1.title = "4B(e)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/0/01/BBCP_Litchi_4B.png')
+            embed1.add_field(name="Staffless Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+			
+    @li.command(name="3c", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _3c_li(self):   
+        #"""Insert tag here"""		
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[21]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 = table_body.find_all('tr')[4]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp2 = [op.get_text() for op in info.find_all('li')]
+            mp1 = [po.get_text() for po in info.find_all('p')]
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```"
+            #mpB = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "3c(m)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/c/ca/BBCS_Litchi_3Cm.png')
+            embed.add_field(name="Staff Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed()
+            embed1.title = "3c(e)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/c/cc/BBCS_Litchi_3C.png')
+            embed1.add_field(name="Staffless Frame Data", value=tab1)
+            #embed.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+			
+    @li.command(name="ja", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _ja_li(self): 
+        """Placeholder"""		
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[23]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('p').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "J.A"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/8/8f/BBCS_Litchi_jA.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)			
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+			
+    @li.command(name="jb", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _jb_li(self):   
+        #"""Insert tag here"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[25]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 = table_body.find_all('tr')[4]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            #mp2 = 
+            mp1 = info.find('p').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+            #mpB =
+			
+            embed = discord.Embed()
+            embed.title = "J.B(m)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/8/8a/BBCS_Litchi_jBm.png')
+            embed.add_field(name="Staff Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed()
+            embed1.title = "J.B(e)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/b/bc/BBCS_Litchi_jB.png')
+            embed1.add_field(name="Staffless Frame Data", value=tab1)
+            #embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+			
+    @li.command(name="jc", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _jc_li(self): 
+        #"""Insert tag here"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[27]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 = table_body.find_all('tr')[4]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp2 = info.find('p').get_text()
+            mp1 = info.find('p').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+            mpB = "```" + "*" + mp2 + "```"
+
+			
+            embed = discord.Embed()
+            embed.title = "J.C(m)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/b/b8/BBCS_Litchi_jCm.png')
+            embed.add_field(name="Staff Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed()
+            embed1.title = "J.C(e)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/9/9a/BBCS_Litchi_jC.png')
+            embed1.add_field(name="Staffless Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @li.command(name="5d", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _5d_li(self):   
+        """5D[m]: Look at the Flick of the wrist~ 5d[e]:  Swerve em'"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[29]
+            my_table1 = table[41]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 = table_body.find_all('tr')[4]
+            headers2 = table_body1.find_all('tr')[1]
+            headers3 = table_body1.find_all('tr')[3]
+            info2 = table_body.find_all('tr')[4]
+
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]	
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]	
+            Data3 = [head3.get_text() for head3 in headers3.find_all('td')]				
+            mp1 = info.find('p').get_text() 
+            mp2 = [po.get_text() for po in info1.find_all('p')]
+            mp3 = [po1.get_text() for po1 in info2.find_all('p')]
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+            vrs3 = headers3.find('th').get_text()
+			
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')	
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')	
+            tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Cancel", Data3[1]], ["Guard", Data3[2]], ["Startup", Data3[3]], ["Active", Data3[4]], ["Recovery", Data3[5]], ["Frame Adv.", Data3[6]], ["Attribute", Data3[7]]], tablefmt='simple', stralign='left')	
+            mpA = "```" + "*" + mp1 + "```"
+            mpB = "```" + "*" + mp2[0] + "```"
+            mpC = "```" + "*" + mp3[2] + "```"
+			
+            embed = discord.Embed(description='Look at the Flick of the wrist~')
+            embed.title = "5D(Staff)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/7/7e/BBCS_Litchi_5Dm.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA)
+			
+            embed1 = discord.Embed(description='Swerve em')
+            embed1.title = "5D(Staffless)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/7/7b/BBCS_Litchi_5D.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "5D Staff Launch"
+            embed2.set_image(url='http://www.dustloop.com/wiki/images/f/f8/BBCS_Litchi_Staff5D.png')
+            embed2.add_field(name="Vertical Frame Data", value=tab2)
+            embed2.add_field(name="Dashing Frame Data", value=tab3)
+            embed2.add_field(name="Attack Props:", value=mpC)
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+			
+    @li.command(name="2d", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _2d_li(self):   
+        #"""Insert Tag Here"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[31]
+            my_table1 = table[41]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 = table_body.find_all('tr')[4]
+            headers2 = table_body1.find_all('tr')[2]
+            headers3 = table_body1.find_all('tr')[3]
+            info2 = table_body.find_all('tr')[4]
+
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]	
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]	
+            Data3 = [head3.get_text() for head3 in headers3.find_all('td')]				
+            mp1 = info.find('p').get_text() 
+            mp2 = [po.get_text() for po in info1.find_all('p')]
+            mp3 = [po1.get_text() for po1 in info2.find_all('p')]
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+            vrs3 = headers3.find('th').get_text()
+			
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')	
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')	
+            tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Cancel", Data3[1]], ["Guard", Data3[2]], ["Startup", Data3[3]], ["Active", Data3[4]], ["Recovery", Data3[5]], ["Frame Adv.", Data3[6]], ["Attribute", Data3[7]]], tablefmt='simple', stralign='left')	
+            mpA = "```" + "*" + mp1 + "```"
+            mpB = "```" + "*" + mp2[0] + "```"
+            mpC = "```" + "*" + mp3[1] + "```"
+			
+            embed = discord.Embed(description='This Chest')
+            embed.title = "2D"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/1/18/BBCS_Litchi_2Dm.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA)
+			
+            embed1 = discord.Embed(description='Dem legs')
+            embed1.title = "2D"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/b/bc/BBCS_Litchi_2D.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "2D Staff Launch"
+            embed2.set_image(url='http://www.dustloop.com/wiki/images/6/6c/BBCS_Litchi_Staff2D.png')
+            embed2.add_field(name="Vertical Frame Data", value=tab2)
+            embed2.add_field(name="Dashing Frame Data", value=tab3)
+            embed2.add_field(name="Attack Props:", value=mpC)
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @li.command(name="6d", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _6d_li(self):   
+        """Sets up an easy Crush Trigger."""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[33]
+            my_table1 = table[41]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body1.find_all('tr')[2]
+            headers2 = table_body1.find_all('tr')[3]
+            info1 = table_body1.find_all('tr')[4]
+
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]	
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]				
+            mp1 = info.find('p').get_text() 
+            mp2 = [po1.get_text() for po1 in info1.find_all('p')]
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()			
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')	
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')	
+            mpA = "```" + "*" + mp1 + "```"
+            mpB = "```" + "*" + mp2[0] + "```"
+			
+            embed = discord.Embed(description='Sets up an easy Crush Trigger.')
+            embed.title = "6D"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/a/a0/BBCS_Litchi_6D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "6D Staff Launch"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/6/6c/BBCS_Litchi_Staff2D.png')
+            embed1.add_field(name="Vertical Frame Data", value=tab1)
+            embed1.add_field(name="Dashing Frame Data", value=tab2)
+            embed1.add_field(name="Attack Props:", value=mpB)
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+
+    @li.command(name="4d", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _4d_li(self):   
+        """Frame adv. varies depending on distance."""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[35]
+            my_table1 = table[41]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body1.find_all('tr')[2]
+            headers2 = table_body1.find_all('tr')[3]
+            info1 = table_body1.find_all('tr')[4]
+
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]	
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]				
+            #mp1 = info.find('p').get_text() 
+            mp2 = [po1.get_text() for po1 in info1.find_all('p')]
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()			
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')	
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')	
+            #mpA = "```" + "*" + mp1 + "```"
+            mpB = "```" + "*" + mp2[1] + "```"
+			
+            embed = discord.Embed(description='Frame adv. varies depending on distance.')
+            embed.title = "4D"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/a/ad/BBCS_Litchi_4D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "4D Staff Launch"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/f/f8/BBCS_Litchi_Staff5D.png')
+            embed1.add_field(name="Vertical Frame Data", value=tab1)
+            embed1.add_field(name="Dashing Frame Data", value=tab2)
+            embed1.add_field(name="Attack Props:", value=mpB)
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @li.command(name="jd", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _jd_li(self):   
+        #"""Insert Tag Here"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[37]
+            my_table1 = table[41]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 = table_body.find_all('tr')[4]
+            headers2 = table_body1.find_all('tr')[2]
+            headers3 = table_body1.find_all('tr')[3]
+            info2 = table_body1.find_all('tr')[4]
+
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]	
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]		
+            Data3 = [head3.get_text() for head3 in headers3.find_all('td')]				
+            mp1 = info.find('p').get_text() 
+            mp2 = [po1.get_text() for po1 in info2.find_all('p')]
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+            vrs3 = headers3.find('th').get_text()			
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')	
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')	
+            tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Cancel", Data3[1]], ["Guard", Data3[2]], ["Startup", Data3[3]], ["Active", Data3[4]], ["Recovery", Data3[5]], ["Frame Adv.", Data3[6]], ["Attribute", Data3[7]]], tablefmt='simple', stralign='left')	
+            mpA = "```" + "*" + mp1 + "```"
+            mpB = "```" + "*" + mp2[0] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "J.D(m)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/3/38/BBCS_Litchi_jDm.png')
+            embed.add_field(name="Staff Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "J.D(e)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/7/7f/BBCS_Litchi_jD.png')
+            embed1.add_field(name="Staffless Frame Data", value=tab1)
+			
+            embed2 = discord.Embed()
+            embed2.title = "J.D Staff Launch"
+            embed2.set_image(url='http://www.dustloop.com/wiki/images/6/6c/BBCS_Litchi_Staff2D.png')
+            embed2.add_field(name="Vertical Frame Data", value=tab2)
+            embed2.add_field(name="Dashing Frame Data", value=tab3)
+            embed2.add_field(name="Attack Props:", value=mpB)
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @li.command(name="j2d", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _j2d_li(self):   
+        """Cross-up leads to a full combo."""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[39]
+            my_table1 = table[41]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body1.find_all('tr')[1]
+            headers2 = table_body1.find_all('tr')[3]
+            info1 = table_body1.find_all('tr')[4]
+
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]	
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]					
+            #mp1 = info.find('p').get_text() 
+            mp2 = [po1.get_text() for po1 in info1.find_all('p')]
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()			
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')	
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')	
+            #mpA = "```" + "*" + mp1 + "```"
+            mpB = "```" + "*" + mp2[1] + "```"
+			
+            embed = discord.Embed(description='Cross-up leads to a full combo.')
+            embed.title = "J.2D"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/b/bc/BBCS_Litchi_j2Dm.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "J.2D Staff Launch"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/f/f8/BBCS_Litchi_Staff5D.png')
+            embed1.add_field(name="Vertical Frame Data", value=tab1)
+            embed1.add_field(name="Dashing Frame Data", value=tab2)
+            embed1.add_field(name="Attack Props:", value=mpB)
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+
+    @li.command(name="ft", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _ft_li(self):   
+        """Forward Throw"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[43]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = [op.get_text() for op in info.find_all('li')]
+            #mp2 = info.find('p').get_text()		
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Forward Throw"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/9/99/BBCS_Litchi_FThrow.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found....")
+			
+    @li.command(name="bt", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _bt_li(self):   
+        """Back Throw"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[45]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = [op.get_text() for op in info.find_all('li')]
+            #mp2 = info.find('p').get_text()		
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Back Throw"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/8/85/BBCS_Litchi_BThrow.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found....")
+			
+    @li.command(name="at", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _at_li(self):   
+        """Air Throw"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[47]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('p').get_text()				
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Air Throw"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/9/90/BBCS_Litchi_AThrow.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @li.command(name="ca", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _ca_li(self):   
+        """Counter Assault"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[49]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = info.find('p').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Counter Assault"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/6/6b/BBCS_Litchi_6B.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
             await self.bot.say("No Frame Data Found.....")		
+
+    @li.command(name="ct", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _ct_li(self):   
+        """Crush Trigger:  Release The Dragon!"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[51]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [po.get_text() for po in info.find_all('p')]
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mp = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Crush Trigger"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/d/d8/BBCP_Litchi_CT.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mp, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @li.command(name="447", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _s1_li(self):   
+        """Back flip"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[53]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('p').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Additional Back Step"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/2/2b/BBCS_Litchi_447.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')			
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found...")	
+
+    @m.command(name="41236a", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _m1_li(self):   
+        #"""Insert Tag here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[55]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [po.get_text() for po in info.find_all('p')]
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed(description='気通貫 Ikki Tsūkan')
+            embed.title = "Straight Through(A)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/1/1a/BBCS_Litchi_StraightThrough.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed()
+            embed1.title = "Straight Through Angles"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/8/81/BBCF_Litchi_StraightThroughFollowups.png')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+
+    @m.command(name="41236b", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _m2_li(self):   
+        #"""Insert Tag here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[55]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [po.get_text() for po in info.find_all('p')]
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[2] + "```"
+			
+            embed = discord.Embed(description='気通貫 Ikki Tsūkan')
+            embed.title = "Straight Through(B)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/1/1a/BBCS_Litchi_StraightThrough.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed()
+            embed1.title = "Straight Through Angles"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/8/81/BBCF_Litchi_StraightThroughFollowups.png')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @m.command(name="41236c", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _m3_li(self):   
+        #"""Insert Tag here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[55]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [po.get_text() for po in info.find_all('p')]
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[3] + "```"
+			
+            embed = discord.Embed(description='気通貫 Ikki Tsūkan')
+            embed.title = "Straight Through(C)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/1/1a/BBCS_Litchi_StraightThrough.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed()
+            embed1.title = "Straight Through Angles"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/8/81/BBCF_Litchi_StraightThroughFollowups.png')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @m.command(name="623d", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _m4_li(self):   
+        """Rising Dragon"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[57]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('p').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Tsubame Gaeshi"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/2/2c/BBCS_Litchi_TsubameGaeshi.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")				
+			
+    @e.command(name="236a", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _e1_li(self):   
+        """i wonder if i left the oven on"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[59]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info = table_body.find_all('tr')[3]
+            headers2 = table_body.find_all('tr')[4]
+            info1 =  table_body.find_all('tr')[5]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            #mp2 = [po.get_text() for po in info1.find_all('li')]
+            mp1 = info.find('li').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')
+            mp = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Three Dragons: White"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/e/e1/BBCS_Litchi_Haku.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="1st Follow-up Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mp, inline='true')
+            embed.add_field(name="2nd Follow-up Frame Data", value=tab2)
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+
+    @e.command(name="236b", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _e2_li(self):   
+        """Prob left the oven on"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[61]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info = table_body.find_all('tr')[3]
+            headers2 = table_body.find_all('tr')[4]
+            info1 =  table_body.find_all('tr')[5]
+            headers3 = table_body.find_all('tr')[6]
+            headers4 = table_body.find_all('tr')[7]
+            info2 =  table_body.find_all('tr')[8]
+            headers5 = table_body.find_all('tr')[9]
+            info3 =  table_body.find_all('tr')[10]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            Data3 = [head3.get_text() for head3 in headers3.find_all('td')]
+            Data4 = [head4.get_text() for head4 in headers4.find_all('td')]
+            Data5 = [head5.get_text() for head5 in headers5.find_all('td')]
+            #mp4 = info3
+            mp3 = info2.find('li').get_text()
+            mp2 = info1.find('li').get_text()
+            mp1 = info.find('li').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+            vrs3 = headers3.find('th').get_text()
+            vrs4 = headers4.find('th').get_text()
+            vrs5 = headers5.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')
+            tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Cancel", Data3[1]], ["Guard", Data3[2]], ["Startup", Data3[3]], ["Active", Data3[4]], ["Recovery", Data3[5]], ["Frame Adv.", Data3[6]], ["Attribute", Data3[7]]], tablefmt='simple', stralign='left')
+            tab4 = tabulate([["Version", vrs4], ["Damage", Data4[0]], ["Cancel", Data4[1]], ["Guard", Data4[2]], ["Startup", Data4[3]], ["Active", Data4[4]], ["Recovery", Data4[5]], ["Frame Adv.", Data4[6]], ["Attribute", Data4[7]]], tablefmt='simple', stralign='left')
+            tab5 = tabulate([["Version", vrs5], ["Damage", Data5[0]], ["Cancel", Data5[1]], ["Guard", Data5[2]], ["Startup", Data5[3]], ["Active", Data5[4]], ["Recovery", Data5[5]], ["Frame Adv.", Data5[6]], ["Attribute", Data5[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+            mpB = "```" + "*" + mp2 + "```"
+            mpC = "```" + "*" + mp3 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Three Dragons: Green"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/d/d0/BBCS_Litchi_Hatsu.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="1st Follow-up Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+            embed.add_field(name="2nd Follow-up Frame Data", value=tab2)
+            embed.add_field(name="Attack Props:", value=mpB, inline='true')
+            embed.add_field(name="Air Frame Data", value=tab3)
+            embed.add_field(name="Air 1st Follow-up Frame Data", value=tab4)
+            embed.add_field(name="Attack Props:", value=mpC, inline='true')
+            embed.add_field(name="Air 2st Follow-up Frame Data", value=tab5)
+            #embed.add_field(name="Attack Props:", value=mpD, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @e.command(name="236c", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _e3_li(self):   
+        """Nah i didn't leave it on"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[63]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info = table_body.find_all('tr')[3]
+            headers2 = table_body.find_all('tr')[4]
+            info1 =  table_body.find_all('tr')[5]
+            headers3 = table_body.find_all('tr')[6]
+            headers4 = table_body.find_all('tr')[7]
+            info2 =  table_body.find_all('tr')[8]
+            headers5 = table_body.find_all('tr')[9]
+            info3 =  table_body.find_all('tr')[10]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            Data3 = [head3.get_text() for head3 in headers3.find_all('td')]
+            Data4 = [head4.get_text() for head4 in headers4.find_all('td')]
+            Data5 = [head5.get_text() for head5 in headers5.find_all('td')]
+            #mp4 = info3
+            mp3 = info2.find('li').get_text()
+            mp2 = info1.find('li').get_text()
+            mp1 = info.find('li').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+            vrs3 = headers3.find('th').get_text()
+            vrs4 = headers4.find('th').get_text()
+            vrs5 = headers5.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')
+            tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Cancel", Data3[1]], ["Guard", Data3[2]], ["Startup", Data3[3]], ["Active", Data3[4]], ["Recovery", Data3[5]], ["Frame Adv.", Data3[6]], ["Attribute", Data3[7]]], tablefmt='simple', stralign='left')
+            tab4 = tabulate([["Version", vrs4], ["Damage", Data4[0]], ["Cancel", Data4[1]], ["Guard", Data4[2]], ["Startup", Data4[3]], ["Active", Data4[4]], ["Recovery", Data4[5]], ["Frame Adv.", Data4[6]], ["Attribute", Data4[7]]], tablefmt='simple', stralign='left')
+            tab5 = tabulate([["Version", vrs5], ["Damage", Data5[0]], ["Cancel", Data5[1]], ["Guard", Data5[2]], ["Startup", Data5[3]], ["Active", Data5[4]], ["Recovery", Data5[5]], ["Frame Adv.", Data5[6]], ["Attribute", Data5[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+            mpB = "```" + "*" + mp2 + "```"
+            mpC = "```" + "*" + mp3 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Three Dragons: Green"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/2/28/BBCS_Litchi_Chun.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="1st Follow-up Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+            embed.add_field(name="2nd Follow-up Frame Data", value=tab2)
+            embed.add_field(name="Attack Props:", value=mpB, inline='true')
+            embed.add_field(name="Air Frame Data", value=tab3)
+            embed.add_field(name="Air 1st Follow-up Frame Data", value=tab4)
+            embed.add_field(name="Attack Props:", value=mpC, inline='true')
+            embed.add_field(name="Air 2st Follow-up Frame Data", value=tab5)
+            #embed.add_field(name="Attack Props:", value=mpD, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+
+    @e.command(name="421c", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _e4_li(self):   
+        """Rising Dragon"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[65]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[3]
+            info =  table_body.find_all('tr')[2]
+            info1 =  table_body.find_all('tr')[4]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp1 = info.find('p').get_text()
+            mp2 = info1.find('p').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+            mpB = "```" + "*" + mp2 + "```"
+			
+            embed = discord.Embed(description='Input for an attack.')
+            embed.title = "Gut Shot(Uncharged)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/f/fe/BBCS_Litchi_Kanchan.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed(description='Hold the Button for a cross up.')
+            embed1.title = "Gut Shot(Charged)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/6/65/BBCP_Litchi_ChargedKanchan.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")		
+
+    @reach.command(name="a", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _e5_li(self):   
+        """Scoop!"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[67]
+            my_table1 = table[69]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body1.find_all('tr')[1]
+            info1 =  table_body1.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp2 = info1.find('p').get_text()
+            mp1 = info.find('p').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+            mpB = "```" + "*" + mp2 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Reach: Last Chance"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/0/05/BBCS_Litchi_Reach.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed(description='Reach: Last Chance~A')
+            embed1.title = "One Shot"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/2/20/BBCS_Litchi_ReachA.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @reach.command(name="b", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _e6_li(self):   
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[67]
+            my_table1 = table[71]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body1.find_all('tr')[1]
+            info1 =  table_body1.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            #mp2 = 
+            mp1 = info.find('p').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+            #mpB = "```" + "*" + mp2 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Reach: Last Chance"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/0/05/BBCS_Litchi_Reach.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed(description='Reach: Last Chance~B')
+            embed1.title = "Last Chance > Three Dragons: Green"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/a/a8/BBCS_Litchi_ReachB.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            #embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @reach.command(name="c", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _e7_li(self):   
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[67]
+            my_table1 = table[73]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body1.find_all('tr')[1]
+            info1 =  table_body1.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            #mp2 = 
+            mp1 = info.find('p').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+            #mpB = "```" + "*" + mp2 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Reach: Last Chance"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/0/05/BBCS_Litchi_Reach.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed(description='Reach: Last Chance~C')
+            embed1.title = "Last Chance > Three Dragons: Red"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/4/4c/BBCS_Litchi_ReachC.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            #embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @reach.command(name="d", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _e8_li(self):   
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[67]
+            my_table1 = table[75]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body1.find_all('tr')[1]
+            info1 =  table_body1.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            #mp2 = 
+            mp1 = info.find('p').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+            #mpB = "```" + "*" + mp2 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Reach: Last Chance"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/0/05/BBCS_Litchi_Reach.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed(description='Reach: Last Chance~D')
+            embed1.title = "Robbing a Quad"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/b/bc/BBCS_Litchi_j2Dm.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            #embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @reach.command(name="63214b", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _e9_li(self):   
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[67]
+            my_table1 = table[77]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body1.find_all('tr')[1]
+            info1 =  table_body1.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            #mp2 = 
+            mp1 = info.find('p').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+            #mpB = "```" + "*" + mp2 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Reach: Last Chance"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/0/05/BBCS_Litchi_Reach.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed(description='63214B[e]')
+            embed1.title = "Reach: Robbing the Kong"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/7/72/BBCS_Litchi_ReachToss.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            #embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")		
+
+    @reach.command(name="63214c", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _e10_li(self):   
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[67]
+            my_table1 = table[79]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            headers1 = table_body1.find_all('tr')[1]
+            info1 =  table_body1.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp2 = info1.find('p').get_text()
+            mp1 = info.find('p').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+            mpB = "```" + "*" + mp2 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Reach: Last Chance"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/0/05/BBCS_Litchi_Reach.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed(description='*Sonic Spring.Mp3*')
+            embed1.title = "Reach: Kong on Kong"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/1/1d/BBCS_Litchi_ReachHop.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")		
+
+    @e.command(name="41236d", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _e11_li(self):   
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[81]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info =  table_body.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            #mp2 = info1.find('p').get_text()
+            #mp1 = info.find('p').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1 + "```"
+            #mpB = "```" + "*" + mp2 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "The Four Winds: Vertical"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/8/82/BBCS_Litchi_FourWindsVert.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed()
+            embed1.title = "The Four Winds: Horizontal"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/0/0e/BBCS_Litchi_FourWindsHoriz.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            #embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @e.command(name="623d", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _e12_li(self):   
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[83]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info =  table_body.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('p')]
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Kote Gaeshi"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/e/ea/BBCS_Litchi_Kote6.png')
+            embed.add_field(name="Ground Frame Data", value=tab)
+            embed.add_field(name="Air Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @e.command(name="421d", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _e13_li(self):   
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[83]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info =  table_body.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('p')]
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Kote Gaeshi"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/f/f5/BBCS_Litchi_Kote4.png')
+            embed.add_field(name="Ground Frame Data", value=tab)
+            embed.add_field(name="Air Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @m.command(name="214b", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _m5_li(self):   
+        """Ren Chan(B)"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[85]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 =
+            vrs = headers.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Ren Chan(B)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/5/5e/BBCF_Litchi_RenChan.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+
+    @m.command(name="214c", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _m6_li(self):   
+        """Ren Chan(C)"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[85]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[2]
+            info =  table_body.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 =
+            vrs = headers.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Ren Chan(C)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/5/5e/BBCF_Litchi_RenChan.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")			
+			
+    @li.command(name="6428c", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _dd1_li(self):
+        #"""Insert tag here"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[87]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info =  table_body.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            #mp1 = [op.get_text() for op in info.find_all('li')]
+            #mp2 = info.find('p').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp2 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "All Green"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/e/ec/BBCS_Litchi_Ryuisou.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed()
+            embed1.title = "All Green(OD)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/2/2e/BBCP_Litchi_RyuisouOD.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @li.command(name="632146c", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _dd2_li(self):
+        """Strong reversal and good combo ender."""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[89]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            headers2 = table_body.find_all('tr')[3]
+            headers3 = table_body.find_all('tr')[4]
+            info =  table_body.find_all('tr')[5]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            Data3 = [head3.get_text() for head3 in headers3.find_all('td')]
+            #mp1 = info.find('li').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+            vrs3 = headers3.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')
+            tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Cancel", Data3[1]], ["Guard", Data3[2]], ["Startup", Data3[3]], ["Active", Data3[4]], ["Recovery", Data3[5]], ["Frame Adv.", Data3[6]], ["Attribute", Data3[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1 + "```"
+
+            embed = discord.Embed(description='Strong reversal and good combo ender.')
+            embed.title = "All Terminals(1st Hit)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/4/4b/BBCP_Litchi_AllTerminals.png')
+			
+            embed1 = discord.Embed()
+            embed1.title = "All Terminals"
+            embed1.add_field(name="632146C[m] (Staff ender) Frame Data", value=tab)
+            embed1.add_field(name="632146C~[D][m] (Staff > Staffless ender) Frame Data", value=tab1)
+            embed1.add_field(name="632146C[e] (Staffless ender) Frame Data", value=tab2)
+            embed1.add_field(name="632146C during Overdrive Frame Data", value=tab3)
+            #embed.add_field(name="OD Attack Props:", value=mpB, inline='true')
+			
+            embed2 = discord.Embed(description='More damage than the [e] version, but worse post-super options.')
+            embed2.title = "All Terminals(Staff Ender)"
+            embed2.set_image(url='http://www.dustloop.com/wiki/images/c/ce/BBCP_Litchi_AllTerminalsStaff.png')
+			
+            embed3 = discord.Embed(description='Less damage than the [m] version, but better post-super options.')
+            embed3.title = "All Terminals(Staffless Ender)"
+            embed3.set_image(url='http://www.dustloop.com/wiki/images/f/f9/BBCP_Litchi_AllTerminalsStaffless.png')
+            
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+            await self.bot.say(embed=embed3)
+        except:
+            await self.bot.say("No Frame Data Found.....")				
+
+    @e.command(name="632146d", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _dd3_li(self):
+        """Staffless Super"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[91]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info =  table_body.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('p')]
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "```"
+            mpB = "```" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed(description='Combo filler.')
+            embed.title = "Thirteen Orphans(5D Set)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/b/b4/BBCP_Litchi_VerticalKokushi.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed(description='Decent pressure tool.')
+            embed1.title = "Thirteen Orphans(2D Set)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/d/d7/BBCS_Litchi_Kokushi.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+            
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @li.command(name="abcd", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _abcd_li(self): 
+        """Need a hand?"""		
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[93]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info = table_body.find_all('tr')[3]
+            
+            vrs = headers.find('th').get_text()
+            Data = [head.get_text() for head in headers.find_all('td')]
+            vrs1 = headers1.find('th').get_text()
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp2 = info.find('p').get_text()
+            mp1 = [op.get_text() for op in info.find_all('li')]
+       
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mp = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Crimson Peacock"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/1/1e/BBCF_Litchi_Exceed_Accel.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Active Flow Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mp, inline='true')
+            
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @li.command(name="od", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _overdrive_li(self):   
+        """Use this time to buffer staff hits"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[95]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('p')]
+            vrs = headers.find('th').get_text()
+       
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "```"
+            mpB = "```" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "```"
+			
+            embed = discord.Embed(description='Use this time to buffer staff hits.')
+            embed.title = "The Great Wheel"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/4/4a/BBCP_Litchi_Overdrive.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            embed1 = discord.Embed(description='Multi-purpose tool, incredibly strong.')
+            embed1.title = "The Great Wheel Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/7/76/BBCP_Litchi_DaisharinStaff.png')
+            embed1.add_field(name="Attack Props Cont:", value=mpB, inline='true')
+            
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")			
+			
+    @reach.command(name="46d", pass_context=False)  # Litchi Faye Ling from blazblue
+    async def _astral_li(self):   
+        """One does not simply kick 99 times without SWITCHING FEET."""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Litchi_Faye_Ling"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[97]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('p')]
+       
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mp = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "```"
+			
+            embed = discord.Embed(description='Last Chance > 46D')
+            embed.title = "Nine Gates of Heaven"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/a/ab/BBCS_Litchi_NineGates2.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mp, inline='true')
+            
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")			
 ###################################################################################################################################################################################################
 def setup(bot):
     if soupAvailable is False:
