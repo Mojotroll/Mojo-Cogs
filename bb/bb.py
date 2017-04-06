@@ -33711,7 +33711,7 @@ class bb:
 			
             Data = [head.get_text() for head in headers.find_all('td')]
             Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
-            mp2 = info.find('p').get_text()
+            mp2 = info1.find('p').get_text()
             mp1 = info.find('p').get_text()
             vrs = headers.find('th').get_text()
             vrs1 = headers1.find('th').get_text()
