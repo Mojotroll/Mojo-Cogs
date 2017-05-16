@@ -390,6 +390,14 @@ class bb:
 
         if ctx.invoked_subcommand is None:
             await send_cmd_help(ctx)
+			
+    @commands.group(pass_context=True)
+    async def ca(self, ctx):
+        """Puppeter for Vengence"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)
+
 #########################################################################################################################################
 
     @am.command(name="5a", pass_context=False)  # Amane from blazblue
@@ -46360,7 +46368,1165 @@ class bb:
             
             await self.bot.say(embed=embed)
         except:
+            await self.bot.say("No Frame Data Found.....")		
+
+###################################################################################################################################################################################################
+    @ca.command(name="5a", pass_context=False)  #  Carol Clover from blazblue
+    async def _5a_ca(self):
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[1]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('li').get_text()
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"  
+			
+            embed = discord.Embed()
+            embed.title = "5a"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/f/ff/BBCS_Carl_5A.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+		
+            await self.bot.say(embed=embed)
+            
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @ca.command(name="5b", pass_context=False)  #  Carol Clover from blazblue
+    async def _5b_ca(self):   
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[3]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "```" 	
+			
+            embed = discord.Embed()
+            embed.title = "5b"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/9/92/BBCS_Carl_5B.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)					
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @ca.command(name="5c", pass_context=False)  #  Carol Clover from blazblue
+    async def _5c_ca(self): 
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[5]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```" 	
+			
+            embed = discord.Embed()
+            embed.title = "5c"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/0/07/BBCS_Carl_5C.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+	
+    @ca.command(name="2a", pass_context=False)  #  Carol Clover from blazblue
+    async def _2a_ca(self):   
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[7]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('li').get_text()
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```" 	
+			
+            embed = discord.Embed()
+            embed.title = "2A"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/c/c3/BBCS_Carl_2A.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @ca.command(name="2b", pass_context=False)  #  Carol Clover from blazblue
+    async def _2b_ca(self): 
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[9]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = [op.get_text() for op in info.find_all('li')]
+            #mp2 = info.find('p').get_text()
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp2 + "```" 	
+			
+            embed = discord.Embed()
+            embed.title = "2B"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/b/b8/BBCS_Carl_2B.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @ca.command(name="2c", pass_context=False)  #  Carol Clover from blazblue
+    async def _2c_ca(self):   
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[11]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('li').get_text()
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "2c"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/8/8a/BBCS_Carl_2C.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @ca.command(name="6a", pass_context=False)  #  Carol Clover from blazblue
+    async def _6a_ca(self):  
+        #"""Insert Tag Here"""		
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[13]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "6A"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/e/e8/BBCS_Carl_6A.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @ca.command(name="6b", pass_context=False)  #  Carol Clover from blazblue
+    async def _6b_ca(self):  
+        #"""Insert Tag Here"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[15]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[1] + "```"  	
+			
+            embed = discord.Embed()
+            embed.title = "6b"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/a/aa/BBCS_Carl_6B.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+
+    @ca.command(name="6c", pass_context=False)  #  Carol Clover from blazblue
+    async def _6c_ca(self):  
+        #"""Insert Tag Here"""			
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[17]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[1] + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "6c"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/4/4b/BBCF_Carl_6C.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
             await self.bot.say("No Frame Data Found.....")			
+			
+    @ca.command(name="3c", pass_context=False)  #  Carol Clover from blazblue
+    async def _3c_ca(self):   
+        #"""Insert Tag Here"""		
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[19]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "3c"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/f/f5/BBCS_Carl_3C.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+			
+    @ca.command(name="ja", pass_context=False)  #  Carol Clover from blazblue
+    async def _ja_ca(self): 
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[21]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+
+            Data = [head.get_text() for head in headers.find_all('td')]			
+            mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "J.A"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/e/e5/BBCS_Carl_jA.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)			
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+			
+    @ca.command(name="jb", pass_context=False)  #  Carol Clover from blazblue
+    async def _jb_ca(self):   
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[23]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+
+            Data = [head.get_text() for head in headers.find_all('td')]			
+            #mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "J.B"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/7/75/BBCS_Carl_jB.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+			
+    @ca.command(name="jc", pass_context=False)  #  Carol Clover from blazblue
+    async def _jc_ca(self): 
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[25]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA =
+			
+            embed = discord.Embed()
+            embed.title = "J.C"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/a/a9/BBCS_Carl_jC.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @ca.command(name="j2c", pass_context=False)  #  Carol Clover from blazblue
+    async def _j2c_ca(self):   
+        """Going in strong!"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[27]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+
+            Data = [head.get_text() for head in headers.find_all('td')]			
+            mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[1] + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "J.2C"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/b/ba/BBCS_Carl_j2C.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @ca.command(name="6d", pass_context=False)  #  Carol Clover from blazblue
+    async def _6d_ca(self): 
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[29]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            #info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = info.find('li').get_text()
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = 
+			
+            embed = discord.Embed()
+            embed.title = "6D"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/8/8c/BBCS_Carl_6D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @ca.command(name="3d", pass_context=False)  #  Carol Clover from blazblue
+    async def _3d_ca(self): 
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[31]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = info.find('li').get_text()
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = 
+			
+            embed = discord.Embed()
+            embed.title = "3D"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/9/91/BBCS_Carl_3D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @ca.command(name="4d", pass_context=False)  #  Carol Clover from blazblue
+    async def _4d_ca(self): 
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[33]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "4D"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/b/b3/BBCP_Carl_46D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @ca.command(name="2d", pass_context=False)  #  Carol Clover from blazblue
+    async def _2d_ca(self): 
+        #"""Insert Tag Here"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[35]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "2D"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/c/cd/BBCF_Carl_1D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @ca.command(name="8d", pass_context=False)  #  Carol Clover from blazblue
+    async def _8d_ca(self): 
+        """The Clap"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[37]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "8D"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/7/79/BBCS_Carl_8D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+		
+    @ca.command(name="22d", pass_context=False)  #  Carol Clover from blazblue
+    async def _22d_ca(self): 
+        """The Bell"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[39]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "La Campanella"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/d/da/BBCS_Carl_22D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @ca.command(name="623d", pass_context=False)  #  Carol Clover from blazblue
+    async def _623d_ca(self): 
+        """With Vigor"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[41]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Con Brio"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/4/49/BBCS_Carl_623D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @ca.command(name="63214d", pass_context=False)  #  Carol Clover from blazblue
+    async def _63214d_ca(self): 
+        """With feeling"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[43]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Con Anima"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/f/f7/BBCS_Carl_63214D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @ca.command(name="41236d", pass_context=False)  #  Carol Clover from blazblue
+    async def _41236d_ca(self): 
+        """With fire"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[45]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Con Fuoco"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/8/82/BBCS_Carl_41236D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+
+    @ca.command(name="421d", pass_context=False)  #  Carol Clover from blazblue
+    async def _421d_ca(self): 
+        """Flying"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[47]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Volante"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/5/55/BBCS_Carl_421D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @ca.command(name="ft", pass_context=False)  #  Carol Clover from blazblue
+    async def _ft_ca(self):   
+        """Forward Throw"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[49]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = info.find('p').get_text()		
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = 
+			
+            embed = discord.Embed()
+            embed.title = "Forward Throw"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/8/89/BBCS_Carl_FThrow.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found....")
+			
+    @ca.command(name="bt", pass_context=False)  #  Carol Clover from blazblue
+    async def _bt_ca(self):   
+        """Back Throw"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[51]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = info.find('p').get_text()		
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = 
+			
+            embed = discord.Embed()
+            embed.title = "Back Throw"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/3/30/BBCS_Carl_BThrow.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found....")
+			
+    @ca.command(name="at", pass_context=False)  #  Carol Clover from blazblue
+    async def _at_ca(self):   
+        """Air Throw"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[53]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = [po.get_text() for po in info.find_all('p')]	
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = 
+			
+            embed = discord.Embed()
+            embed.title = "Air Throw"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/7/7c/BBCS_Carl_AThrow.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @ca.command(name="ca", pass_context=False)  #  Carol Clover from blazblue
+    async def _ca_ca(self):   
+        """Counter Assault"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[55]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]		
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Counter Assault"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/c/cf/BBCS_Carl_6C.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")		
+
+    @ca.command(name="ct", pass_context=False)  #  Carol Clover from blazblue
+    async def _ct_ca(self):   
+        """Crush Trigger"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[57]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info =  table_body.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]	
+            mp1 = [op.get_text() for op in info.find_all('li')]	
+            vrs = headers.find('th').get_text()		
+            vrs1 = headers1.find('th').get_text()				
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Crush Trigger"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/b/b0/BBCP_Carl_CT.png')
+            embed.add_field(name="Uncharged Frame Data", value=tab)
+            embed.add_field(name="Charged Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @ca.command(name="236a", pass_context=False)  #  Carol Clover from blazblue
+    async def _s1_ca(self):   
+        """Quickly(A)"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[59]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [po.get_text() for po in info.find_all('li')]
+            vrs = headers.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Vivace(A)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/d/d5/BBCS_Carl_Vivace.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')					
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found...")	
+
+    @ca.command(name="236b", pass_context=False)  #  Carol Clover from blazblue
+    async def _s2_ca(self):   
+        """Quickly(B)"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[59]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[2]
+            info =  table_body.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [po.get_text() for po in info.find_all('li')]
+            vrs = headers.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Vivace(B)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/d/d5/BBCS_Carl_Vivace.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')					
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found...")	
+			
+    @ca.command(name="623c", pass_context=False)  #  Carol Clover from blazblue
+    async def _s3_ca(self):   
+        """A songlike tone"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[61]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [po.get_text() for po in info.find_all('li')]
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Cantabile"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/6/67/BBCS_Carl_Cantabile.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @ca.command(name="j214c", pass_context=False)  #  Carol Clover from blazblue
+    async def _s4_ca(self):   
+        """Light and moderately brisk"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[63]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [po.get_text() for po in info.find_all('li')]
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Allegretto"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/b/bb/BBCS_Carl_Allegretto.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")		
+
+    @ca.command(name="632146c", pass_context=False)  #  Carol Clover from blazblue
+    async def _dd1_ca(self):
+        """Song of joy"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[65]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Laetabilis Cantata"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/0/0f/BBCS_Carl_LaetabilisCantata.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+            
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @ca.command(name="236236d", pass_context=False)  #  Carol Clover from blazblue
+    async def _dd2_ca(self):
+        """Air OK"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[67]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info =  table_body.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "```"
+			
+            embed = discord.Embed(description='Air OK')
+            embed.title = "Rhapsody of Memories"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/c/c0/BBCS_Carl_RhapsodyOfMemories.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="OD Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+            
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")					
+
+    @ca.command(name="214214d", pass_context=False)  #  Carol Clover from blazblue
+    async def _dd3_ca(self):
+        """And the finale(AIR OK)"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[69]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = [po.get_text() for po in info.find_all('li')]
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed(description='Air OK')
+            embed.title = "Fermata"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/b/bc/BBCS_Carl_Fermata.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+            
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @ca.command(name="632146d", pass_context=False)  #  Carol Clover from blazblue
+    async def _dd4_ca(self):
+        """OverDrive Only Distortion Drive"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[71]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Arpeggio of Oblivion (OD Only)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/9/9c/BBCP_Carl_Arpeggio.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+            
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")			
+			
+    @ca.command(name="abcd", pass_context=False)  #  Carol Clover from blazblue
+    async def _abcd_ca(self): 
+        """Exceed Accel"""		
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[73]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info = table_body.find_all('tr')[3]
+            
+            vrs = headers.find('th').get_text()
+            Data = [head.get_text() for head in headers.find_all('td')]
+            vrs1 = headers1.find('th').get_text()
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+       
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Symphony of Lament"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/3/3f/BBCF_Carl_ExceedAccel.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Active Flow Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+            
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")			
+			
+    @ca.command(name="64641236d", pass_context=False)  #  Carol Clover from blazblue
+    async def _astral_ca(self):   
+        """Astral Heat"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Carl_Clover"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[75]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            
+            Data = [head.get_text() for head in headers.find_all('td')]
+            #mp1 = info.find('p').get_text()
+       
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            #mpA = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Deus Ex Machina"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/2/2d/BBCP_Carl_Machina.png')
+            embed.add_field(name="Frame Data", value=tab)
+            #embed.add_field(name="Attack Props:", value=mpA, inline='true')
+            
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+			
 ###################################################################################################################################################################################################
 def setup(bot):
     if soupAvailable is False:
