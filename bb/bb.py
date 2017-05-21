@@ -397,6 +397,20 @@ class bb:
 
         if ctx.invoked_subcommand is None:
             await send_cmd_help(ctx)
+			
+    @commands.group(pass_context=True)
+    async def bu(self, ctx):
+        """Crouching Tiger, Wannabe Tager"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)
+			
+    @bu.group(pass_context=True)
+    async def sa(self, ctx):
+        """Serpentine Assault/Follow-ups: 720a, 720d, 1080d"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)
 
 #########################################################################################################################################
 
@@ -47527,6 +47541,1337 @@ class bb:
         except:
             await self.bot.say("No Frame Data Found.....")	
 			
+###################################################################################################################################################################################################
+###################################################################################################################################################################################################
+    @bu.command(name="5a", pass_context=False)  #   Bullet from blazblue
+    async def _5a_bu(self):
+        """Just another punch"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[1]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "5a"
+            embed.set_image(url='http://dustloop.com/wiki/images/e/e2/BBCP_Bullet_5A.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+		
+            await self.bot.say(embed=embed)
+            
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @bu.command(name="5b", pass_context=False)  #   Bullet from blazblue
+    async def _5b_bu(self):   
+        """The best non-Drive poke you got"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[3]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = info.find('p').get_text()
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```" 	
+			
+            embed = discord.Embed()
+            embed.title = "5b"
+            embed.set_image(url='http://dustloop.com/wiki/images/9/9e/BBCP_Bullet_5B.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)					
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @bu.command(name="5c", pass_context=False)  #   Bullet from blazblue
+    async def _5c_bu(self): 
+        """Flamey punch brings satisfaction"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[5]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 	
+			
+            embed = discord.Embed()
+            embed.title = "5c"
+            embed.set_image(url='http://dustloop.com/wiki/images/2/26/BBCP_Bullet_5C.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+	
+    @bu.command(name="2a", pass_context=False)  #   Bullet from blazblue
+    async def _2a_bu(self):   
+        """poke poke poke dash* poke poke"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[7]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('li').get_text()
+            mp2 = [po.get_text() for po in info.find_all('p')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```" 	
+			
+            embed = discord.Embed()
+            embed.title = "2A"
+            embed.set_image(url='http://dustloop.com/wiki/images/d/d7/BBCP_Bullet_2A.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @bu.command(name="2b", pass_context=False)  #   Bullet from blazblue
+    async def _2b_bu(self): 
+        """Best low normal and not that bad of a poke, too"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[9]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('li').get_text()
+            mp2 = [po.get_text() for po in info.find_all('p')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 		
+			
+            embed = discord.Embed()
+            embed.title = "2B"
+            embed.set_image(url='http://dustloop.com/wiki/images/3/33/BBCP_Bullet_2B.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @bu.command(name="2c", pass_context=False)  #   Bullet from blazblue
+    async def _2c_bu(self):   
+        """Criss-cross!"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[11]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('li').get_text()
+            mp2 = [po.get_text() for po in info.find_all('p')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 	
+			
+            embed = discord.Embed()
+            embed.title = "2c"
+            embed.set_image(url='http://dustloop.com/wiki/images/4/42/BBCP_Bullet_2C.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+    @bu.command(name="6a", pass_context=False)  #   Bullet from blazblue
+    async def _6a_bu(self):  
+        """It's an overhead"""		
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[13]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = info.find('p').get_text()
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "6A"
+            embed.set_image(url='http://dustloop.com/wiki/images/1/13/BBCP_Bullet_6A.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @bu.command(name="6b", pass_context=False)  #   Bullet from blazblue
+    async def _6b_bu(self):  
+        """Pretty good as far as anti-airs go"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[15]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 	
+			
+            embed = discord.Embed()
+            embed.title = "6b"
+            embed.set_image(url='http://dustloop.com/wiki/images/6/66/BBCP_Bullet_6B.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+
+    @bu.command(name="6c", pass_context=False)  #   Bullet from blazblue
+    async def _6c_bu(self):  
+        """Knee of Justice?"""			
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[17]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('li').get_text()
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "6c"
+            embed.set_image(url='http://dustloop.com/wiki/images/e/ec/BBCP_Bullet_6C.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")			
+			
+    @bu.command(name="3c", pass_context=False)  #   Bullet from blazblue
+    async def _3c_bu(self):   
+        """Sweep the leg"""		
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[19]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = info.find('p').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "3c"
+            embed.set_image(url='http://dustloop.com/wiki/images/8/85/BBCP_Bullet_3C.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+			
+    @bu.command(name="ja", pass_context=False)  #   Bullet from blazblue
+    async def _ja_bu(self): 
+        """jump* poke poke poke"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[21]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+
+            Data = [head.get_text() for head in headers.find_all('td')]			
+            mp1 = info.find('li').get_text()
+            mp2 = info.find('p').get_text()
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "J.A"
+            embed.set_image(url='http://dustloop.com/wiki/images/f/f0/BBCP_Bullet_jA.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)			
+        except:
+            await self.bot.say("No Frame Data Found.....")  # oh holy crap we have a houston!
+			
+			
+    @bu.command(name="jb", pass_context=False)  #   Bullet from blazblue
+    async def _jb_bu(self):   
+        """Kick 'em in the face"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[23]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+
+            Data = [head.get_text() for head in headers.find_all('td')]			
+            mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "J.B"
+            embed.set_image(url='http://dustloop.com/wiki/images/6/6e/BBCP_Bullet_jB.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+			
+    @bu.command(name="jc", pass_context=False)  #   Bullet from blazblue
+    async def _jc_bu(self): 
+        """Basically does everything"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[25]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+			
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "J.C"
+            embed.set_image(url='http://dustloop.com/wiki/images/c/c6/BBCP_Bullet_jC.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @bu.command(name="5d", pass_context=False)  #   Bullet from blazblue
+    async def _5d_bu(self): 
+        """zoop"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[27]
+            my_table1 = table[45]  #table [45]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info = table_body.find_all('tr')[3]
+            headers2 = table_body1.find_all('tr')[1]
+            headers3 = table_body1.find_all('tr')[2]
+            info1 = table_body1.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            Data3 = [head3.get_text() for head3 in headers3.find_all('td')]
+            mp1 = [po.get_text() for po in info.find_all('p')]
+            mp2 = info1.find('li').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+            vrs3 = headers3.find('th').get_text()
+			
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')
+            tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Cancel", Data3[1]], ["Guard", Data3[2]], ["Startup", Data3[3]], ["Active", Data3[4]], ["Recovery", Data3[5]], ["Frame Adv.", Data3[6]], ["Attribute", Data3[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```" 
+            mpB = "```" + "*" + mp2 + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "5D"
+            embed.set_image(url='http://dustloop.com/wiki/images/c/cc/BBCP_Bullet_5D.png')
+            embed.add_field(name="Lv. 0 Frame Data", value=tab)
+            embed.add_field(name="Lv. 1, 2 Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            embed1 = discord.Embed(description='D during a D normal')
+            embed1.title = "Wadcut Engage"
+            embed1.set_image(url='http://dustloop.com/wiki/images/a/a3/BBCP_Bullet_5DD.png')
+            embed1.add_field(name="Lv. 1 Frame Data", value=tab2)
+            embed1.add_field(name="Lv. 2 Frame Data", value=tab3)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+            embed1.set_footer(text='Never a bad idea to use this in the corner')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @bu.command(name="jd", pass_context=False)  #   Bullet from blazblue
+    async def _jd_bu(self): 
+        """zoop"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[29]
+            my_table1 = table[45]  #table [45]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info = table_body.find_all('tr')[3]
+            headers2 = table_body1.find_all('tr')[1]
+            headers3 = table_body1.find_all('tr')[2]
+            info1 = table_body1.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            Data3 = [head3.get_text() for head3 in headers3.find_all('td')]
+            mp1 = [po.get_text() for po in info.find_all('li')]
+            mp2 = info1.find('li').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+            vrs3 = headers3.find('th').get_text()
+			
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')
+            tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Cancel", Data3[1]], ["Guard", Data3[2]], ["Startup", Data3[3]], ["Active", Data3[4]], ["Recovery", Data3[5]], ["Frame Adv.", Data3[6]], ["Attribute", Data3[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "```" 
+            mpB = "```" + "*" + mp2 + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "J.D"
+            embed.set_image(url='http://dustloop.com/wiki/images/c/cc/BBCP_Bullet_5D.png')
+            embed.add_field(name="Lv. 0 Frame Data", value=tab)
+            embed.add_field(name="Lv. 1, 2 Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            embed1 = discord.Embed(description='D during a D normal')
+            embed1.title = "Wadcut Engage"
+            embed1.set_image(url='http://dustloop.com/wiki/images/a/a3/BBCP_Bullet_5DD.png')
+            embed1.add_field(name="Lv. 1 Frame Data", value=tab2)
+            embed1.add_field(name="Lv. 2 Frame Data", value=tab3)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+            embed1.set_footer(text='Never a bad idea to use this in the corner')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @bu.command(name="2d", pass_context=False)  #   Bullet from blazblue
+    async def _2d_bu(self): 
+        """A mix-up tool with a confusing animation"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[31]
+            my_table1 = table[45]  #table [45]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info = table_body.find_all('tr')[3]
+            headers2 = table_body1.find_all('tr')[1]
+            headers3 = table_body1.find_all('tr')[2]
+            info1 = table_body1.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            Data3 = [head3.get_text() for head3 in headers3.find_all('td')]
+            mp1 = info.find('p').get_text()
+            mp2 = info1.find('li').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+            vrs3 = headers3.find('th').get_text()
+			
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')
+            tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Cancel", Data3[1]], ["Guard", Data3[2]], ["Startup", Data3[3]], ["Active", Data3[4]], ["Recovery", Data3[5]], ["Frame Adv.", Data3[6]], ["Attribute", Data3[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```" 
+            mpB = "```" + "*" + mp2 + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "2D"
+            embed.set_image(url='http://dustloop.com/wiki/images/e/e8/BBCP_Bullet_2D.png')
+            embed.add_field(name="Lv. 0 Frame Data", value=tab)
+            embed.add_field(name="Lv. 1, 2 Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            embed1 = discord.Embed(description='D during a D normal')
+            embed1.title = "Wadcut Engage"
+            embed1.set_image(url='http://dustloop.com/wiki/images/a/a3/BBCP_Bullet_5DD.png')
+            embed1.add_field(name="Lv. 1 Frame Data", value=tab2)
+            embed1.add_field(name="Lv. 2 Frame Data", value=tab3)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+            embed1.set_footer(text='Never a bad idea to use this in the corner')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @bu.command(name="6d", pass_context=False)  #   Bullet from blazblue
+    async def _6d_bu(self): 
+        """A mix-up tool with a less confusing animation"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[33]
+            my_table1 = table[45]  #table [45]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info = table_body.find_all('tr')[3]
+            headers2 = table_body1.find_all('tr')[1]
+            headers3 = table_body1.find_all('tr')[2]
+            info1 = table_body1.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            Data3 = [head3.get_text() for head3 in headers3.find_all('td')]
+            mp1 = info.find('p').get_text()
+            mp2 = info1.find('li').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+            vrs3 = headers3.find('th').get_text()
+			
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')
+            tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Cancel", Data3[1]], ["Guard", Data3[2]], ["Startup", Data3[3]], ["Active", Data3[4]], ["Recovery", Data3[5]], ["Frame Adv.", Data3[6]], ["Attribute", Data3[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```" 
+            mpB = "```" + "*" + mp2 + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "6D"
+            embed.set_image(url='http://dustloop.com/wiki/images/0/0e/BBCP_Bullet_6D.png')
+            embed.add_field(name="Lv. 0 Frame Data", value=tab)
+            embed.add_field(name="Lv. 1, 2 Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            embed1 = discord.Embed(description='D during a D normal')
+            embed1.title = "Wadcut Engage"
+            embed1.set_image(url='http://dustloop.com/wiki/images/a/a3/BBCP_Bullet_5DD.png')
+            embed1.add_field(name="Lv. 1 Frame Data", value=tab2)
+            embed1.add_field(name="Lv. 2 Frame Data", value=tab3)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+            embed1.set_footer(text='Never a bad idea to use this in the corner')
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @bu.command(name="ft", pass_context=False)  #   Bullet from blazblue
+    async def _ft_bu(self):   
+        """Forward Throw: Bounces them off the wall"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[35]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [po.get_text() for po in info.find_all('li')]
+            mp2 = info.find('p').get_text()		
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```" 
+			
+            embed = discord.Embed()
+            embed.title = "Forward Throw"
+            embed.set_image(url='http://dustloop.com/wiki/images/9/90/BBCP_Bullet_BC.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found....")
+			
+    @bu.command(name="bt", pass_context=False)  #   Bullet from blazblue
+    async def _bt_bu(self):   
+        """Back Throw: Drops them to the ground"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[37]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [po.get_text() for po in info.find_all('li')]	
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```"  
+			
+            embed = discord.Embed()
+            embed.title = "Back Throw"
+            embed.set_image(url='http://dustloop.com/wiki/images/7/7f/BBCP_Bullet_4BC.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found....")
+			
+    @bu.command(name="at", pass_context=False)  #   Bullet from blazblue
+    async def _at_bu(self):   
+        """Air Throw: Similar to the ground forward throw"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[39]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('li').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"  
+			
+            embed = discord.Embed()
+            embed.title = "Air Throw"
+            embed.set_image(url='http://dustloop.com/wiki/images/b/b2/BBCP_Bullet_jBC.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")
+			
+    @bu.command(name="ca", pass_context=False)  #   Bullet from blazblue
+    async def _ca_bu(self):   
+        """Counter Assault: Don't get yourself in situations when you have to use this"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[41]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('li').get_text()	
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Counter Assault"
+            embed.set_image(url='http://dustloop.com/wiki/images/6/66/BBCP_Bullet_6B.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")		
+
+    @bu.command(name="ct", pass_context=False)  #   Bullet from blazblue
+    async def _ct_bu(self):   
+        """Crush Trigger: There's never enough ways to crack the enemy open"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[43]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info =  table_body.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]	
+            mp1 = info.find('li').get_text()
+            vrs = headers.find('th').get_text()		
+            vrs1 = headers1.find('th').get_text()				
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Crush Trigger"
+            embed.set_image(url='http://dustloop.com/wiki/images/9/9c/BBCP_Bullet_AB.png')
+            embed.add_field(name="Uncharged Frame Data", value=tab)
+            embed.add_field(name="Charged Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @bu.command(name="236a", pass_context=False)  #   Bullet from blazblue
+    async def _s1_bu(self):   
+        """Not for, but against zoning"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[47]
+            my_table1 = table[49]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            headers2 = table_body.find_all('tr')[3]
+            info =  table_body.find_all('tr')[4]
+            headers3 = table_body1.find_all('tr')[1]
+            info1 =  table_body1.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            Data3 = [head3.get_text() for head3 in headers3.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
+            mp3 = [op1.get_text() for op1 in info1.find_all('li')]
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')
+            tab3 = tabulate([["Damage", Data3[0]], ["Cancel", Data3[1]], ["Guard", Data3[2]], ["Startup", Data3[3]], ["Active", Data3[4]], ["Recovery", Data3[5]], ["Frame Adv.", Data3[6]], ["Attribute", Data3[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```"  
+            mpB = "```" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"  
+            mpC = "```" + "*" + mp3[0] + "\n" + "*" + mp3[1] + "\n" + "*" + mp3[2] + "```"  
+			
+            embed = discord.Embed()
+            embed.title = "Flint Shooter"
+            embed.add_field(name="Lv. 0 Frame Data", value=tab)
+            embed.add_field(name="Lv. 1 Frame Data", value=tab1)
+            embed.add_field(name="Lv. 2 Frame Data", value=tab2)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')	
+			
+            embed1 = discord.Embed()
+            embed1.title = "Flint Shooter Cont."
+            embed1.set_image(url='http://dustloop.com/wiki/images/0/03/BBCP_Bullet_236A.png')
+            embed1.add_field(name="Attack Properties cont.", value=mpB)
+
+            embed2 = discord.Embed(description='236[A]')
+            embed2.title = "Flint Shooter (Charged)"
+            embed2.set_image(url='http://dustloop.com/wiki/images/1/13/BBCP_Bullet_236A_charged.png')
+            embed2.add_field(name="Frame Data", value=tab3)
+            embed2.add_field(name="Attack Props:", value=mpC, inline='true')	
+            embed2.set_footer(text='A great combo tool. Now with neutral!')			
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+        except:
+            await self.bot.say("No Frame Data Found...")	
+
+    @bu.command(name="623b", pass_context=False)  #   Bullet from blazblue
+    async def _s2_bu(self):   
+        """Has a penchant for missing"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[51]
+            my_table1 = table[53]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+            headers1 = table_body1.find_all('tr')[1]
+            headers2 = table_body1.find_all('tr')[2]
+            info1 =  table_body1.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
+            mp3 = info1.find('li').get_text()
+            mp4 = info1.find('p').get_text()
+            vrs = headers1.find('th').get_text()
+            vrs1 = headers2.find('th').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs1], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"  
+            mpB = "```" + "*" + mp3 + "\n" + "*" + mp4 + "```"  
+			
+            embed = discord.Embed()
+            embed.title = "Cutting Shear"
+            embed.set_image(url='http://dustloop.com/wiki/images/4/4b/BBCP_Bullet_623B.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+
+            embed1 = discord.Embed(description='22D during Cutting Shear')
+            embed1.title = "Explode Engage"
+            embed1.set_image(url='http://dustloop.com/wiki/images/d/dc/BBCP_Bullet_22D.png')
+            embed1.add_field(name="Lv. 1 Frame Data", value=tab1)
+            embed1.add_field(name="Lv. 2 Frame Data", value=tab2)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')	
+            embed1.set_footer(text='A rare sight to see, but a cool one')				
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found...")	
+			
+    @bu.command(name="41236c", pass_context=False)  #   Bullet from blazblue
+    async def _s3_bu(self):   
+        """Just don't use it as a command dash"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[55]
+            my_table1 = table[57]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info =  table_body.find_all('tr')[3]
+            headers2 = table_body1.find_all('tr')[1]
+            headers3 = table_body1.find_all('tr')[2]
+            info1 =  table_body1.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            Data3 = [head3.get_text() for head3 in headers3.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [op1.get_text() for op1 in info1.find_all('li')]
+            mp3 = info1.find('p').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+            vrs3 = headers3.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')
+            tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Cancel", Data3[1]], ["Guard", Data3[2]], ["Startup", Data3[3]], ["Active", Data3[4]], ["Recovery", Data3[5]], ["Frame Adv.", Data3[6]], ["Attribute", Data3[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "```"  
+            mpB = "```" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "\n" + "*" + mp3 + "```"  
+			
+            embed = discord.Embed()
+            embed.title = "Miquelet Capture"
+            embed.set_image(url='http://dustloop.com/wiki/images/7/75/BBCP_Bullet_41236C.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Brake Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+
+            embed1 = discord.Embed(description='236D during Miquelet Capture')
+            embed1.title = "Piercing Engage"
+            embed1.set_image(url='http://dustloop.com/wiki/images/4/4f/BBCP_Bullet_236D.png')
+            embed1.add_field(name="Lv. 1 Frame Data", value=tab2)
+            embed1.add_field(name="Lv. 2 Frame Data", value=tab3)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')	
+            embed1.set_footer(text='This baby hurts')				
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found...")	
+
+    @bu.command(name="623c", pass_context=False)  #   Bullet from blazblue
+    async def _s4_bu(self):   
+        """Barely even an anti-air"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[59]
+            my_table1 = table[61]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[3]
+            headers1 = table_body1.find_all('tr')[1]
+            headers2 = table_body1.find_all('tr')[2]
+            info1 =  table_body1.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
+            mp4 = info1.find('p').get_text()
+            mp3 = info1.find('li').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```"  
+            mpB = "```" + "*" + mp3 + "\n" + "*" + mp4 + "```"  
+			
+            embed = discord.Embed()
+            embed.title = "Snaphance Fist(Ground)"
+            embed.set_image(url='http://dustloop.com/wiki/images/5/59/BBCP_Bullet_623C.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+
+            embed1 = discord.Embed(description='623D during Snaphance Fist')
+            embed1.title = "Flechette Engage"
+            embed1.set_image(url='http://dustloop.com/wiki/images/1/14/BBCP_Bullet_623D.png')
+            embed1.add_field(name="Lv. 1 Frame Data", value=tab1)
+            embed1.add_field(name="Lv. 2 Frame Data", value=tab2)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')	
+            embed1.set_footer(text='Catch and boom')				
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found...")		
+			
+    @bu.command(name="j623c", pass_context=False)  #   Bullet from blazblue
+    async def _s5_bu(self):   
+        """Barely even an anti-air"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[59]
+            my_table1 = table[61]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[2]
+            info =  table_body.find_all('tr')[3]
+            headers1 = table_body1.find_all('tr')[1]
+            headers2 = table_body1.find_all('tr')[2]
+            info1 =  table_body1.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
+            mp4 = info1.find('p').get_text()
+            mp3 = info1.find('li').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```"  
+            mpB = "```" + "*" + mp3 + "\n" + "*" + mp4 + "```"  
+			
+            embed = discord.Embed()
+            embed.title = "Snaphance Fist(Air)"
+            embed.set_image(url='http://dustloop.com/wiki/images/5/59/BBCP_Bullet_623C.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+
+            embed1 = discord.Embed(description='623D during Snaphance Fist')
+            embed1.title = "Flechette Engage"
+            embed1.set_image(url='http://dustloop.com/wiki/images/1/14/BBCP_Bullet_623D.png')
+            embed1.add_field(name="Lv. 1 Frame Data", value=tab1)
+            embed1.add_field(name="Lv. 2 Frame Data", value=tab2)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')	
+            embed1.set_footer(text='Catch and boom')				
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found...")	
+			
+    @bu.command(name="360b", pass_context=False)  #   Bullet from blazblue
+    async def _s6_bu(self):   
+        """Heel drop"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[63]
+            my_table1 = table[65]
+            table_body = my_table.find("table")
+            table_body1 = my_table1.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+            headers1 = table_body1.find_all('tr')[1]
+            headers2 = table_body1.find_all('tr')[2]
+            info1 =  table_body1.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            mp3 = [op.get_text() for op in info1.find_all('li')]
+            mp4 = info1.find('p').get_text()
+            mp2 = info.find('p').get_text()
+            mp1 = info.find('li').get_text()
+            vrs = headers1.find('th').get_text()
+            vrs1 = headers2.find('th').get_text()
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs1], ["Damage", Data2[0]], ["Cancel", Data2[1]], ["Guard", Data2[2]], ["Startup", Data2[3]], ["Active", Data2[4]], ["Recovery", Data2[5]], ["Frame Adv.", Data2[6]], ["Attribute", Data2[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"  
+            mpB = "```" + "*" + mp3[0] + "\n" + "*" + mp3[1] + "\n" + "*" + mp4 + "```"  
+			
+            embed = discord.Embed()
+            embed.title = "Crossfire Wheel"
+            embed.set_image(url='http://dustloop.com/wiki/images/8/84/BBCF_Bullet_CrossfireWheel.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+
+            embed1 = discord.Embed(description='63214D during Crossfire Wheel')
+            embed1.title = "Shot Shell: Engage"
+            embed1.set_image(url='http://dustloop.com/wiki/images/4/46/BBCF_Bullet_Shot_Shell_Engage.png')
+            embed1.add_field(name="Lv. 1 Frame Data", value=tab1)
+            embed1.add_field(name="Lv. 2 Frame Data", value=tab2)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')	
+            embed1.set_footer(text='Drag your opponent through the dirt!')				
+			
+            await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+        except:
+            await self.bot.say("No Frame Data Found...")	
+			
+    @bu.command(name="214d", pass_context=False)  #   Bullet from blazblue
+    async def _s7_bu(self):   
+        """For when they try to make fun of your stubby dash"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[67]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = info.find('p').get_text()			
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```"  
+			
+            embed = discord.Embed()
+            embed.title = "Afterburner"
+            embed.set_image(url='http://dustloop.com/wiki/images/4/41/BBCP_Bullet_214D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+			
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @bu.command(name="2363214c", pass_context=False)  #   Bullet from blazblue
+    async def _dd1_bu(self):
+        """The ultimate combo ender."""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[69]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info =  table_body.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp1 = info.find('li').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Rage Aggressor"
+            embed.set_image(url='http://dustloop.com/wiki/images/e/ee/BBCP_Bullet_2363214C.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="OD Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+            
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @sa.command(name="720a", pass_context=False)  #   Bullet from blazblue
+    async def _dd2_bu(self):
+        """And they said she's not a grappler."""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[71]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "```"
+			
+            embed = discord.Embed(description="And they said she's not a grappler.")
+            embed.title = "Serpentine Assault"
+            embed.set_image(url='http://dustloop.com/wiki/images/9/9c/BBCP_Bullet_720A.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+            
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")					
+
+    @sa.command(name="720d", pass_context=False)  #   Bullet from blazblue
+    async def _dd3_bu(self):
+        """720D during Serpentine Assault: It's not over yet!"""	
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[73]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info =  table_body.find_all('tr')[2]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = [po.get_text() for po in info.find_all('li')]
+
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```"
+			
+            embed = discord.Embed(description='720D during Serpentine Assault')
+            embed.title = "Frangible Engage"
+            embed.set_image(url='http://dustloop.com/wiki/images/b/b0/BBCP_Bullet_720D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+            embed.set_footer(text="It's not over yet!")	
+            
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
+
+    @sa.command(name="1080d", pass_context=False)  #   Bullet from blazblue
+    async def _dd4_bu(self):
+        """1080D during Frangible Engage: Lights out!"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[75]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info =  table_body.find_all('tr')[3]
+			
+            Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp1 = info.find('li').get_text()
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed(description='1080D during Frangible Engage')
+            embed.title = "Blackout"
+            embed.set_image(url='http://dustloop.com/wiki/images/f/f8/BBCP_Bullet_1080D.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="OD Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+            embed.set_footer(text="Lights out!")	
+            
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")			
+			
+    @bu.command(name="abcd", pass_context=False)  #   Bullet from blazblue
+    async def _abcd_bu(self): 
+        """Exceed Accel: Dat corner carry"""		
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[77]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
+            info = table_body.find_all('tr')[3]
+            
+            vrs = headers.find('th').get_text()
+            Data = [head.get_text() for head in headers.find_all('td')]
+            vrs1 = headers1.find('th').get_text()
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = info.find('p').get_text()
+       
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Execution Maneuver"
+            embed.set_image(url='http://dustloop.com/wiki/images/7/7e/BBCF_Bullet_ExcecutionManeuver.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Active Flow Frame Data", value=tab1)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+            
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")			
+			
+    @bu.command(name="632146d", pass_context=False)  #   Bullet from blazblue
+    async def _astral_bu(self):   
+        """Astral Heat: Actually not that hard to kill with"""
+        url = "http://www.dustloop.com/wiki/index.php/BBCF/Bullet"  # they allow spaces so I had to add underscore as a temporary resolution
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
+            my_table = table[79]
+            table_body = my_table.find("table")
+            headers = table_body.find_all('tr')[1]
+            info = table_body.find_all('tr')[2]
+            
+            Data = [head.get_text() for head in headers.find_all('td')]
+            mp1 = info.find('p').get_text()
+       
+            tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1 + "```"
+			
+            embed = discord.Embed()
+            embed.title = "Deus Ex Machina"
+            embed.set_image(url='http://dustloop.com/wiki/images/0/0f/BBCP_Bullet_AH.png')
+            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+            
+            await self.bot.say(embed=embed)
+        except:
+            await self.bot.say("No Frame Data Found.....")	
 ###################################################################################################################################################################################################
 def setup(bot):
     if soupAvailable is False:
