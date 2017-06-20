@@ -46495,21 +46495,27 @@ class bbcf:
 
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```"
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```"
+            mpB = "```" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"
 			
             embed = discord.Embed()
             embed.title = "Wedge Catapult"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/b/b5/BBCF_Tager_WedgeCatapult1.png')
             embed.add_field(name="WC Frame Data", value=tab)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+			
+            embed1 = discord.Embed()
+            embed1.title = "Wedge Catapult Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/b/b5/BBCF_Tager_WedgeCatapult1.png')
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
 
-            embed1 = discord.Embed(description='360b after Wedge Catapult')
-            embed1.title = "Impact Driver"
-            embed1.set_image(url='http://www.dustloop.com/wiki/images/f/f9/BBCF_Tager_WedgeCatapult2.png')
-            embed1.add_field(name="ID Frame Data", value=tab1)			
+            embed2 = discord.Embed(description='360b after Wedge Catapult')
+            embed2.title = "Impact Driver"
+            embed2.set_image(url='http://www.dustloop.com/wiki/images/f/f9/BBCF_Tager_WedgeCatapult2.png')
+            embed2.add_field(name="ID Frame Data", value=tab1)			
 			
             await self.bot.say(embed=embed)
             await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
