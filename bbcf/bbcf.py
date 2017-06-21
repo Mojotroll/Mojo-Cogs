@@ -4786,7 +4786,8 @@ class bbcf:
             tab5 = tabulate([["Version", vrs5], ["Damage", Data5[0]], ["Cancel", Data5[1]], ["Guard", Data5[2]], ["Startup", Data5[3]], ["Active", Data5[4]], ["Recovery", Data5[5]], ["Frame Adv.", Data5[6]], ["Attribute", Data5[7]]], tablefmt='simple', stralign='left')
             tab6 = tabulate([["Version", vrs6], ["Damage", Data6[0]], ["Cancel", Data6[1]], ["Guard", Data6[2]], ["Startup", Data6[3]], ["Active", Data6[4]], ["Recovery", Data6[5]], ["Frame Adv.", Data6[6]], ["Attribute", Data6[7]]], tablefmt='simple', stralign='left')
             mpA = "```" + "*" + mp1 + "```"
-            mpB = "```" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "\n" + "*" + mp2[3] + "\n" + "*" + mp3[0] + "\n" + "*" + mp3[1] + "\n" + "*" + mp3[2] + "```"
+            mpB = "```" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```"
+            mpC = "```" + "*" + mp2[3] + "\n" + "*" + mp3[0] + "\n" + "*" + mp3[1] + "\n" + "*" + mp3[2] + "```"
 
 			
             embed = discord.Embed()
@@ -4799,15 +4800,20 @@ class bbcf:
 			
             embed1 = discord.Embed()
             embed1.title = "Type: Shooter Breunor"
-            embed1.set_image(url='http://www.dustloop.com/wiki/images/0/0d/BBCF_Es_ShooterBreunorAir.png')
             embed1.add_field(name="Powered Up Shot", value=tab3)
             embed1.add_field(name="Air A", value=tab4)
             embed1.add_field(name="Air B Breunor", value=tab5)
             embed1.add_field(name="Additional Air Breunor A/B", value=tab6)
             embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+			
+            embed2 = discord.Embed()
+            embed2.title = "Type: Shooter Breunor Cont."
+            embed2.set_image(url='http://www.dustloop.com/wiki/images/0/0d/BBCF_Es_ShooterBreunorAir.png')
+            embed2.add_field(name="Attack Props:", value=mpC)
             
             await self.bot.say(embed=embed)
             await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -4835,7 +4841,7 @@ class bbcf:
             Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
             vrs2 = headers2.find('th').get_text()
             Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
-            mp2 = info.find('li').get_text()   
+            mp2 = info.find('p').get_text()   
             mp1 = [op.get_text() for op in info.find_all('li')]
        
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
