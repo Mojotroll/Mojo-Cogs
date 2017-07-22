@@ -1,0 +1,7 @@
+{
+    "AUTHOR" : "Mojotroll",
+    "INSTALL_MSG" : "This Cog Requires Beautiful Soup 4. Any issues please contact me at Mojotroll#6791",
+    "NAME" : "hots",
+    "SHORT" : "Heroes Of the Storm Character Search",
+    "DESCRIPTION" : "Heroes of the Storm Character Search using HoTS' Gamepedia, currently in Pre-Alpha"
+}
