@@ -19,7 +19,7 @@ class bbcf:
 
     def __init__(self, bot):
         self.bot = bot
-        self.version = "1.3.2"
+        self.version = "1.4"
 
     @commands.group(pass_context=True)
     async def am(self, ctx):
@@ -462,18 +462,62 @@ class bbcf:
         if ctx.invoked_subcommand is None:
             await send_cmd_help(ctx)
 			
-    @commands.command(pass_context=True)
+    @commands.command(pass_context=True, aliases=["teachmemisslitchi", "MissLitchi", "bbhelp", "assistme"])
     async def TeachMeMissLitchi(self, ctx):
-        """BBCF Tutorial"""
+        """Fighting Game/BBCF Tutorial"""		
 
-        message = "Under Construction, Wiki is currently under construction"
-        await self.bot.say(message)
+		####Introduction to Fighting Games##########
+        #https://www.youtube.com/watch?v=nd9sEB6ku14
+        #https://www.youtube.com/watch?v=CyV7Ca5T2Zc
+        #https://www.youtube.com/watch?v=1NnK5f617_A
+        ############################################
+		
+		###Introduction to Anime Fighting Games###
+        #https://www.youtube.com/watch?v=HWfk3tOJjaQ
+        ############################################
+		
+		###Introduction to Blazblue Central Fiction###
+        #https://www.youtube.com/watch?v=Gt0wT4BzsLg
+        #https://www.youtube.com/watch?v=Gt0wT4BzsLg
+        #https://www.youtube.com/watch?v=owTyfLATh-A
+        #https://www.youtube.com/watch?v=IUo1DdceOUw
+        #https://www.youtube.com/watch?v=GbCpujVrRLM
+        #https://www.youtube.com/watch?v=52FiYl8SoZ8
+        #https://www.youtube.com/watch?v=Mh2pHaueM8M
+        ############################################
+		
+        embed = discord.Embed()
+        embed.title = "Introduction to Fighting Games"
+        embed.set_image(url='https://s-media-cache-ak0.pinimg.com/originals/d2/f3/89/d2f389b68559cc8dc6f3500612b7ad96.jpg')
+        embed.add_field(name="Concepts Every 2D Fighting Game Player Should Know", value="https://www.youtube.com/watch?v=nd9sEB6ku14", inline='true')
+        embed.add_field(name="REAL TALK: Fighting Game Advice (How To Play Great Fast)", value="https://www.youtube.com/watch?v=CyV7Ca5T2Zc", inline='true')
+        embed.add_field(name="Exploring Fighting Games Series", value="https://www.youtube.com/watch?v=1NnK5f617_A", inline='true')
+		
+        embed1 = discord.Embed()
+        embed1.title = "Introduction to Anime Fighting Games"
+        embed1.set_image(url='http://airdasherchile.com/wp-content/uploads/2014/02/Teach-me-Miss.Litchi-184x180.png')
+        embed1.add_field(name="Air Dash Academy Series", value="https://www.youtube.com/watch?v=HWfk3tOJjaQ", inline='true')
+		
+        embed2 = discord.Embed()
+        embed2.title = "Introduction to Blazblue Central Fiction"
+        embed2.set_image(url='http://i175.photobucket.com/albums/w127/antiwhippy/NoelBangSwap.jpg')
+        embed2.add_field(name="Learning Blazblue Centralfiction Series", value="https://www.youtube.com/watch?v=Gt0wT4BzsLg", inline='true')
+        embed2.add_field(name="BBCF Meaty Hitstop OS Tutorial", value="https://www.youtube.com/watch?v=Gt0wT4BzsLg", inline='true')
+        embed2.add_field(name="BBCF L/R OS Tutorial", value="https://www.youtube.com/watch?v=owTyfLATh-A", inline='true')
+        embed2.add_field(name="BBCF Fuzzy Jump Tutorial", value="https://www.youtube.com/watch?v=IUo1DdceOUw", inline='true')
+        embed2.add_field(name="BBCF Trip Guard Tutorial: Proximity Guard", value="https://www.youtube.com/watch?v=GbCpujVrRLM", inline='true')
+        embed2.add_field(name="BBCF Trip Guard Tutorial: Dash Cancelling", value="https://www.youtube.com/watch?v=52FiYl8SoZ8", inline='true')
+        embed2.add_field(name="BBCF Kara Cancel Tutorial", value="https://www.youtube.com/watch?v=Mh2pHaueM8M", inline='true')
+        
+        await self.bot.whisper(embed=embed)
+        await self.bot.whisper(embed=embed1)
+        await self.bot.whisper(embed=embed2)
 		
     @commands.command(pass_context=True)
     async def bbcfAbout(self, ctx):
         """BBCF Information"""
 
-        mpA = "```" + "The information is retrieved from the Dustloop Wiki Page and the wonderful community who helps keep the wiki's up to date! Thank you all!" + "```"
+        mpA = "```" + "The information is retrieved from the Dustloop Character Wiki Pages, using the information kept up by the Community! Thank you all!" + "```"
         mpB = "https://trello.com/b/K4froUcU"
         version = self.version
 		
