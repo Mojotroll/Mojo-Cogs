@@ -19,7 +19,7 @@ class bbcf:
 
     def __init__(self, bot):
         self.bot = bot
-        self.version = "1.4"
+        self.version = "1.4.1"
 
     @commands.group(pass_context=True)
     async def am(self, ctx):
@@ -3018,7 +3018,7 @@ class bbcf:
             embed1 = discord.Embed()
             embed1.title = "Hell's Fang: Follow-up"
             embed1.set_image(url='http://www.dustloop.com/wiki/images/d/d9/BBCS_Ragna_HellsFangFollowup.png')
-            embed1.add_field(name="214D Follw-up Normal Frame Data", value=tab1)
+            embed1.add_field(name="214D Follow-up Normal Frame Data", value=tab1)
             embed1.add_field(name="Follow-up Normal Attack Props", value=mpB)
             embed1.add_field(name="214D Follow-up OverDrive Frame Data", value=tab2)
             embed1.add_field(name="Follow-up OverDrive Attack Props", value=mpC)
