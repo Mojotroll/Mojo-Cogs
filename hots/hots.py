@@ -7886,6 +7886,1677 @@ class hots:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
+##################################################################################################################################################################################################################################################
+    @commands.group(pass_context=True)
+    async def malthael(self, ctx):
+        """The Aspect of Death"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)  
+			
+    @malthael.command(name="info", pass_context=False)
+    async def _info_malthael(self):   
+        """Basic Info about Malthael"""
+        url = "https://heroesofthestorm.gamepedia.com/Malthael"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find('table', attrs={'class': "infobox2"})
+            name = table.find_all('tr')[0]
+            pic = table.find_all('tr')[1]
+            binfo = table.find_all('tr')[2]
+            title = table.find_all('tr')[3]
+            role = table.find_all('tr')[4]
+            fran = table.find_all('tr')[5]
+            reld = table.find_all('tr')[6]
+            stat = table.find_all('tr')[7]
+            hlt = table.find_all('tr')[8]
+            hreg = table.find_all('tr')[9]
+            eng = table.find_all('tr')[10]
+            arm = table.find_all('tr')[11]
+            spd = table.find_all('tr')[12]
+            ats = table.find_all('tr')[13]
+            atr = table.find_all('tr')[14]
+            atd = table.find_all('tr')[15]
+
+            malthael = name.find('th').get_text()	
+            picture = pic.find('img').get('src')		
+            info = binfo.find('th').get_text()			
+            ttl = title.find('th').get_text()
+            ttl1 = title.find('td').get_text()
+            role1 = role.find('th').get_text()
+            role2 = role.find('td').get_text()
+            franc = fran.find('th').get_text()
+            franc1 = fran.find('td').get_text()
+            date = reld.find('th').get_text()
+            date1 = reld.find('td').get_text()
+            htit = hlt.find('th').get_text()
+            hdat = hlt.find('td').get_text()
+            hregt = hreg.find('th').get_text()
+            hregdat = hreg.find('td').get_text()
+            ent = eng.find('th').get_text()
+            endat = eng.find('td').get_text()
+            armt = arm.find('th').get_text()
+            armdat = arm.find('td').get_text()
+            spt = spd.find('th').get_text()
+            spdat = spd.find('td').get_text()
+            atst = ats.find('th').get_text()
+            atsdat = ats.find('td').get_text()
+            atrt = atr.find('th').get_text()
+            atrdat = atr.find('td').get_text()
+            atdt = atd.find('th').get_text()
+            atddat = atd.find('td').get_text()
+            stats = stat.find('th').get_text()
+            nail = role.find('img').get('src')
+			
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
+            mpA = "Death descends upon our enemies...."
+			
+            embed = discord.Embed()
+            embed.title = "{malthael}".format(malthael=malthael)
+            embed.set_image(url='{picture}'.format(picture=picture))
+            embed.set_thumbnail(url="{nail}".format(nail=nail))
+            embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
+            embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
+            embed.set_footer(text=mpA)
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @malthael.command(name="abilities", pass_context=False)
+    async def _abilities_malthael(self):   
+        """Abilities for Malthael"""
+        url = "https://heroesofthestorm.gamepedia.com/Malthael"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab1 = skill.find_all(class_='skill')[1]
+            ab2 = skill.find_all(class_='skill')[2]
+            ab3 = skill.find_all(class_='skill')[3]
+			
+            abimg = ab1.find(class_='skill-image').find('img').get('src')
+            absk = ab1.find(class_='skill-key').get_text()
+            abname = ab1.find(class_='skill-heading').find('span').get_text()
+            abcst = ab1.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            abcd = ab1.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            abdesc = ab1.find(class_='skill-description').get_text()
+			
+            ab1img = ab2.find(class_='skill-image').find('img').get('src')
+            ab1sk = ab2.find(class_='skill-key').get_text()
+            ab1name = ab2.find(class_='skill-heading').find('span').get_text()
+            ab1cst = ab2.find(class_='skill-details').find(class_='skill-cost').get_text()
+            ab1cd = ab2.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab1desc = ab2.find(class_='skill-description').get_text()	
+
+            ab2img = ab3.find(class_='skill-image').find('img').get('src')
+            ab2sk = ab3.find(class_='skill-key').get_text()
+            ab2name = ab3.find(class_='skill-heading').find('span').get_text()
+            ab2cst = ab3.find(class_='skill-details').find(class_='skill-cost').get_text()
+            ab2cd = ab3.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab2desc = ab3.find(class_='skill-description').get_text()			
+
+            mpA = "```" + abcst + "|" + abcd + "\n" + abdesc + "```"	
+            mpB = "```" + ab1cst + "|" + ab1cd + "\n" + ab1desc + "```"	
+            mpC = "```" + ab2cst + "|" + ab2cd + "\n" + ab2desc + "```"				
+			
+            embed1 = discord.Embed()
+            embed1.title = "{absk}".format(absk=absk)
+            embed1.set_image(url='{abimg}'.format(abimg=abimg))
+            embed1.add_field(name="{abname}".format(abname=abname), value=mpA)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{ab1sk}".format(ab1sk=ab1sk)
+            embed2.set_image(url='{ab1img}'.format(ab1img=ab1img))
+            embed2.add_field(name="{ab1name}".format(ab1name=ab1name), value=mpB)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{ab2sk}".format(ab2sk=ab2sk)
+            embed3.set_image(url='{ab2img}'.format(ab2img=ab2img))
+            embed3.add_field(name="{ab2name}".format(ab2name=ab2name), value=mpC)
+
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+            await self.bot.say(embed=embed3)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @malthael.command(name="trait", pass_context=False)
+    async def _trait_malthael(self):   
+        """Trait for Malthael"""
+        url = "https://heroesofthestorm.gamepedia.com/Malthael"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            trait = skill.find_all(class_='skill')[0]
+			
+            timg = trait.find(class_='skill-image').find('img').get('src')
+            tname = trait.find(class_='skill-heading').find('span').get_text()
+            tdesc = trait.find(class_='skill-description').get_text()						
+			
+            embed = discord.Embed()
+            embed.title = "Trait"
+            embed.set_image(url='{timg}'.format(timg=timg))
+            embed.add_field(name="{tname}".format(tname=tname), value=tdesc)
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @malthael.command(name="heroics", pass_context=False)
+    async def _heroics_malthael(self):   
+        """Heroic Abilities for Malthael"""
+        url = "https://heroesofthestorm.gamepedia.com/Malthael"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab4 = skill.find_all(class_='skill')[4]
+            ab5 = skill.find_all(class_='skill')[5]
+			
+            ab3img = ab4.find(class_='skill-image').find('img').get('src')
+            ab3sk = ab4.find(class_='skill-key').get_text()
+            ab3name = ab4.find(class_='skill-heading').find('span').get_text()
+            ab3cst = ab4.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            ab3cd = ab4.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab3desc = ab4.find(class_='skill-description').get_text()	
+
+            ab4img = ab5.find(class_='skill-image').find('img').get('src')
+            ab4sk = ab5.find(class_='skill-key').get_text()
+            ab4name = ab5.find(class_='skill-heading').find('span').get_text()
+            ab4cst = ab5.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            ab4cd = ab5.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab4desc = ab5.find(class_='skill-description').get_text()					
+
+            mpD = "```"  + ab3cst + "|" + ab3cd + "\n" + ab3desc + "```"
+            mpE = "```"  + ab4cst + "|" + ab4cd + "\n" + ab4desc + "```"	
+			
+            embed4 = discord.Embed()
+            embed4.title = "{ab3sk}".format(ab3sk=ab3sk)
+            embed4.set_image(url='{ab3img}'.format(ab3img=ab3img))
+            embed4.add_field(name="{ab3name}".format(ab3name=ab3name), value=mpD)
+			
+            embed5 = discord.Embed()
+            embed5.title = "{ab4sk}".format(ab4sk=ab4sk)
+            embed5.set_image(url='{ab4img}'.format(ab4img=ab4img))
+            embed5.add_field(name="{ab4name}".format(ab4name=ab4name), value=mpE)
+
+            await self.bot.say(embed=embed4)	
+            await self.bot.say(embed=embed5)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @malthael.command(name="tlv1", pass_context=False)
+    async def _talents1_malthael(self):   
+        """Level 1 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Malthael"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t1 = skill.find_all(class_='talent-tier')[0]
+			
+            tl1 = t1.find_all(class_='matched-height talent')[0]
+            tl2 = t1.find_all(class_='matched-height talent')[1]
+            tl3 = t1.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/1c/Death%27s_Reach_Icon.png?version=ce0d16991775a2515c5584c6ba71f9f3')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/9/9a/On_a_Pale_Horse_Icon.png?version=30be69ae0b175afaae4637609d75e793')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/4/4b/Fear_the_Reaper_Icon.png?version=0a3a0cd72f56a2431c620293db22b7ba')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @malthael.command(name="tlv4", pass_context=False)
+    async def _talents4_malthael(self):   
+        """Level 4 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Malthael"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t2 = skill.find_all(class_='talent-tier')[1]
+			
+            tl1 = t2.find_all(class_='matched-height talent')[0]
+            tl2 = t2.find_all(class_='matched-height talent')[1]
+            tl3 = t2.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/1c/Die_Alone_Icon.png?version=da1787224b31dac64b77973e6c9d2330')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/6/69/Throwing_Shade_Icon.png?version=b884887c4e33b7aa56405a67208fb1fd')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/1a/Black_Harvest_Icon.png?version=66ecbe7fac5bc91fae5918f6ab439807')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)		
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @malthael.command(name="tlv7", pass_context=False)
+    async def _talents7_malthael(self):   
+        """Level 7 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Malthael"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t3 = skill.find_all(class_='talent-tier')[2]
+			
+            tl1 = t3.find_all(class_='matched-height talent')[0]
+            tl2 = t3.find_all(class_='matched-height talent')[1]
+            tl3 = t3.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/0/06/Cold_Hand_Icon.png?version=1ce453f378c5b156aff007e7282360b7')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/7/79/Mortality_Icon.png?version=966188c6fdf7243bfee977567ad6dc42')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/7/77/Touch_of_Death_Icon.png?version=9915d517702da7472229a7a483a8792f')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)		
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @malthael.command(name="tlv13", pass_context=False)
+    async def _talents13_malthael(self):   
+        """Level 13 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Malthael"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t5 = skill.find_all(class_='talent-tier')[4]
+			
+            tl1 = t5.find_all(class_='matched-height talent')[0]
+            tl2 = t5.find_all(class_='matched-height talent')[1]
+            tl3 = t5.find_all(class_='matched-height talent')[2]
+            tl4 = t5.find_all(class_='matched-height talent')[3]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            tl4name = tl4.find(class_='talent-name').get_text()
+            tl4desc = tl4.find(class_='talent-description').get_text()				
+            mpD = "```" + tl4desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/5/58/Soul_Siphon_Icon.png?version=52c8d8668d136514268946350c49b84c')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/18/Ethereal_Existence_Icon.png?version=8d5d9bfc1ce3f77b80eb46f36f758109')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/e/ef/Inevitable_End_Icon.png?version=10ce1f4b88c03a3dd259776aeb0ac7dc')
+            embed2.add_field(name="Description", value=mpC)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{tl4name}".format(tl4name=tl4name)
+            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/1e/Shroud_of_Wisdom_Icon.png?version=7b8eafd73d1e4d9ae0936971e760652a')
+            embed3.add_field(name="Description", value=mpD)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+            await self.bot.say(embed=embed3)				
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @malthael.command(name="tlv16", pass_context=False)
+    async def _talents16_malthael(self):   
+        """Level 16 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Malthael"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t6 = skill.find_all(class_='talent-tier')[5]
+			
+            tl1 = t6.find_all(class_='matched-height talent')[0]
+            tl2 = t6.find_all(class_='matched-height talent')[1]
+            tl3 = t6.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/b5/Soul_Collector_Icon.png?version=8542ea98785fa92e3a49e9fe066ceb9a')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/0/00/Massacre_Icon.png?version=a31df8bc6cf7a8bc4130c8b3f418f525')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/0/0e/Memento_Mori_Icon.png?version=69e78197ce9f614f045df471a1d0d1fb')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @malthael.command(name="tlv20", pass_context=False)
+    async def _talents20_malthael(self):   
+        """Level 20 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Malthael"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t7 = skill.find_all(class_='talent-tier')[6]
+			
+            tl1 = t7.find_all(class_='matched-height talent')[0]
+            tl2 = t7.find_all(class_='matched-height talent')[1]
+            tl3 = t7.find_all(class_='matched-height talent')[2]
+            tl4 = t7.find_all(class_='matched-height talent')[3]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            tl4name = tl4.find(class_='talent-name').get_text()
+            tl4desc = tl4.find(class_='talent-description').get_text()				
+            mpD = "```" + tl4desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/7/73/Reaper_of_Souls_Icon.png?version=1c78fa84bb6d08002c37dbf4f93dfcd3')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/13/Angel_of_Death_Icon.png?version=4bc8808b65d6485f28189795543733be')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/6/6f/Final_Curtain_Icon.png?version=a8e6b523d6fbb3f7e752792f2756462a')
+            embed2.add_field(name="Description", value=mpC)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{tl4name}".format(tl4name=tl4name)
+            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/8/8c/No_One_Can_Stop_Death_Icon.png?version=e840f8e6f92b314c762389704e394553')
+            embed3.add_field(name="Description", value=mpD)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)	
+            await self.bot.say(embed=embed3)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+################################################################################################################################################################################################################################################
+    @commands.group(pass_context=True)
+    async def nova(self, ctx):
+        """The Dominion Ghost"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)  
+			
+    @nova.command(name="info", pass_context=False)
+    async def _info_nova(self):   
+        """Basic Info about Nova"""
+        url = "https://heroesofthestorm.gamepedia.com/Nova"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find('table', attrs={'class': "infobox2"})
+            name = table.find_all('tr')[0]
+            pic = table.find_all('tr')[1]
+            binfo = table.find_all('tr')[2]
+            title = table.find_all('tr')[3]
+            role = table.find_all('tr')[4]
+            fran = table.find_all('tr')[5]
+            reld = table.find_all('tr')[6]
+            stat = table.find_all('tr')[7]
+            hlt = table.find_all('tr')[8]
+            hreg = table.find_all('tr')[9]
+            eng = table.find_all('tr')[10]
+            arm = table.find_all('tr')[11]
+            spd = table.find_all('tr')[12]
+            ats = table.find_all('tr')[13]
+            atr = table.find_all('tr')[14]
+            atd = table.find_all('tr')[15]
+
+            nova = name.find('th').get_text()	
+            picture = pic.find('img').get('src')		
+            info = binfo.find('th').get_text()			
+            ttl = title.find('th').get_text()
+            ttl1 = title.find('td').get_text()
+            role1 = role.find('th').get_text()
+            role2 = role.find('td').get_text()
+            franc = fran.find('th').get_text()
+            franc1 = fran.find('td').get_text()
+            date = reld.find('th').get_text()
+            date1 = reld.find('td').get_text()
+            htit = hlt.find('th').get_text()
+            hdat = hlt.find('td').get_text()
+            hregt = hreg.find('th').get_text()
+            hregdat = hreg.find('td').get_text()
+            ent = eng.find('th').get_text()
+            endat = eng.find('td').get_text()
+            armt = arm.find('th').get_text()
+            armdat = arm.find('td').get_text()
+            spt = spd.find('th').get_text()
+            spdat = spd.find('td').get_text()
+            atst = ats.find('th').get_text()
+            atsdat = ats.find('td').get_text()
+            atrt = atr.find('th').get_text()
+            atrdat = atr.find('td').get_text()
+            atdt = atd.find('th').get_text()
+            atddat = atd.find('td').get_text()
+            stats = stat.find('th').get_text()
+            nail = role.find('img').get('src')
+			
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
+            mpA = "Ready to pop some hostiles?"
+			
+            embed = discord.Embed()
+            embed.title = "{nova}".format(nova=nova)
+            embed.set_image(url='{picture}'.format(picture=picture))
+            embed.set_thumbnail(url="{nail}".format(nail=nail))
+            embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
+            embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
+            embed.set_footer(text=mpA)
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @nova.command(name="abilities", pass_context=False)
+    async def _abilities_nova(self):   
+        """Abilities for Nova"""
+        url = "https://heroesofthestorm.gamepedia.com/Nova"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab1 = skill.find_all(class_='skill')[1]
+            ab2 = skill.find_all(class_='skill')[2]
+            ab3 = skill.find_all(class_='skill')[3]
+			
+            abimg = ab1.find(class_='skill-image').find('img').get('src')
+            absk = ab1.find(class_='skill-key').get_text()
+            abname = ab1.find(class_='skill-heading').find('span').get_text()
+            abcst = ab1.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            abcd = ab1.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            abdesc = ab1.find(class_='skill-description').get_text()
+			
+            ab1img = ab2.find(class_='skill-image').find('img').get('src')
+            ab1sk = ab2.find(class_='skill-key').get_text()
+            ab1name = ab2.find(class_='skill-heading').find('span').get_text()
+            ab1cst = ab2.find(class_='skill-details').find(class_='skill-cost').get_text()
+            ab1cd = ab2.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab1desc = ab2.find(class_='skill-description').get_text()	
+
+            ab2img = ab3.find(class_='skill-image').find('img').get('src')
+            ab2sk = ab3.find(class_='skill-key').get_text()
+            ab2name = ab3.find(class_='skill-heading').find('span').get_text()
+            ab2cst = ab3.find(class_='skill-details').find(class_='skill-cost').get_text()
+            ab2cd = ab3.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab2desc = ab3.find(class_='skill-description').get_text()			
+
+            mpA = "```" + abcst + "|" + abcd + "\n" + abdesc + "```"	
+            mpB = "```" + ab1cst + "|" + ab1cd + "\n" + ab1desc + "```"	
+            mpC = "```" + ab2cst + "|" + ab2cd + "\n" + ab2desc + "```"				
+			
+            embed1 = discord.Embed()
+            embed1.title = "{absk}".format(absk=absk)
+            embed1.set_image(url='{abimg}'.format(abimg=abimg))
+            embed1.add_field(name="{abname}".format(abname=abname), value=mpA)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{ab1sk}".format(ab1sk=ab1sk)
+            embed2.set_image(url='{ab1img}'.format(ab1img=ab1img))
+            embed2.add_field(name="{ab1name}".format(ab1name=ab1name), value=mpB)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{ab2sk}".format(ab2sk=ab2sk)
+            embed3.set_image(url='{ab2img}'.format(ab2img=ab2img))
+            embed3.add_field(name="{ab2name}".format(ab2name=ab2name), value=mpC)
+
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+            await self.bot.say(embed=embed3)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @nova.command(name="trait", pass_context=False)
+    async def _trait_nova(self):   
+        """Trait for Nova"""
+        url = "https://heroesofthestorm.gamepedia.com/Nova"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            trait = skill.find_all(class_='skill')[0]
+			
+            timg = trait.find(class_='skill-image').find('img').get('src')
+            tname = trait.find(class_='skill-heading').find('span').get_text()
+            tdesc = trait.find(class_='skill-description').get_text()						
+			
+            embed = discord.Embed()
+            embed.title = "Trait"
+            embed.set_image(url='{timg}'.format(timg=timg))
+            embed.add_field(name="{tname}".format(tname=tname), value=tdesc)
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @nova.command(name="heroics", pass_context=False)
+    async def _heroics_nova(self):   
+        """Heroic Abilities for Nova"""
+        url = "https://heroesofthestorm.gamepedia.com/Nova"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab4 = skill.find_all(class_='skill')[4]
+            ab5 = skill.find_all(class_='skill')[5]
+			
+            ab3img = ab4.find(class_='skill-image').find('img').get('src')
+            ab3sk = ab4.find(class_='skill-key').get_text()
+            ab3name = ab4.find(class_='skill-heading').find('span').get_text()
+            ab3cst = ab4.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            ab3cd = ab4.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab3desc = ab4.find(class_='skill-description').get_text()	
+
+            ab4img = ab5.find(class_='skill-image').find('img').get('src')
+            ab4sk = ab5.find(class_='skill-key').get_text()
+            ab4name = ab5.find(class_='skill-heading').find('span').get_text()
+            ab4cst = ab5.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            ab4cd = ab5.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab4desc = ab5.find(class_='skill-description').get_text()					
+
+            mpD = "```"  + ab3cst + "|" + ab3cd + "\n" + ab3desc + "```"
+            mpE = "```"  + ab4cst + "|" + ab4cd + "\n" + ab4desc + "```"	
+			
+            embed4 = discord.Embed()
+            embed4.title = "{ab3sk}".format(ab3sk=ab3sk)
+            embed4.set_image(url='{ab3img}'.format(ab3img=ab3img))
+            embed4.add_field(name="{ab3name}".format(ab3name=ab3name), value=mpD)
+			
+            embed5 = discord.Embed()
+            embed5.title = "{ab4sk}".format(ab4sk=ab4sk)
+            embed5.set_image(url='{ab4img}'.format(ab4img=ab4img))
+            embed5.add_field(name="{ab4name}".format(ab4name=ab4name), value=mpE)
+
+            await self.bot.say(embed=embed4)	
+            await self.bot.say(embed=embed5)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @nova.command(name="tlv1", pass_context=False)
+    async def _talents1_nova(self):   
+        """Level 1 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Nova"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t1 = skill.find_all(class_='talent-tier')[0]
+			
+            tl1 = t1.find_all(class_='matched-height talent')[0]
+            tl2 = t1.find_all(class_='matched-height talent')[1]
+            tl3 = t1.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/17/Advanced_Cloaking_Icon.png?version=62f67b51692ba22fa212c1124e3a2033')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/b0/Longshot_Icon.png?version=fb2e7057b22ce0e55254c3fda131b15f')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/0/05/Covert_Ops_Icon.png?version=a1bf3f726c0ddcd0c1a0b8346c6d4d9d')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @nova.command(name="tlv4", pass_context=False)
+    async def _talents4_nova(self):   
+        """Level 4 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Nova"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t2 = skill.find_all(class_='talent-tier')[1]
+			
+            tl1 = t2.find_all(class_='matched-height talent')[0]
+            tl2 = t2.find_all(class_='matched-height talent')[1]
+            tl3 = t2.find_all(class_='matched-height talent')[2]
+            tl4 = t2.find_all(class_='matched-height talent')[3]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            tl4name = tl4.find(class_='talent-name').get_text()
+            tl4desc = tl4.find(class_='talent-description').get_text()				
+            mpD = "```" + tl4desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/7/7b/Remote_Delivery_Icon.png?version=9dc23d47ddcc57271b5cda6b15137628')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/7/7b/Rapid_Projection_Icon.png?version=086eb30713bf87062be8dfbfddad36ed')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/e/e5/Holo_Stability_Icon.png?version=eb239fc04a6fd61056abf48397d065aa')
+            embed2.add_field(name="Description", value=mpC)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{tl4name}".format(tl4name=tl4name)
+            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/3/3f/Bribe_Icon.png?version=3af6c6990e3932d4e01e7872803e80f8')
+            embed3.add_field(name="Description", value=mpD)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+            await self.bot.say(embed=embed3)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @nova.command(name="tlv7", pass_context=False)
+    async def _talents7_nova(self):   
+        """Level 7 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Nova"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t3 = skill.find_all(class_='talent-tier')[2]
+			
+            tl1 = t3.find_all(class_='matched-height talent')[0]
+            tl2 = t3.find_all(class_='matched-height talent')[1]
+            tl3 = t3.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/3/3e/One_in_the_Chamber_Icon.png?version=74837948de96ce4315db7f3ebc4ff254')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/0/07/Anti-Armor_Shells_Icon.png?version=06857e89c8a832bbd1ef56786e148af0')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/f/fb/Snipe_Master_Icon.png?version=a8ae22c9cb5151d2c4b189d6088a7536')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)		
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @nova.command(name="tlv13", pass_context=False)
+    async def _talents13_nova(self):   
+        """Level 13 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Nova"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t5 = skill.find_all(class_='talent-tier')[4]
+			
+            tl1 = t5.find_all(class_='matched-height talent')[0]
+            tl2 = t5.find_all(class_='matched-height talent')[1]
+            tl3 = t5.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/c/ce/Double_Tap_Icon.png?version=7a438f8a73f8629963a415b618f940b5')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/3/35/Psionic_Efficiency_Icon.png?version=846b29b53e9ba004ecf8ce281dabeee7')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/c/ce/Explosive_Round_Icon.png?version=d25fe05866cca2655d164fd417d27156')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @nova.command(name="tlv16", pass_context=False)
+    async def _talents16_nova(self):   
+        """Level 16 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Nova"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t6 = skill.find_all(class_='talent-tier')[5]
+			
+            tl1 = t6.find_all(class_='matched-height talent')[0]
+            tl2 = t6.find_all(class_='matched-height talent')[1]
+            tl3 = t6.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/27/Perfect_Shot_Icon.png?version=6a94472a2e8fe8443dad9e5ac02206be')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/e/ea/Crippling_Shot_Icon.png?version=e86c91f3847cb849ef1728d847b965fc')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/23/Double_Fake_Icon.png?version=45f887a68de2ee19fae46725ce12c036')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @nova.command(name="tlv20", pass_context=False)
+    async def _talents20_nova(self):   
+        """Level 20 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Nova"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t7 = skill.find_all(class_='talent-tier')[6]
+			
+            tl1 = t7.find_all(class_='matched-height talent')[0]
+            tl2 = t7.find_all(class_='matched-height talent')[1]
+            tl3 = t7.find_all(class_='matched-height talent')[2]
+            tl4 = t7.find_all(class_='matched-height talent')[3]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            tl4name = tl4.find(class_='talent-name').get_text()
+            tl4desc = tl4.find(class_='talent-description').get_text()				
+            mpD = "```" + tl4desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/a/a4/Fast_Reload_Icon.png?version=4a29fc67ee4092183db828c61e8f2a1f')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/21/Precision_Barrage_Icon.png?version=e3ae435468ea6d88c7289d2a3ef2a3a9')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/f/fc/Rewind_Icon.png?version=ccb98d8dd3e038c3031daf217ed40bb7')
+            embed2.add_field(name="Description", value=mpC)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{tl4name}".format(tl4name=tl4name)
+            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/9/95/Ghost_Protocol_Icon.png?version=c680fa74de5a23b4687e03da4bbbfe37')
+            embed3.add_field(name="Description", value=mpD)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)	
+            await self.bot.say(embed=embed3)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+################################################################################################################################################################################################################################################
+    @commands.group(pass_context=True)
+    async def ragnaros(self, ctx):
+        """The Firelord"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)  
+			
+    @ragnaros.command(name="info", pass_context=False)
+    async def _info_ragnaros(self):   
+        """Basic Info about Ragnaros"""
+        url = "https://heroesofthestorm.gamepedia.com/Ragnaros"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find('table', attrs={'class': "infobox2"})
+            name = table.find_all('tr')[0]
+            pic = table.find_all('tr')[1]
+            binfo = table.find_all('tr')[2]
+            title = table.find_all('tr')[3]
+            role = table.find_all('tr')[4]
+            fran = table.find_all('tr')[5]
+            reld = table.find_all('tr')[6]
+            stat = table.find_all('tr')[7]
+            hlt = table.find_all('tr')[8]
+            hreg = table.find_all('tr')[9]
+            eng = table.find_all('tr')[10]
+            arm = table.find_all('tr')[11]
+            spd = table.find_all('tr')[12]
+            ats = table.find_all('tr')[13]
+            atr = table.find_all('tr')[14]
+            atd = table.find_all('tr')[15]
+
+            ragnaros = name.find('th').get_text()	
+            picture = pic.find('img').get('src')		
+            info = binfo.find('th').get_text()			
+            ttl = title.find('th').get_text()
+            ttl1 = title.find('td').get_text()
+            role1 = role.find('th').get_text()
+            role2 = role.find('td').get_text()
+            franc = fran.find('th').get_text()
+            franc1 = fran.find('td').get_text()
+            date = reld.find('th').get_text()
+            date1 = reld.find('td').get_text()
+            htit = hlt.find('th').get_text()
+            hdat = hlt.find('td').get_text()
+            hregt = hreg.find('th').get_text()
+            hregdat = hreg.find('td').get_text()
+            ent = eng.find('th').get_text()
+            endat = eng.find('td').get_text()
+            armt = arm.find('th').get_text()
+            armdat = arm.find('td').get_text()
+            spt = spd.find('th').get_text()
+            spdat = spd.find('td').get_text()
+            atst = ats.find('th').get_text()
+            atsdat = ats.find('td').get_text()
+            atrt = atr.find('th').get_text()
+            atrdat = atr.find('td').get_text()
+            atdt = atd.find('th').get_text()
+            atddat = atd.find('td').get_text()
+            stats = stat.find('th').get_text()
+            nail = role.find('img').get('src')
+			
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
+            mpA = "Are you prepared to serve me, mortal?"
+			
+            embed = discord.Embed()
+            embed.title = "{ragnaros}".format(ragnaros=ragnaros)
+            embed.set_image(url='{picture}'.format(picture=picture))
+            embed.set_thumbnail(url="{nail}".format(nail=nail))
+            embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
+            embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
+            embed.set_footer(text=mpA)
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @ragnaros.command(name="abilities", pass_context=False)
+    async def _abilities_ragnaros(self):   
+        """Abilities for Ragnaros"""
+        url = "https://heroesofthestorm.gamepedia.com/Ragnaros"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab1 = skill.find_all(class_='skill')[1]
+            ab2 = skill.find_all(class_='skill')[2]
+            ab3 = skill.find_all(class_='skill')[3]
+            ab4 = skill.find_all(class_='skill')[4]
+            ab5 = skill.find_all(class_='skill')[5]
+            ab6 = skill.find_all(class_='skill')[6]
+			
+            abimg = ab1.find(class_='skill-image').find('img').get('src')
+            absk = ab1.find(class_='skill-key').get_text()
+            abname = ab1.find(class_='skill-heading').find('span').get_text()
+            abcst = ab1.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            abcd = ab1.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            abdesc = ab1.find(class_='skill-description').get_text()
+			
+            ab1img = ab2.find(class_='skill-image').find('img').get('src')
+            ab1sk = ab2.find(class_='skill-key').get_text()
+            ab1name = ab2.find(class_='skill-heading').find('span').get_text()
+            ab1cd = ab2.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab1desc = ab2.find(class_='skill-description').get_text()	
+
+            ab2img = ab3.find(class_='skill-image').find('img').get('src')
+            ab2sk = ab3.find(class_='skill-key').get_text()
+            ab2name = ab3.find(class_='skill-heading').find('span').get_text()
+            ab2cst = ab3.find(class_='skill-details').find(class_='skill-cost').get_text()
+            ab2cd = ab3.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab2desc = ab3.find(class_='skill-description').get_text()	
+
+            ab3img = ab4.find(class_='skill-image').find('img').get('src')
+            ab3sk = ab4.find(class_='skill-key').get_text()
+            ab3name = ab4.find(class_='skill-heading').find('span').get_text()
+            ab3cd = ab4.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab3desc = ab4.find(class_='skill-description').get_text()
+			
+            ab4img = ab5.find(class_='skill-image').find('img').get('src')
+            ab4sk = ab5.find(class_='skill-key').get_text()
+            ab4name = ab5.find(class_='skill-heading').find('span').get_text()
+            ab4cst = ab5.find(class_='skill-details').find(class_='skill-cost').get_text()
+            ab4cd = ab5.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab4desc = ab5.find(class_='skill-description').get_text()	
+
+            ab5img = ab6.find(class_='skill-image').find('img').get('src')
+            ab5sk = ab6.find(class_='skill-key').get_text()
+            ab5name = ab6.find(class_='skill-heading').find('span').get_text()
+            ab5cd = ab6.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab5desc = ab6.find(class_='skill-description').get_text()			
+
+            mpA = "```" + abcst + "|" + abcd + "\n" + abdesc + "```"	
+            mpB = "```" + ab1cd + "\n" + ab1desc + "```"	
+            mpC = "```" + ab2cst + "|" + ab2cd + "\n" + ab2desc + "```"	
+            mpD = "```" + ab3cd + "\n" + ab3desc + "```"	
+            mpE = "```" + ab4cst + "|" + ab4cd + "\n" + ab4desc + "```"	
+            mpF = "```" + ab5cd + "\n" + ab5desc + "```"				
+			
+            embed1 = discord.Embed()
+            embed1.title = "{absk}".format(absk=absk)
+            embed1.set_image(url='{abimg}'.format(abimg=abimg))
+            embed1.add_field(name="{abname}".format(abname=abname), value=mpA)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{ab1sk}".format(ab1sk=ab1sk)
+            embed2.set_image(url='{ab1img}'.format(ab1img=ab1img))
+            embed2.add_field(name="{ab1name}".format(ab1name=ab1name), value=mpB)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{ab2sk}".format(ab2sk=ab2sk)
+            embed3.set_image(url='{ab2img}'.format(ab2img=ab2img))
+            embed3.add_field(name="{ab2name}".format(ab2name=ab2name), value=mpC)
+			
+            embed4 = discord.Embed()
+            embed4.title = "{ab3sk}".format(ab3sk=ab3sk)
+            embed4.set_image(url='{ab3img}'.format(ab3img=ab3img))
+            embed4.add_field(name="{ab3name}".format(ab3name=ab3name), value=mpD)
+			
+            embed5 = discord.Embed()
+            embed5.title = "{ab4sk}".format(ab4sk=ab4sk)
+            embed5.set_image(url='{ab4img}'.format(ab4img=ab4img))
+            embed5.add_field(name="{ab4name}".format(ab4name=ab4name), value=mpE)
+			
+            embed6 = discord.Embed()
+            embed6.title = "{ab5sk}".format(ab5sk=ab5sk)
+            embed6.set_image(url='{ab5img}'.format(ab5img=ab5img))
+            embed6.add_field(name="{ab5name}".format(ab5name=ab5name), value=mpF)
+
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+            await self.bot.say(embed=embed3)
+            await self.bot.say(embed=embed4)
+            await self.bot.say(embed=embed5)
+            await self.bot.say(embed=embed6)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @ragnaros.command(name="trait", pass_context=False)
+    async def _trait_ragnaros(self):   
+        """Trait for Ragnaros"""
+        url = "https://heroesofthestorm.gamepedia.com/Ragnaros"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            trait = skill.find_all(class_='skill')[0]
+			
+            timg = trait.find(class_='skill-image').find('img').get('src')
+            tname = trait.find(class_='skill-heading').find('span').get_text()
+            tcd = trait.find(class_='skill-details').find(class_='skill-cooldown').get_text()
+            tdesc = trait.find(class_='skill-description').get_text()	
+            mpA = "```" + tcd + "\n" + tdesc + "```"		
+			
+            embed = discord.Embed()
+            embed.title = "Trait"
+            embed.set_image(url='{timg}'.format(timg=timg))
+            embed.add_field(name="{tname}".format(tname=tname), value=mpA)
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @ragnaros.command(name="heroics", pass_context=False)
+    async def _heroics_ragnaros(self):   
+        """Heroic Abilities for Ragnaros"""
+        url = "https://heroesofthestorm.gamepedia.com/Ragnaros"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab4 = skill.find_all(class_='skill')[7]
+            ab5 = skill.find_all(class_='skill')[8]
+			
+            ab3img = ab4.find(class_='skill-image').find('img').get('src')
+            ab3sk = ab4.find(class_='skill-key').get_text()
+            ab3name = ab4.find(class_='skill-heading').find('span').get_text()
+            ab3cst = ab4.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            ab3cd = ab4.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab3desc = ab4.find(class_='skill-description').get_text()	
+
+            ab4img = ab5.find(class_='skill-image').find('img').get('src')
+            ab4sk = ab5.find(class_='skill-key').get_text()
+            ab4name = ab5.find(class_='skill-heading').find('span').get_text()
+            ab4cst = ab5.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            ab4cd = ab5.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab4desc = ab5.find(class_='skill-description').get_text()					
+
+            mpD = "```"  + ab3cst + "|" + ab3cd + "\n" + ab3desc + "```"
+            mpE = "```"  + ab4cst + "|" + ab4cd + "\n" + ab4desc + "```"	
+			
+            embed4 = discord.Embed()
+            embed4.title = "{ab3sk}".format(ab3sk=ab3sk)
+            embed4.set_image(url='{ab3img}'.format(ab3img=ab3img))
+            embed4.add_field(name="{ab3name}".format(ab3name=ab3name), value=mpD)
+			
+            embed5 = discord.Embed()
+            embed5.title = "{ab4sk}".format(ab4sk=ab4sk)
+            embed5.set_image(url='{ab4img}'.format(ab4img=ab4img))
+            embed5.add_field(name="{ab4name}".format(ab4name=ab4name), value=mpE)
+
+            await self.bot.say(embed=embed4)	
+            await self.bot.say(embed=embed5)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @ragnaros.command(name="tlv1", pass_context=False)
+    async def _talents1_ragnaros(self):   
+        """Level 1 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Ragnaros"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t1 = skill.find_all(class_='talent-tier')[0]
+			
+            tl1 = t1.find_all(class_='matched-height talent')[0]
+            tl2 = t1.find_all(class_='matched-height talent')[1]
+            tl3 = t1.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/c/ca/Sulfuras_Hungers_Icon.png?version=45de6004759a1723d6aafe3c81cb45ca')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/13/Shifting_Meteor_Icon.png?version=8de2566dedd2a1bbde5465d6a521e0a2')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/f/f5/Engulfing_Flame_Icon.png?version=a80986a674ff0e0fe61841468cd19e97')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @ragnaros.command(name="tlv4", pass_context=False)
+    async def _talents4_ragnaros(self):   
+        """Level 4 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Ragnaros"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t2 = skill.find_all(class_='talent-tier')[1]
+			
+            tl1 = t2.find_all(class_='matched-height talent')[0]
+            tl2 = t2.find_all(class_='matched-height talent')[1]
+            tl3 = t2.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/0/02/Fire_Ward_Icon.png?version=45d07c964d737c9cc0f30456adf4a970')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/be/Slow_Burn_Icon.png?version=4e57987087cbc0f761f41609496f03c5')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/0/0d/Catching_Fire_Icon.png?version=9438b6374ffa86fcc49e26c02024ae65')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @ragnaros.command(name="tlv7", pass_context=False)
+    async def _talents7_ragnaros(self):   
+        """Level 7 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Ragnaros"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t3 = skill.find_all(class_='talent-tier')[2]
+			
+            tl1 = t3.find_all(class_='matched-height talent')[0]
+            tl2 = t3.find_all(class_='matched-height talent')[1]
+            tl3 = t3.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/b3/Hand_of_Ragnaros_Icon.png?version=d5c71ceecd89f7fbe0bc29a07bf10701')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/8/80/Molten_Power_Icon.png?version=e02ed6334dbfa9197578a80e96aa1086')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/3/39/Superheated_Icon.png?version=183b3494c8092ea1e54c408171f3e411')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)		
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @ragnaros.command(name="tlv13", pass_context=False)
+    async def _talents13_ragnaros(self):   
+        """Level 13 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Ragnaros"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t5 = skill.find_all(class_='talent-tier')[4]
+			
+            tl1 = t5.find_all(class_='matched-height talent')[0]
+            tl2 = t5.find_all(class_='matched-height talent')[1]
+            tl3 = t5.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/b1/Cauterized_Wounds_Icon.png?version=2dc72815d974d9632c137c642cd40df7')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/3/3f/Tempered_Flame_Icon.png?version=ba982339804a3779ee1eeb8086d389db')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/8/8d/Resilient_Flame_Icon.png?version=fb3a2c374aa19294cc02f7fd797e7b35')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @ragnaros.command(name="tlv16", pass_context=False)
+    async def _talents16_ragnaros(self):   
+        """Level 16 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Ragnaros"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t6 = skill.find_all(class_='talent-tier')[5]
+			
+            tl1 = t6.find_all(class_='matched-height talent')[0]
+            tl2 = t6.find_all(class_='matched-height talent')[1]
+            tl3 = t6.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/6/65/Giant_Scorcher_Ragnaros_Icon.png?version=5e9d53edacecd867bc4ff18a6f66ea85')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/d/d3/Meteor_Bomb_Icon.png?version=3419ffb400c0878d762b50a2bb20da29')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/e/ee/Blast_Echo_Icon.png?version=f18fd1f02e6d9af950295027131e3b05')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @ragnaros.command(name="tlv20", pass_context=False)
+    async def _talents20_ragnaros(self):   
+        """Level 20 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Ragnaros"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t7 = skill.find_all(class_='talent-tier')[6]
+			
+            tl1 = t7.find_all(class_='matched-height talent')[0]
+            tl2 = t7.find_all(class_='matched-height talent')[1]
+            tl3 = t7.find_all(class_='matched-height talent')[2]
+            tl4 = t7.find_all(class_='matched-height talent')[3]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            tl4name = tl4.find(class_='talent-name').get_text()
+            tl4desc = tl4.find(class_='talent-description').get_text()				
+            mpD = "```" + tl4desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/f/fc/Flames_of_Sulfuron_Icon.png?version=7b00e25df6a5444c1f04e4b55c97159c')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/b9/Lava_Surge_Icon.png?version=c08663c3a2291a08b481599f06d765f4')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/4/42/Heroic_Difficulty_Icon.png?version=fe659faa42829c1de43eccdf1dfc6a16')
+            embed2.add_field(name="Description", value=mpC)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{tl4name}".format(tl4name=tl4name)
+            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/9/92/Submerge_Icon.png?version=2d174437cb039b5da3da3a446e84db46')
+            embed3.add_field(name="Description", value=mpD)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)	
+            await self.bot.say(embed=embed3)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
 def setup(bot):
     if soupAvailable is False:
