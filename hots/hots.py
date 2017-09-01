@@ -41,18 +41,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            alarak = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -61,6 +62,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -82,17 +85,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "You address the highlord?"
 			
             embed = discord.Embed()
-            embed.title = "{alarak}".format(alarak=alarak)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -576,18 +577,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            cassia = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -596,6 +598,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -617,17 +621,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "I am the Queen's spear!"
 			
             embed = discord.Embed()
-            embed.title = "{cassia}".format(cassia=cassia)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -1111,18 +1113,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            chromie = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -1131,6 +1134,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -1152,17 +1157,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "We have all the time in the world!"
 			
             embed = discord.Embed()
-            embed.title = "{chromie}".format(chromie=chromie)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -1275,7 +1278,7 @@ class hots:
             ab3img = ab4.find(class_='skill-image').find('img').get('src')
             ab3sk = ab4.find(class_='skill-key').get_text()
             ab3name = ab4.find(class_='skill-heading').find('span').get_text()
-            #ab3cst = ab4.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            ab3cst = ab4.find(class_='skill-details').find(class_='skill-cost').get_text()	
             ab3cd = ab4.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
             ab3desc = ab4.find(class_='skill-description').get_text()	
 
@@ -1286,8 +1289,8 @@ class hots:
             ab4cd = ab5.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
             ab4desc = ab5.find(class_='skill-description').get_text()					
 
-            mpD = "```" + ab3cd + "\n" + ab3desc + "```"
-            mpE = "```"  + ab4cst + "|" + ab4cd + "\n" + ab4desc + "```"	
+            mpD = "```" + ab3cst + "|" + ab3cd + "\n" + ab3desc + "```"
+            mpE = "```" + ab4cst + "|" + ab4cd + "\n" + ab4desc + "```"	
 			
             embed4 = discord.Embed()
             embed4.title = "{ab3sk}".format(ab3sk=ab3sk)
@@ -1300,8 +1303,7 @@ class hots:
             embed5.add_field(name="{ab4name}".format(ab4name=ab4name), value=mpE)
 
             await self.bot.say(embed=embed4)	
-            await self.bot.say(embed=embed5)
-            print(ab4img)			
+            await self.bot.say(embed=embed5)		
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -1647,18 +1649,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            falstad  = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -1667,6 +1670,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -1688,17 +1693,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "For Khaz Modan!"
 			
             embed = discord.Embed()
-            embed.title = "{falstad}".format(falstad=falstad)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -2209,18 +2212,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            gall  = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -2229,6 +2233,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -2250,17 +2256,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "Embrace the shadow!"
 			
             embed = discord.Embed()
-            embed.title = "{gall}".format(gall=gall)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -2806,18 +2810,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            genji = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -2826,6 +2831,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -2847,17 +2854,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "You... are a fish."
 			
             embed = discord.Embed()
-            embed.title = "{genji}".format(genji=genji)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -3345,40 +3350,26 @@ class hots:
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
-            table = soupObject.find_all('table', attrs={'class': "infobox2"})[0]
+            table = soupObject.find('table', attrs={'class': "infobox2"})
             name = table.find_all('tr')[0]
             pic = table.find_all('tr')[1]
             binfo = table.find_all('tr')[2]
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-			
-            table1 = soupObject.find_all('table', attrs={'class': "infobox2"})[1]
-            gmh = table1.find_all('tr')[0]
-            bstats = table1.find_all('tr')[1]
-            at = table1.find_all('tr')[2]
-            hlt1 = table1.find_all('tr')[3]
-            hltreg1 = table1.find_all('tr')[4]
-            res1 = table1.find_all('tr')[5]
-            arm1 = table1.find_all('tr')[6]
-            ats1 = table1.find_all('tr')[7]
-            atr1 = table1.find_all('tr')[8]
-            atd1 = table1.find_all('tr')[9]
-			
-            table2 = soupObject.find_all('table', attrs={'class': "infobox2"})[2]
-            gmw = table2.find_all('tr')[0]
-            bstats2 = table2.find_all('tr')[1]
-            at1 = table2.find_all('tr')[2]
-            hlt2 = table2.find_all('tr')[3]
-            hltreg2 = table2.find_all('tr')[4]
-            res2 = table2.find_all('tr')[5]
-            arm2 = table2.find_all('tr')[6]
-            ats2 = table2.find_all('tr')[7]
-            atr2 = table2.find_all('tr')[8]
-            atd2 = table2.find_all('tr')[9]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            greymane = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -3387,61 +3378,38 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
+            htit = hlt.find('th').get_text()
+            hdat = hlt.find('td').get_text()
+            hregt = hreg.find('th').get_text()
+            hregdat = hreg.find('td').get_text()
+            ent = eng.find('th').get_text()
+            endat = eng.find('td').get_text()
+            armt = arm.find('th').get_text()
+            armdat = arm.find('td').get_text()
+            spt = spd.find('th').get_text()
+            spdat = spd.find('td').get_text()
+            atst = ats.find('th').get_text()
+            atsdat = ats.find('td').get_text()
+            atrt = atr.find('th').get_text()
+            atrdat = atr.find('td').get_text()
+            atdt = atd.find('th').get_text()
+            atddat = atd.find('td').get_text()
+            stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            gmht = gmh.find('th').get_text()
-            bstats1 = bstats.find('th').get_text()
-            atA = at.find('th').get_text()
-            atB = at.find('td').get_text()
-            hltA = hlt1.find('th').get_text()
-            hltB = hlt1.find('td').get_text()
-            hltrA = hltreg1.find('th').get_text()
-            hltrB = hltreg1.find('td').get_text()
-            resA = res1.find('th').get_text()
-            resB = res1.find('td').get_text()
-            armA = arm1.find('th').get_text()
-            armB = arm1.find('td').get_text()
-            atsA = ats1.find('th').get_text()
-            atsB = ats1.find('td').get_text()
-            atrA = atr1.find('th').get_text()
-            atrB = atr1.find('td').get_text()
-            atdA = atd1.find('th').get_text()
-            atdB = atd1.find('td').get_text()
-			
-            gmwt = gmw.find('th').get_text()
-            bstats3 = bstats2.find('th').get_text()
-            atC = at1.find('th').get_text()
-            atD = at1.find('td').get_text()
-            hltC = hlt2.find('th').get_text()
-            hltD = hlt2.find('td').get_text()
-            hltrC = hltreg2.find('th').get_text()
-            hltrD = hltreg2.find('td').get_text()
-            resC = res2.find('th').get_text()
-            resD = res2.find('td').get_text()
-            armC = arm2.find('th').get_text()
-            armD = arm2.find('td').get_text()
-            atsC = ats2.find('th').get_text()
-            atsD = ats2.find('td').get_text()
-            atrC = atr2.find('th').get_text()
-            atrD = atr2.find('td').get_text()
-            atdC = atd2.find('th').get_text()
-            atdD = atd2.find('td').get_text()
-			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
-            tab1 = tabulate([[atA, atB], [hltA, hltB], [hltrA, hltrB], [resA, resB], [armA, armB], [atsA, atsB], [atrA, atrB], [atdA, atdB]], tablefmt='grid', stralign='left')
-            tab2 = tabulate([[atC, atD], [hltC, hltD], [hltrC, hltrD], [resC, resD], [armC, armD], [atsC, atsD], [atrC, atrD], [atdC, atdD]], tablefmt='grid', stralign='left')
-            mpA = "Gilneas never back down!"
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
+            tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
 			
             embed = discord.Embed()
-            embed.title = "{greymane}".format(greymane=greymane)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
-            embed.add_field(name="{gmht}".format(gmht=gmht), value=tab1, inline='true')
-            embed.add_field(name="{gmwt}".format(gmwt=gmwt), value=tab2, inline='true')
-            embed.set_footer(text=mpA)
+            embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -3977,18 +3945,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            guldan = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -3997,6 +3966,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -4018,17 +3989,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "I will not be denied!"
 			
             embed = discord.Embed()
-            embed.title = "{guldan}".format(guldan=guldan)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -4533,18 +4502,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            illidan = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -4553,6 +4523,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -4574,17 +4546,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "I will not be denied!"
 			
             embed = discord.Embed()
-            embed.title = "{illidan}".format(illidan=illidan)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -5058,22 +5028,25 @@ class hots:
         try:
             table = soupObject.find('table', attrs={'class': "infobox2"})
             name = table.find_all('tr')[0]
+            pic = table.find_all('tr')[1]
             binfo = table.find_all('tr')[2]
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            jaina = name.find('th').get_text()		
+            tname = name.find('th').get_text()	
+            picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
             ttl1 = title.find('td').get_text()
@@ -5081,6 +5054,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -5102,17 +5077,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "I'm here to help!"
 			
             embed = discord.Embed()
-            embed.title = "{jaina}".format(jaina=jaina)
-            embed.set_image(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/c/c1/JainaArt.jpg?version=33bae818a937c31d0a3023ee310151d3')
+            embed.title = "{tname}".format(tname=tname)
+            embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -5607,18 +5580,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            kaelthas = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -5627,6 +5601,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -5648,17 +5624,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "I don't suffer setbacks. I revel in them."
 			
             embed = discord.Embed()
-            embed.title = "{kaelthas}".format(kaelthas=kaelthas)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -6141,18 +6115,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            kerrigan = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -6161,6 +6136,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -6182,17 +6159,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "Your time's up."
 			
             embed = discord.Embed()
-            embed.title = "{kerrigan}".format(kerrigan=kerrigan)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -6720,18 +6695,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            liming = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -6740,6 +6716,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -6761,17 +6739,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "No more waiting, Strike now!"
 			
             embed = discord.Embed()
-            embed.title = "{liming}".format(liming=liming)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -7277,18 +7253,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            lunara = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -7297,6 +7274,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -7318,17 +7297,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "Our enemies will wither before us..."
 			
             embed = discord.Embed()
-            embed.title = "{lunara}".format(lunara=lunara)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -7908,18 +7885,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            malthael = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -7928,6 +7906,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -7949,17 +7929,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "Death descends upon our enemies...."
 			
             embed = discord.Embed()
-            embed.title = "{malthael}".format(malthael=malthael)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -8454,18 +8432,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            nova = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -8474,6 +8453,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -8495,17 +8476,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "Ready to pop some hostiles?"
 			
             embed = discord.Embed()
-            embed.title = "{nova}".format(nova=nova)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -9000,18 +8979,19 @@ class hots:
             title = table.find_all('tr')[3]
             role = table.find_all('tr')[4]
             fran = table.find_all('tr')[5]
-            reld = table.find_all('tr')[6]
-            stat = table.find_all('tr')[7]
-            hlt = table.find_all('tr')[8]
-            hreg = table.find_all('tr')[9]
-            eng = table.find_all('tr')[10]
-            arm = table.find_all('tr')[11]
-            spd = table.find_all('tr')[12]
-            ats = table.find_all('tr')[13]
-            atr = table.find_all('tr')[14]
-            atd = table.find_all('tr')[15]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
 
-            ragnaros = name.find('th').get_text()	
+            tname = name.find('th').get_text()	
             picture = pic.find('img').get('src')		
             info = binfo.find('th').get_text()			
             ttl = title.find('th').get_text()
@@ -9020,6 +9000,8 @@ class hots:
             role2 = role.find('td').get_text()
             franc = fran.find('th').get_text()
             franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
             date = reld.find('th').get_text()
             date1 = reld.find('td').get_text()
             htit = hlt.find('th').get_text()
@@ -9041,17 +9023,15 @@ class hots:
             stats = stat.find('th').get_text()
             nail = role.find('img').get('src')
 			
-            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [date, date1]], tablefmt='grid', stralign='left')
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
             tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
-            mpA = "Are you prepared to serve me, mortal?"
 			
             embed = discord.Embed()
-            embed.title = "{ragnaros}".format(ragnaros=ragnaros)
+            embed.title = "{tname}".format(tname=tname)
             embed.set_image(url='{picture}'.format(picture=picture))
             embed.set_thumbnail(url="{nail}".format(nail=nail))
             embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
             embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
-            embed.set_footer(text=mpA)
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
@@ -9551,6 +9531,575 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+################################################################################################################################################################################################################################################			
+    @commands.group(pass_context=True)
+    async def raynor(self, ctx):
+        """The Renegade Commander"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)  
+			
+    @raynor.command(name="info", pass_context=False)
+    async def _info_raynor(self):   
+        """Basic Info about Raynor"""
+        url = "https://heroesofthestorm.gamepedia.com/Raynor"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find('table', attrs={'class': "infobox2"})
+            name = table.find_all('tr')[0]
+            pic = table.find_all('tr')[1]
+            binfo = table.find_all('tr')[2]
+            title = table.find_all('tr')[3]
+            role = table.find_all('tr')[4]
+            fran = table.find_all('tr')[5]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
+
+            tname = name.find('th').get_text()	
+            picture = pic.find('img').get('src')		
+            info = binfo.find('th').get_text()			
+            ttl = title.find('th').get_text()
+            ttl1 = title.find('td').get_text()
+            role1 = role.find('th').get_text()
+            role2 = role.find('td').get_text()
+            franc = fran.find('th').get_text()
+            franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
+            date = reld.find('th').get_text()
+            date1 = reld.find('td').get_text()
+            htit = hlt.find('th').get_text()
+            hdat = hlt.find('td').get_text()
+            hregt = hreg.find('th').get_text()
+            hregdat = hreg.find('td').get_text()
+            ent = eng.find('th').get_text()
+            endat = eng.find('td').get_text()
+            armt = arm.find('th').get_text()
+            armdat = arm.find('td').get_text()
+            spt = spd.find('th').get_text()
+            spdat = spd.find('td').get_text()
+            atst = ats.find('th').get_text()
+            atsdat = ats.find('td').get_text()
+            atrt = atr.find('th').get_text()
+            atrdat = atr.find('td').get_text()
+            atdt = atd.find('th').get_text()
+            atddat = atd.find('td').get_text()
+            stats = stat.find('th').get_text()
+            nail = role.find('img').get('src')
+			
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
+            tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
+			
+            embed = discord.Embed()
+            embed.title = "{tname}".format(tname=tname)
+            embed.set_image(url='{picture}'.format(picture=picture))
+            embed.set_thumbnail(url="{nail}".format(nail=nail))
+            embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
+            embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @raynor.command(name="abilities", pass_context=False)
+    async def _abilities_raynor(self):   
+        """Abilities for Raynor"""
+        url = "https://heroesofthestorm.gamepedia.com/Raynor"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab1 = skill.find_all(class_='skill')[1]
+            ab2 = skill.find_all(class_='skill')[2]
+            ab3 = skill.find_all(class_='skill')[3]
+			
+            abimg = ab1.find(class_='skill-image').find('img').get('src')
+            absk = ab1.find(class_='skill-key').get_text()
+            abname = ab1.find(class_='skill-heading').find('span').get_text()
+            abcst = ab1.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            abcd = ab1.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            abdesc = ab1.find(class_='skill-description').get_text()
+			
+            ab1img = ab2.find(class_='skill-image').find('img').get('src')
+            ab1sk = ab2.find(class_='skill-key').get_text()
+            ab1name = ab2.find(class_='skill-heading').find('span').get_text()
+            ab1cst = ab2.find(class_='skill-details').find(class_='skill-cost').get_text()
+            ab1cd = ab2.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab1desc = ab2.find(class_='skill-description').get_text()	
+
+            ab2img = ab3.find(class_='skill-image').find('img').get('src')
+            ab2sk = ab3.find(class_='skill-key').get_text()
+            ab2name = ab3.find(class_='skill-heading').find('span').get_text()
+            ab2cd = ab3.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab2desc = ab3.find(class_='skill-description').get_text()			
+
+            mpA = "```" + abcst + "|" + abcd + "\n" + abdesc + "```"	
+            mpC = "```" + ab2cd + "\n" + ab2desc + "```"	
+            mpB = "```" + ab1cst + "|" + ab1cd + "\n" + ab1desc + "```"				
+			
+            embed1 = discord.Embed()
+            embed1.title = "{absk}".format(absk=absk)
+            embed1.set_image(url='{abimg}'.format(abimg=abimg))
+            embed1.add_field(name="{abname}".format(abname=abname), value=mpA)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{ab1sk}".format(ab1sk=ab1sk)
+            embed2.set_image(url='{ab1img}'.format(ab1img=ab1img))
+            embed2.add_field(name="{ab1name}".format(ab1name=ab1name), value=mpB)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{ab2sk}".format(ab2sk=ab2sk)
+            embed3.set_image(url='{ab2img}'.format(ab2img=ab2img))
+            embed3.add_field(name="{ab2name}".format(ab2name=ab2name), value=mpC)
+
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+            await self.bot.say(embed=embed3)		
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @raynor.command(name="trait", pass_context=False)
+    async def _trait_raynor(self):   
+        """Trait for Raynor"""
+        url = "https://heroesofthestorm.gamepedia.com/Raynor"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            trait = skill.find_all(class_='skill')[0]
+			
+            timg = trait.find(class_='skill-image').find('img').get('src')
+            tname = trait.find(class_='skill-heading').find('span').get_text()
+            tdesc = trait.find(class_='skill-description').get_text()	
+            mpA = "```" + tdesc + "```"		
+			
+            embed = discord.Embed()
+            embed.title = "Trait"
+            embed.set_image(url='{timg}'.format(timg=timg))
+            embed.add_field(name="{tname}".format(tname=tname), value=mpA)
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @raynor.command(name="heroics", pass_context=False)
+    async def _heroics_raynor(self):   
+        """Heroic Abilities for Raynor"""
+        url = "https://heroesofthestorm.gamepedia.com/Raynor"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab4 = skill.find_all(class_='skill')[4]
+            ab5 = skill.find_all(class_='skill')[5]
+			
+            ab3img = ab4.find(class_='skill-image').find('img').get('src')
+            ab3sk = ab4.find(class_='skill-key').get_text()
+            ab3name = ab4.find(class_='skill-heading').find('span').get_text()
+            ab3cst = ab4.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            ab3cd = ab4.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab3desc = ab4.find(class_='skill-description').get_text()	
+
+            ab4img = ab5.find(class_='skill-image').find('img').get('src')
+            ab4sk = ab5.find(class_='skill-key').get_text()
+            ab4name = ab5.find(class_='skill-heading').find('span').get_text()
+            ab4cst = ab5.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            ab4cd = ab5.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab4desc = ab5.find(class_='skill-description').get_text()					
+
+            mpD = "```"  + ab3cst + "|" + ab3cd + "\n" + ab3desc + "```"
+            mpE = "```"  + ab4cst + "|" + ab4cd + "\n" + ab4desc + "```"	
+			
+            embed4 = discord.Embed()
+            embed4.title = "{ab3sk}".format(ab3sk=ab3sk)
+            embed4.set_image(url='{ab3img}'.format(ab3img=ab3img))
+            embed4.add_field(name="{ab3name}".format(ab3name=ab3name), value=mpD)
+			
+            embed5 = discord.Embed()
+            embed5.title = "{ab4sk}".format(ab4sk=ab4sk)
+            embed5.set_image(url='{ab4img}'.format(ab4img=ab4img))
+            embed5.add_field(name="{ab4name}".format(ab4name=ab4name), value=mpE)
+
+            await self.bot.say(embed=embed4)	
+            await self.bot.say(embed=embed5)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @raynor.command(name="tlv1", pass_context=False)
+    async def _talents1_raynor(self):   
+        """Level 1 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Raynor"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t1 = skill.find_all(class_='talent-tier')[0]
+			
+            tl1 = t1.find_all(class_='matched-height talent')[0]
+            tl2 = t1.find_all(class_='matched-height talent')[1]
+            tl3 = t1.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/9/96/Give_Me_More%21_Icon.png?version=ffefee745edb7981458c80e62f5ac2f4')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/2f/Seasoned_Marksman_Icon.png?version=924f3f27956d02caa0ec86e0f1500680')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/4/4f/Scouting_Drone_Icon.png?version=6671e630a72da6794f835c94e9ef2a7e')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @raynor.command(name="tlv4", pass_context=False)
+    async def _talents4_raynor(self):   
+        """Level 4 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Raynor"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t2 = skill.find_all(class_='talent-tier')[1]
+			
+            tl1 = t2.find_all(class_='matched-height talent')[0]
+            tl2 = t2.find_all(class_='matched-height talent')[1]
+            tl3 = t2.find_all(class_='matched-height talent')[2]
+            tl4 = t2.find_all(class_='matched-height talent')[3]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            tl4name = tl4.find(class_='talent-name').get_text()
+            tl4desc = tl4.find(class_='talent-description').get_text()				
+            mpD = "```" + tl4desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/c/ce/Focused_Attack_Icon.png?version=26e6813701e30bfb9ddc4612fb9d6ac5')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/9/95/Vigorous_Assault_Icon.png?version=ca2674bc69e495869b2460cd0d05e975')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/7/7f/Confident_Aim_Icon.png?version=258551541146857c487dcb1587da0cf0')
+            embed2.add_field(name="Description", value=mpC)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{tl4name}".format(tl4name=tl4name)
+            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/f/f0/Relentless_Leader_Icon.png?version=11525d694780a5f73dcad0e407a770ff')
+            embed3.add_field(name="Description", value=mpD)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)	
+            await self.bot.say(embed=embed3)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @raynor.command(name="tlv7", pass_context=False)
+    async def _talents7_raynor(self):   
+        """Level 7 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Raynor"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t3 = skill.find_all(class_='talent-tier')[2]
+			
+            tl1 = t3.find_all(class_='matched-height talent')[0]
+            tl2 = t3.find_all(class_='matched-height talent')[1]
+            tl3 = t3.find_all(class_='matched-height talent')[2]
+            tl4 = t3.find_all(class_='matched-height talent')[3]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            tl4name = tl4.find(class_='talent-name').get_text()
+            tl4desc = tl4.find(class_='talent-description').get_text()				
+            mpD = "```" + tl4desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/4/4b/Hamstring_Shot_Icon.png?version=a80baca655c7c0c6b6ce61bae66c19d5')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/9/9a/Revolution_Overdrive_Icon.png?version=3c697b47543dbf5832be705ca5828253')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/23/Fight_or_Flight_Icon.png?version=0a19ecb9580fb4fb8b22093a2af9837a')
+            embed2.add_field(name="Description", value=mpC)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{tl4name}".format(tl4name=tl4name)
+            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/d/dd/Puttin%27_On_a_Clinic_Icon.png?version=00b110d70da48f921d6914e5104ff25f')
+            embed3.add_field(name="Description", value=mpD)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+            await self.bot.say(embed=embed3)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @raynor.command(name="tlv13", pass_context=False)
+    async def _talents13_raynor(self):   
+        """Level 13 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Raynor"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t5 = skill.find_all(class_='talent-tier')[4]
+			
+            tl1 = t5.find_all(class_='matched-height talent')[0]
+            tl2 = t5.find_all(class_='matched-height talent')[1]
+            tl3 = t5.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/bd/Giant_Killer_Icon.png?version=263665046749adbc51a7830777c4f585')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/4/41/Double-Barreled_Icon.png?version=c18f04e6629bf06f1dde9341c38a8165')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/d/d6/Steel_Resolve_Icon.png?version=dbb1fd159f40d54b01036deb4c0a7a37')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @raynor.command(name="tlv16", pass_context=False)
+    async def _talents16_raynor(self):   
+        """Level 16 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Raynor"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t6 = skill.find_all(class_='talent-tier')[5]
+			
+            tl1 = t6.find_all(class_='matched-height talent')[0]
+            tl2 = t6.find_all(class_='matched-height talent')[1]
+            tl3 = t6.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/e/e0/Executioner_Icon.png?version=27bc5a5ac360fc827bf2a50ae107eec8')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/6/62/Cluster_Round_Icon.png?version=36d74de96672d13a92155262becd4047')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/5/52/Bullseye_Icon.png?version=1b8f48e20bea591e5cfbed95abcbe6b0')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @raynor.command(name="tlv20", pass_context=False)
+    async def _talents20_raynor(self):   
+        """Level 20 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Raynor"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t7 = skill.find_all(class_='talent-tier')[6]
+			
+            tl1 = t7.find_all(class_='matched-height talent')[0]
+            tl2 = t7.find_all(class_='matched-height talent')[1]
+            tl3 = t7.find_all(class_='matched-height talent')[2]
+            tl4 = t7.find_all(class_='matched-height talent')[3]
+            tl5 = t7.find_all(class_='matched-height talent')[4]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            tl4name = tl4.find(class_='talent-name').get_text()
+            tl4desc = tl4.find(class_='talent-description').get_text()				
+            mpD = "```" + tl4desc + "```"
+			
+            tl5name = tl5.find(class_='talent-name').get_text()
+            tl5desc = tl5.find(class_='talent-description').get_text()				
+            mpE = "```" + tl5desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/8/85/Scorched_Earth_Icon.png?version=bcb50b652ce716668d14f0cef8155fb4')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/3/31/Dusk_Wings_Icon.png?version=c7ea2b7894ff824fd9c8f7a526aef275')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/7/73/A_Card_to_Play_Icon.png?version=fd212c754f6a5a8ba40015a683b27fc5')
+            embed2.add_field(name="Description", value=mpC)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{tl4name}".format(tl4name=tl4name)
+            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/d/d9/Nexus_Frenzy_Icon.png?version=d1569eeaeefbc7e5362ff13e09131a74')
+            embed3.add_field(name="Description", value=mpD)
+			
+            embed4 = discord.Embed()
+            embed4.title = "{tl5name}".format(tl5name=tl5name)
+            embed4.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/9/9a/Bolt_of_the_Storm_Icon.png?version=5182d16aedf5509a69101d1efb9929cb')
+            embed4.add_field(name="Description", value=mpE)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)	
+            await self.bot.say(embed=embed3)	
+            await self.bot.say(embed=embed4)			
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
