@@ -19,7 +19,7 @@ class bbcf:
 
     def __init__(self, bot):
         self.bot = bot
-        self.version = "1.5"
+        self.version = "1.5.1"
 
     @commands.group(pass_context=True)
     async def am(self, ctx):
@@ -58867,9 +58867,10 @@ class bbcf:
 			
             Data = [head.get_text() for head in headers.find_all('td')]
             mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = info.find('p').get_text()
 			
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```" 	
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```" 	
 			
             embed = discord.Embed()
             embed.title = "2A"
@@ -58974,7 +58975,7 @@ class bbcf:
 			
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```" 	
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2 + "```" 	
 			
             embed = discord.Embed()
             embed.title = "6A"
@@ -59014,7 +59015,7 @@ class bbcf:
 			
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```"
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2 + "```"
 			
             embed = discord.Embed()
             embed.title = "6B"
@@ -59253,21 +59254,28 @@ class bbcf:
             Data = [head.get_text() for head in headers.find_all('td')]
             Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
             mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
             vrs = headers.find('th').get_text()
             vrs1 = headers1.find('th').get_text()
 			
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "```"            
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "```"  
+            mpB = "```" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```"           
 			
             embed = discord.Embed()
             embed.title = "5D"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/b/b3/BBCF_Jubei_5D.png')
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="OD Frame Data", value=tab1)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            embed1 = discord.Embed()
+            embed1.title = "5D Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/b/b3/BBCF_Jubei_5D.png')
+            embed1.add_field(name="Attack Props. Cont.", value=mpB)
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -59291,22 +59299,29 @@ class bbcf:
 			
             Data = [head.get_text() for head in headers.find_all('td')]
             Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
-            mp1 = info.find('li').get_text()
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
             vrs = headers.find('th').get_text()
             vrs1 = headers1.find('th').get_text()
 			
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "```"  
+            mpB = "```" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```"           
 			
             embed = discord.Embed()
             embed.title = "J.D"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/8/82/BBCF_Jubei_jD.png')
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="OD Frame Data", value=tab1)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            embed1 = discord.Embed()
+            embed1.title = "J.D Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/b/b3/BBCF_Jubei_5D.png')
+            embed1.add_field(name="Attack Props. Cont.", value=mpB)
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -59330,22 +59345,29 @@ class bbcf:
 			
             Data = [head.get_text() for head in headers.find_all('td')]
             Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
-            mp1 = info.find('li').get_text()
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
             vrs = headers.find('th').get_text()
             vrs1 = headers1.find('th').get_text()
 			
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "```"  
+            mpB = "```" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```"           
 			
             embed = discord.Embed()
             embed.title = "J.6D"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/e/e8/BBCF_Jubei_j.6D.png')
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="OD Frame Data", value=tab1)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            embed1 = discord.Embed()
+            embed1.title = "J.6D Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/b/b3/BBCF_Jubei_5D.png')
+            embed1.add_field(name="Attack Props. Cont.", value=mpB)
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -59755,9 +59777,10 @@ class bbcf:
 			
             Data = [head.get_text() for head in headers.find_all('td')]
             mp1 = info.find('li').get_text()
+            mp2 = info.find('p').get_text()
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "```" 
+            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```" 
 			
             embed = discord.Embed(description='4B after Rekkōzan, Air OK')
             embed.title = "Ni no Kata: Oni Gitsune"
@@ -59788,9 +59811,10 @@ class bbcf:
 			
             Data = [head.get_text() for head in headers.find_all('td')]
             mp1 = info.find('li').get_text()
+            mp2 = info.find('p').get_text()
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "```" 
+            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```" 
 			
             embed = discord.Embed(description='Air OK')
             embed.title = "Ni no Kata: Oni Gitsune"
@@ -59824,7 +59848,7 @@ class bbcf:
             mp2 = [po.get_text() for po in info.find_all('p')]
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"  
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"  
 			
             embed = discord.Embed(description='C after Rekkōzan, Air OK')
             embed.title = "San no Kata: Ranjishi"
@@ -59858,7 +59882,7 @@ class bbcf:
             mp2 = [po.get_text() for po in info.find_all('p')]
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
 			
             embed = discord.Embed(description='Air OK')
             embed.title = "San no Kata: Ranjishi"
@@ -59966,17 +59990,17 @@ class bbcf:
             info =  table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            #mp1 = [op.get_text() for op in info.find_all('li')]
-            #mp2 = info.find('p').get_text()
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            #mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
 			
             embed = discord.Embed(description="4d/6d during Rekkōzan")
             embed.title = "Shitenjin"
             embed.set_image(url='http://www.dustloop.com/wiki/images/0/02/BBCF_Jubei_Shitenjin.png')
             embed.add_field(name="Frame Data", value=tab)
-            #embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
 			
             await self.bot.say(embed=embed)
         except discord.errors.HTTPException:
@@ -60000,17 +60024,17 @@ class bbcf:
             info =  table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            #mp1 = [op.get_text() for op in info.find_all('li')]
-            #mp2 = info.find('p').get_text()
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            #mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
 			
             embed = discord.Embed()
             embed.title = "Shitenjin"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/5/5d/BBCF_Jubei_Shitenjin2.png')
+            embed.set_image(url='http://www.dustloop.com/wiki/images/0/02/BBCF_Jubei_Shitenjin.png')
             embed.add_field(name="Frame Data", value=tab)
-            #embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
 			
             await self.bot.say(embed=embed)
         except discord.errors.HTTPException:
