@@ -19,7 +19,7 @@ class bbcf:
 
     def __init__(self, bot):
         self.bot = bot
-        self.version = "1.5.2"
+        self.version = "1.5.3"
 
     @commands.group(pass_context=True)
     async def am(self, ctx):
@@ -33718,7 +33718,7 @@ class bbcf:
             embed.add_field(name="Enhanced Frame Data", value=tab1)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')
 			
-            embed2 = discord.Embed(description='28A after Shift Sway')
+            embed2 = discord.Embed(description='8A after Shift Sway')
             embed2.title = "Phantom Pain"
             embed2.set_image(url='http://www.dustloop.com/wiki/images/3/3a/BBCF_Naoto_PhantomPain.png')
             embed2.add_field(name="Frame Data", value=tab2)
@@ -58755,7 +58755,7 @@ class bbcf:
 ###################################################################################################################################################################################################
     @ju.command(name="5a", pass_context=False)  #  Jubei from blazblue
     async def _5a_ju(self):
-        #"""Insert Text Here"""
+        """Paw paw paw"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -58801,9 +58801,10 @@ class bbcf:
 			
             Data = [head.get_text() for head in headers.find_all('td')]
             mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
 			
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "```" 	
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 	
 			
             embed = discord.Embed()
             embed.title = "5b"
@@ -58834,9 +58835,10 @@ class bbcf:
 			
             Data = [head.get_text() for head in headers.find_all('td')]
             mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
 			
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "```" 	
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
 			
             embed = discord.Embed()
             embed.title = "5c"
@@ -58854,7 +58856,7 @@ class bbcf:
 	
     @ju.command(name="2a", pass_context=False)  #  Jubei from blazblue
     async def _2a_ju(self):   
-        #"""Insert Text Here"""
+        """Tail to an Ars Magus fight"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -58888,7 +58890,7 @@ class bbcf:
 			
     @ju.command(name="2b", pass_context=False)  #  Jubei from blazblue
     async def _2b_ju(self): 
-        #"""Insert Text Here"""
+        """Stubbed the Black Beast's toe"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -58922,7 +58924,7 @@ class bbcf:
 			
     @ju.command(name="2c", pass_context=False)  #  Jubei from blazblue
     async def _2c_ju(self):   
-        #"""Insert Text Here"""
+        """For fans of Santoryu"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -58935,9 +58937,10 @@ class bbcf:
 			
             Data = [head.get_text() for head in headers.find_all('td')]
             mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = info.find('p').get_text()
 			
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "```" 	
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "\n" + "*" + mp2 + "```" 	
 			
             embed = discord.Embed()
             embed.title = "2C"
@@ -59035,7 +59038,7 @@ class bbcf:
 
     @ju.command(name="6c", pass_context=False)  #  Jubei from blazblue
     async def _6c_ju(self):  
-        #"""Insert Text Here"""				
+        """For fans of Yontoryu"""				
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59048,10 +59051,10 @@ class bbcf:
 			
             Data = [head.get_text() for head in headers.find_all('td')]
             mp1 = [op.get_text() for op in info.find_all('li')]
-            mp2 = info.find('p').get_text()
+            mp2 = [po.get_text() for po in info.find_all('p')]
 			
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp2 + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
 			
             embed = discord.Embed()
             embed.title = "6C"
@@ -59069,7 +59072,7 @@ class bbcf:
 			
     @ju.command(name="3c", pass_context=False)  #  Jubei from blazblue
     async def _3c_ju(self):   
-        #"""Insert Text Here"""		
+        """Great at snipping feet"""		
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59081,10 +59084,11 @@ class bbcf:
             info = table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = info.find('li').get_text()
-
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
+			
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
 			
             embed = discord.Embed()
             embed.title = "3C"
@@ -59103,7 +59107,7 @@ class bbcf:
 			
     @ju.command(name="ja", pass_context=False)  #  Jubei from blazblue
     async def _ja_ju(self): 
-        #"""Insert Text Here"""	
+        """Look at those pads!"""	
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59116,10 +59120,10 @@ class bbcf:
 
             Data = [head.get_text() for head in headers.find_all('td')]			
             mp1 = [op.get_text() for op in info.find_all('li')]
-            mp2 = info.find('p').get_text()
+            mp2 = [po.get_text() for po in info.find_all('p')]
 			
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
 			
             embed = discord.Embed()
             embed.title = "J.A"
@@ -59138,7 +59142,7 @@ class bbcf:
 			
     @ju.command(name="jb", pass_context=False)  #  Jubei from blazblue
     async def _jb_ju(self):   
-        #"""Insert Text Here"""	
+        """The calisthenics of a hero"""	
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59151,10 +59155,10 @@ class bbcf:
 
             Data = [head.get_text() for head in headers.find_all('td')]			
             mp1 = [op.get_text() for op in info.find_all('li')]
-            mp2 = info.find('p').get_text()
+            mp2 = [po.get_text() for po in info.find_all('p')]
 			
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```"
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"
 			
             embed = discord.Embed()
             embed.title = "J.B"
@@ -59184,11 +59188,11 @@ class bbcf:
             info = table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = info.find('li').get_text()
+            mp1 = [op.get_text() for op in info.find_all('li')]
             mp2 = info.find('p').get_text()
 			
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```" 
 			
             embed = discord.Embed()
             embed.title = "J.C"
@@ -59206,7 +59210,7 @@ class bbcf:
 			
     @ju.command(name="j2c", pass_context=False)  #  Jubei from blazblue
     async def _j2c_ju(self): 
-        #"""Insert Text Here"""	
+        """Back and face scratcher"""	
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59218,19 +59222,25 @@ class bbcf:
             info = table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = info.find('li').get_text()
+            mp1 = [op.get_text() for op in info.find_all('li')]
             mp2 = [po.get_text() for po in info.find_all('p')]
 			
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"  
-			
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "```"  
+            mpB = "```" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```"  	
+		
             embed = discord.Embed()
             embed.title = "J.2C"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/3/37/BBCF_Jubei_j.2C.png')
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')
 
+            embed1 = discord.Embed()
+            embed1.title = "J.2C Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/3/37/BBCF_Jubei_j.2C.png')
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -59240,7 +59250,7 @@ class bbcf:
 			
     @ju.command(name="5d", pass_context=False)  #  Jubei from blazblue
     async def _5d_ju(self): 
-        #"""Insert Text Here"""	
+        """You can't see heroes"""	
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59261,7 +59271,7 @@ class bbcf:
 			
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "```"  
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp2[0] + "```"  
             mpB = "```" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```"           
 			
             embed = discord.Embed()
@@ -59589,7 +59599,7 @@ class bbcf:
 
     @rek.command(name="236a", aliases=["236236a"], pass_context=False)  #  Jubei from blazblue
     async def _reka_ju(self):   
-        #"""Insert Text Here"""
+        """Fury Swipes Hit 3 time(s)!"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59604,13 +59614,13 @@ class bbcf:
             Data = [head.get_text() for head in headers.find_all('td')]
             Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
             mp1 = info.find('li').get_text()
-            mp2 = info.find('p').get_text()
+            mp2 = [po.get_text() for po in info.find_all('p')]
             vrs = headers.find('th').get_text()
             vrs1 = headers1.find('th').get_text()
 
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```" 
+            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
 			
             embed = discord.Embed(description="236a/236236a, Air OK")
             embed.title = "Rekkōzan"
@@ -59629,7 +59639,7 @@ class bbcf:
 
     @rek.command(name="a", pass_context=False)  #  Jubei from blazblue
     async def _rek1_ju(self):   
-        #"""Insert Text Here"""
+        """Build-A-236A Workshop"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59641,20 +59651,26 @@ class bbcf:
             info =  table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            #mp1 = [op.get_text() for op in info.find_all('li')]
-            #mp2 = [po.get_text() for po in info.find_all('p')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
 
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            #mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "\n" + "*" + mp2[3] + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "```" 
+            mpB = "```" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```" 
 			
             embed = discord.Embed(description='A after Rekkōzan, Air OK')
             embed.title = "Tsuika Kōgeki"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/d/da/BBCF_Jubei_Tsuika_K%C5%8Dgeki.png')
             embed.add_field(name="Frame Data", value=tab)
-            #embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+
+            embed1 = discord.Embed()
+            embed1.title = "Tsuika Kōgeki Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/d/da/BBCF_Jubei_Tsuika_K%C5%8Dgeki.png')
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')	
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -59664,7 +59680,7 @@ class bbcf:
 
     @rek.command(name="b", pass_context=False)  #  Jubei from blazblue
     async def _rek2_ju(self):   
-        #"""Insert Text Here"""
+        """Surfing up the claw wave"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59676,18 +59692,18 @@ class bbcf:
             info =  table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            #mp1 = [op.get_text() for op in info.find_all('li')]
-            #mp2 = [po.get_text() for po in info.find_all('p')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
 
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            #mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "\n" + "*" + mp2[3] + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
 			
             embed = discord.Embed(description='B after Rekkōzan, Air OK')
             embed.title = "Uchiage"
             embed.set_image(url='http://www.dustloop.com/wiki/images/a/ad/BBCF_Jubei_Uchiage.png')
             embed.add_field(name="Frame Data", value=tab)
-            #embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
 			
             await self.bot.say(embed=embed)
         except discord.errors.HTTPException:
@@ -59699,7 +59715,7 @@ class bbcf:
 
     @rek.command(name="6b", pass_context=False)  #  Jubei from blazblue
     async def _rek3_ju(self):   
-        #"""Insert Text Here"""
+        """Grandpa says no mashing"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59712,17 +59728,24 @@ class bbcf:
 			
             Data = [head.get_text() for head in headers.find_all('td')]
             mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
+            mpB = "```" + "*" + mp2[2] + "\n" + "*" + mp2[3] + "```" 
 			
             embed = discord.Embed(description='6B after Rekkōzan, Air OK')
             embed.title = "Ichi no Kata: Kage Ōkami"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/9/9d/BBCF_Jubei_Ichi_no_Kata_Kage_%C5%8Ckami.png')
             embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')	
+
+            embed1 = discord.Embed()
+            embed1.title = "Ichi no Kata: Kage Ōkami Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/9/9d/BBCF_Jubei_Ichi_no_Kata_Kage_%C5%8Ckami.png')
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')		
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -59732,7 +59755,7 @@ class bbcf:
 
     @ju.command(name="236b", pass_context=False)  #  Jubei from blazblue
     async def _s1_ju(self):   
-        #"""Insert Text Here"""
+        """Grandpa says no mashing"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59745,17 +59768,24 @@ class bbcf:
 			
             Data = [head.get_text() for head in headers.find_all('td')]
             mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
+            mpB = "```" + "*" + mp2[2] + "\n" + "*" + mp2[3] + "```" 
 			
             embed = discord.Embed(description='Air OK')
             embed.title = "Ichi no Kata: Kage Ōkami"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/9/9d/BBCF_Jubei_Ichi_no_Kata_Kage_%C5%8Ckami.png')
             embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')	
+
+            embed1 = discord.Embed()
+            embed1.title = "Ichi no Kata: Kage Ōkami Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/9/9d/BBCF_Jubei_Ichi_no_Kata_Kage_%C5%8Ckami.png')
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')		
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -59765,7 +59795,7 @@ class bbcf:
 
     @rek.command(name="4b", pass_context=False)  #  Jubei from blazblue
     async def _rek4_ju(self):   
-        #"""Insert Text Here"""
+        """GRANDPA SAID NO MASHING"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59778,18 +59808,24 @@ class bbcf:
 			
             Data = [head.get_text() for head in headers.find_all('td')]
             mp1 = [op.get_text() for op in info.find_all('li')]
-            mp2 = info.find('p').get_text()
+            mp2 = [po.get_text() for po in info.find_all('p')]
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
+            mpB = "```" + "*" + mp2[2] + "\n" + "*" + mp2[3] + "```" 
 			
             embed = discord.Embed(description='4B after Rekkōzan, Air OK')
             embed.title = "Ni no Kata: Oni Gitsune"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/5/56/BBCF_Jubei_Ni_no_Kata_Oni_Gitsune.png')
             embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')	
+
+            embed1 = discord.Embed()
+            embed1.title = "Ni no Kata: Oni Gitsune Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/5/56/BBCF_Jubei_Ni_no_Kata_Oni_Gitsune.png')
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')	
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -59799,7 +59835,7 @@ class bbcf:
 
     @ju.command(name="214b", pass_context=False)  #  Jubei from blazblue
     async def _s2_ju(self):   
-        #"""Insert Text Here"""
+        """GRANDPA SAID NO MASHING"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59812,18 +59848,24 @@ class bbcf:
 			
             Data = [head.get_text() for head in headers.find_all('td')]
             mp1 = [op.get_text() for op in info.find_all('li')]
-            mp2 = info.find('p').get_text()
+            mp2 = [po.get_text() for po in info.find_all('p')]
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
+            mpB = "```" + "*" + mp2[2] + "\n" + "*" + mp2[3] + "```" 
 			
-            embed = discord.Embed(description='Air OK')
+            embed = discord.Embed(description='4B after Rekkōzan, Air OK')
             embed.title = "Ni no Kata: Oni Gitsune"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/5/56/BBCF_Jubei_Ni_no_Kata_Oni_Gitsune.png')
             embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')	
+
+            embed1 = discord.Embed()
+            embed1.title = "Ni no Kata: Oni Gitsune Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/5/56/BBCF_Jubei_Ni_no_Kata_Oni_Gitsune.png')
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')	
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -59833,7 +59875,7 @@ class bbcf:
 
     @rek.command(name="c", pass_context=False)  #  Jubei from blazblue
     async def _rek5_ju(self):   
-        #"""Insert Text Here"""
+        """Pleasehitpleasehitpleasehit"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59849,15 +59891,27 @@ class bbcf:
             mp2 = [po.get_text() for po in info.find_all('p')]
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"  
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "\n" + "*" + mp2[0] + "```"  
+            mpB = "```" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```" 
+            mpC = "```" + "*" + mp2[3] + "```"  
 			
             embed = discord.Embed(description='C after Rekkōzan, Air OK')
             embed.title = "San no Kata: Ranjishi"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/f/f9/BBCF_Jubei_San_no_Kata_Ranjishi.png')
             embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            embed1 = discord.Embed()
+            embed1.title = "San no Kata: Ranjishi Cont."
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')	
+
+            embed2 = discord.Embed()
+            embed2.title = "San no Kata: Ranjishi Cont."
+            embed2.set_image(url='http://www.dustloop.com/wiki/images/f/f9/BBCF_Jubei_San_no_Kata_Ranjishi.png')
+            embed2.add_field(name="Attack Props:", value=mpC, inline='true')			
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -59867,7 +59921,7 @@ class bbcf:
 
     @ju.command(name="214c", pass_context=False)  #  Jubei from blazblue
     async def _s3_ju(self):   
-        #"""Insert Text Here"""
+        """Pleasehitpleasehitpleasehit"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59883,15 +59937,27 @@ class bbcf:
             mp2 = [po.get_text() for po in info.find_all('p')]
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "\n" + "*" + mp2[0] + "```"  
+            mpB = "```" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```" 
+            mpC = "```" + "*" + mp2[3] + "```"  
 			
-            embed = discord.Embed(description='Air OK')
+            embed = discord.Embed(description='C after Rekkōzan, Air OK')
             embed.title = "San no Kata: Ranjishi"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/f/f9/BBCF_Jubei_San_no_Kata_Ranjishi.png')
             embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            embed1 = discord.Embed()
+            embed1.title = "San no Kata: Ranjishi Cont."
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')	
+
+            embed2 = discord.Embed()
+            embed2.title = "San no Kata: Ranjishi Cont."
+            embed2.set_image(url='http://www.dustloop.com/wiki/images/f/f9/BBCF_Jubei_San_no_Kata_Ranjishi.png')
+            embed2.add_field(name="Attack Props:", value=mpC, inline='true')			
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -59901,7 +59967,7 @@ class bbcf:
 
     @rek.command(name="646c", pass_context=False)  #  Jubei from blazblue
     async def _rek6_ju(self):   
-        #"""Insert Text Here"""
+        """X marks the unblockable fatal"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59916,12 +59982,14 @@ class bbcf:
             Data = [head.get_text() for head in headers.find_all('td')]
             Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
             mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
             vrs = headers.find('th').get_text()
             vrs1 = headers1.find('th').get_text()
 
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
+            mpB = "```" + "*" + mp2[2] + "```" 
 			
             embed = discord.Embed(description='646c after Rekkōzan')
             embed.title = "Shi no Kata: Kuro Hyō"
@@ -59929,8 +59997,14 @@ class bbcf:
             embed.add_field(name="No Charge Frame Data", value=tab)
             embed.add_field(name="Full Charge Frame Data", value=tab1)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+
+            embed1 = discord.Embed()
+            embed1.title = "Shi no Kata: Kuro Hyō Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/1/1a/BBCF_Jubei_Shi_no_Kata_Kuro_Hy%C5%8D2.png')
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')	
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -59940,7 +60014,7 @@ class bbcf:
 
     @ju.command(name="632146c", pass_context=False)  #  Jubei from blazblue
     async def _s4_ju(self):   
-        #"""Insert Text Here"""
+        """X marks the unblockable fatal"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59955,21 +60029,29 @@ class bbcf:
             Data = [head.get_text() for head in headers.find_all('td')]
             Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
             mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = [po.get_text() for po in info.find_all('p')]
             vrs = headers.find('th').get_text()
             vrs1 = headers1.find('th').get_text()
 
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Cancel", Data1[1]], ["Guard", Data1[2]], ["Startup", Data1[3]], ["Active", Data1[4]], ["Recovery", Data1[5]], ["Frame Adv.", Data1[6]], ["Attribute", Data1[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```" 
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
+            mpB = "```" + "*" + mp2[2] + "```" 
 			
-            embed = discord.Embed()
+            embed = discord.Embed(description='646c after Rekkōzan')
             embed.title = "Shi no Kata: Kuro Hyō"
             embed.set_image(url='http://www.dustloop.com/wiki/images/b/b8/BBCF_Jubei_Shi_no_Kata_Kuro_Hy%C5%8D.png')
             embed.add_field(name="No Charge Frame Data", value=tab)
             embed.add_field(name="Full Charge Frame Data", value=tab1)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+
+            embed1 = discord.Embed()
+            embed1.title = "Shi no Kata: Kuro Hyō Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/1/1a/BBCF_Jubei_Shi_no_Kata_Kuro_Hy%C5%8D2.png')
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')	
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -59979,7 +60061,7 @@ class bbcf:
 
     @rek.command(name="6d", aliases=["4d"], pass_context=False)  #  Jubei from blazblue
     async def _rek7_ju(self):   
-        #"""Insert Text Here"""
+        """As free as a cat now"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -59995,15 +60077,22 @@ class bbcf:
             mp2 = [po.get_text() for po in info.find_all('p')]
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```" 
-			
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
+            mpB = "```" + "*" + mp2[2] + "\n" + "*" + mp2[3] + "```" 	
+		
             embed = discord.Embed(description="4d/6d during Rekkōzan")
             embed.title = "Shitenjin"
             embed.set_image(url='http://www.dustloop.com/wiki/images/0/02/BBCF_Jubei_Shitenjin.png')
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')		
-			
+
+            embed1 = discord.Embed()
+            embed1.title = "Shitenjin"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/5/5d/BBCF_Jubei_Shitenjin2.png')
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')	
+
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -60013,7 +60102,7 @@ class bbcf:
 
     @ju.command(name="j236d", aliases=["j214d"], pass_context=False)  #  Jubei from blazblue
     async def _s5_ju(self):   
-        #"""Insert Text Here"""
+        """As free as a cat now"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -60029,15 +60118,22 @@ class bbcf:
             mp2 = [po.get_text() for po in info.find_all('p')]
 
             tab = tabulate([["Damage", Data[0]], ["Cancel", Data[1]], ["Guard", Data[2]], ["Startup", Data[3]], ["Active", Data[4]], ["Recovery", Data[5]], ["Frame Adv.", Data[6]], ["Attribute", Data[7]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```" 
-			
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
+            mpB = "```" + "*" + mp2[2] + "\n" + "*" + mp2[3] + "```" 	
+		
             embed = discord.Embed()
             embed.title = "Shitenjin"
             embed.set_image(url='http://www.dustloop.com/wiki/images/0/02/BBCF_Jubei_Shitenjin.png')
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')		
-			
+
+            embed1 = discord.Embed()
+            embed1.title = "Shitenjin Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/5/5d/BBCF_Jubei_Shitenjin2.png')
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')	
+
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -60047,7 +60143,7 @@ class bbcf:
 
     @ju.command(name="236c", pass_context=False)  #  Jubei from blazblue
     async def _s6_ju(self):   
-        """Air OK"""
+        """(Air OK)The little fireball that could"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jubei"  # they allow spaces so I had to add underscore as a temporary resolution
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
