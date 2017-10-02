@@ -19,7 +19,7 @@ class bbcf:
 
     def __init__(self, bot):
         self.bot = bot
-        self.version = "1.5.3"
+        self.version = "1.5.3.1"
 
     @commands.group(pass_context=True)
     async def am(self, ctx):
@@ -59854,7 +59854,7 @@ class bbcf:
             mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
             mpB = "```" + "*" + mp2[2] + "\n" + "*" + mp2[3] + "```" 
 			
-            embed = discord.Embed(description='4B after Rekkōzan, Air OK')
+            embed = discord.Embed(description='Air OK')
             embed.title = "Ni no Kata: Oni Gitsune"
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')	
@@ -59941,7 +59941,7 @@ class bbcf:
             mpB = "```" + "*" + mp2[1] + "\n" + "*" + mp2[2] + "```" 
             mpC = "```" + "*" + mp2[3] + "```"  
 			
-            embed = discord.Embed(description='C after Rekkōzan, Air OK')
+            embed = discord.Embed(description='Air OK')
             embed.title = "San no Kata: Ranjishi"
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')
@@ -60038,7 +60038,7 @@ class bbcf:
             mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```" 
             mpB = "```" + "*" + mp2[2] + "```" 
 			
-            embed = discord.Embed(description='646c after Rekkōzan')
+            embed = discord.Embed()
             embed.title = "Shi no Kata: Kuro Hyō"
             embed.set_image(url='http://www.dustloop.com/wiki/images/b/b8/BBCF_Jubei_Shi_no_Kata_Kuro_Hy%C5%8D.png')
             embed.add_field(name="No Charge Frame Data", value=tab)
