@@ -99,9 +99,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @alarak.command(name="abilities", pass_context=False)
     async def _abilities_alarak(self):   
@@ -161,9 +161,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @alarak.command(name="trait", pass_context=False)
     async def _trait_alarak(self):   
@@ -188,9 +188,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @alarak.command(name="heroics", pass_context=False)
     async def _heroics_alarak(self):   
@@ -235,9 +235,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @alarak.command(name="tlv1", pass_context=False)
     async def _talents1_alarak(self):   
@@ -286,9 +286,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @alarak.command(name="tlv4", pass_context=False)
     async def _talents4_alarak(self):   
@@ -337,9 +337,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @alarak.command(name="tlv7", pass_context=False)
     async def _talents7_alarak(self):   
@@ -388,9 +388,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @alarak.command(name="tlv13", pass_context=False)
     async def _talents13_alarak(self):   
@@ -439,9 +439,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @alarak.command(name="tlv16", pass_context=False)
     async def _talents16_alarak(self):   
@@ -490,9 +490,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @alarak.command(name="tlv20", pass_context=False)
     async def _talents20_alarak(self):   
@@ -552,9 +552,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ######################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def cassia(self, ctx):
@@ -635,9 +635,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cassia.command(name="abilities", pass_context=False)
     async def _abilities_cassia(self):   
@@ -697,9 +697,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cassia.command(name="trait", pass_context=False)
     async def _trait_cassia(self):   
@@ -724,9 +724,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cassia.command(name="heroics", pass_context=False)
     async def _heroics_cassia(self):   
@@ -771,9 +771,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cassia.command(name="tlv1", pass_context=False)
     async def _talents1_cassia(self):   
@@ -822,9 +822,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cassia.command(name="tlv4", pass_context=False)
     async def _talents4_cassia(self):   
@@ -873,9 +873,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cassia.command(name="tlv7", pass_context=False)
     async def _talents7_cassia(self):   
@@ -924,9 +924,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cassia.command(name="tlv13", pass_context=False)
     async def _talents13_cassia(self):   
@@ -986,9 +986,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cassia.command(name="tlv16", pass_context=False)
     async def _talents16_cassia(self):   
@@ -1037,9 +1037,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cassia.command(name="tlv20", pass_context=False)
     async def _talents20_cassia(self):   
@@ -1088,9 +1088,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")				
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")				
 ######################################################################################################################################################################################################################################		
     @commands.group(pass_context=True)
     async def chromie(self, ctx):
@@ -1171,9 +1171,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chromie.command(name="abilities", pass_context=False)
     async def _abilities_chromie(self):   
@@ -1233,9 +1233,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chromie.command(name="trait", pass_context=False)
     async def _trait_chromie(self):   
@@ -1260,9 +1260,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chromie.command(name="heroics", pass_context=False)
     async def _heroics_chromie(self):   
@@ -1307,9 +1307,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chromie.command(name="tlv1", pass_context=False)
     async def _talents1_chromie(self):   
@@ -1358,9 +1358,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chromie.command(name="tlv2", pass_context=False)
     async def _talents2_chromie(self):   
@@ -1409,9 +1409,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chromie.command(name="tlv5", pass_context=False)
     async def _talents5_chromie(self):   
@@ -1460,9 +1460,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chromie.command(name="tlv11", pass_context=False)
     async def _talents13_chromie(self):   
@@ -1511,9 +1511,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chromie.command(name="tlv14", pass_context=False)
     async def _talents14_chromie(self):   
@@ -1562,9 +1562,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chromie.command(name="tlv18", pass_context=False)
     async def _talents18_chromie(self):   
@@ -1624,9 +1624,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
 ###############################################################################################################################################################################################################################################	
     @commands.group(pass_context=True)
     async def falstad(self, ctx):
@@ -1707,9 +1707,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @falstad.command(name="abilities", pass_context=False)
     async def _abilities_falstad(self):   
@@ -1769,9 +1769,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @falstad.command(name="trait", pass_context=False)
     async def _trait_falstad(self):   
@@ -1796,9 +1796,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 
     @falstad.command(name="mount", pass_context=False)
     async def _mount_falstad(self):   
@@ -1823,9 +1823,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @falstad.command(name="heroics", pass_context=False)
     async def _heroics_falstad(self):   
@@ -1870,9 +1870,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @falstad.command(name="tlv1", pass_context=False)
     async def _talents1_falstad(self):   
@@ -1921,9 +1921,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @falstad.command(name="tlv4", pass_context=False)
     async def _talents4_falstad(self):   
@@ -1972,9 +1972,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @falstad.command(name="tlv7", pass_context=False)
     async def _talents7_falstad(self):   
@@ -2023,9 +2023,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @falstad.command(name="tlv13", pass_context=False)
     async def _talents13_falstad(self):   
@@ -2074,9 +2074,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @falstad.command(name="tlv16", pass_context=False)
     async def _talents16_falstad(self):   
@@ -2125,9 +2125,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @falstad.command(name="tlv20", pass_context=False)
     async def _talents20_falstad(self):   
@@ -2187,9 +2187,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
 ###############################################################################################################################################################################################################################################	
     @commands.group(pass_context=True)
     async def gall(self, ctx):
@@ -2270,9 +2270,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @gall.command(name="abilities", pass_context=False)
     async def _abilities_gall(self):   
@@ -2329,9 +2329,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @gall.command(name="trait", pass_context=False)
     async def _trait_gall(self):   
@@ -2356,9 +2356,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 
     @gall.command(name="mount", pass_context=False)
     async def _mount_gall(self):   
@@ -2383,9 +2383,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @gall.command(name="Eye", pass_context=False)
     async def _eye_gall(self):   
@@ -2410,9 +2410,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @gall.command(name="heroics", pass_context=False)
     async def _heroics_gall(self):   
@@ -2468,9 +2468,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @gall.command(name="tlv1", pass_context=False)
     async def _talents1_gall(self):   
@@ -2519,9 +2519,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @gall.command(name="tlv4", pass_context=False)
     async def _talents4_gall(self):   
@@ -2570,9 +2570,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @gall.command(name="tlv7", pass_context=False)
     async def _talents7_gall(self):   
@@ -2621,9 +2621,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @gall.command(name="tlv13", pass_context=False)
     async def _talents13_gall(self):   
@@ -2672,9 +2672,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @gall.command(name="tlv16", pass_context=False)
     async def _talents16_gall(self):   
@@ -2723,9 +2723,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @gall.command(name="tlv20", pass_context=False)
     async def _talents20_gall(self):   
@@ -2785,9 +2785,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
 ###############################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def genji(self, ctx):
@@ -2868,9 +2868,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @genji.command(name="abilities", pass_context=False)
     async def _abilities_genji(self):   
@@ -2930,9 +2930,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @genji.command(name="trait", pass_context=False)
     async def _trait_genji(self):   
@@ -2957,9 +2957,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @genji.command(name="heroics", pass_context=False)
     async def _heroics_genji(self):   
@@ -3004,9 +3004,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @genji.command(name="tlv1", pass_context=False)
     async def _talents1_genji(self):   
@@ -3055,9 +3055,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @genji.command(name="tlv4", pass_context=False)
     async def _talents4_genji(self):   
@@ -3106,9 +3106,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @genji.command(name="tlv7", pass_context=False)
     async def _talents7_genji(self):   
@@ -3168,9 +3168,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @genji.command(name="tlv13", pass_context=False)
     async def _talents13_genji(self):   
@@ -3219,9 +3219,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @genji.command(name="tlv16", pass_context=False)
     async def _talents16_genji(self):   
@@ -3270,9 +3270,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @genji.command(name="tlv20", pass_context=False)
     async def _talents20_genji(self):   
@@ -3332,9 +3332,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ###############################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def greymane(self, ctx):
@@ -3415,9 +3415,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @greymane.command(name="abilities", pass_context=False)
     async def _abilities_greymane(self):   
@@ -3507,9 +3507,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @greymane.command(name="trait", pass_context=False)
     async def _trait_greymane(self):   
@@ -3534,9 +3534,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @greymane.command(name="heroics", pass_context=False)
     async def _heroics_greymane(self):   
@@ -3581,9 +3581,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @greymane.command(name="tlv1", pass_context=False)
     async def _talents1_greymane(self):   
@@ -3632,9 +3632,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @greymane.command(name="tlv4", pass_context=False)
     async def _talents4_greymane(self):   
@@ -3694,9 +3694,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @greymane.command(name="tlv7", pass_context=False)
     async def _talents7_greymane(self):   
@@ -3745,9 +3745,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @greymane.command(name="tlv13", pass_context=False)
     async def _talents13_greymane(self):   
@@ -3807,9 +3807,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @greymane.command(name="tlv16", pass_context=False)
     async def _talents16_greymane(self):   
@@ -3858,9 +3858,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @greymane.command(name="tlv20", pass_context=False)
     async def _talents20_greymane(self):   
@@ -3920,9 +3920,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ###############################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def guldan(self, ctx):
@@ -4003,9 +4003,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @guldan.command(name="abilities", pass_context=False)
     async def _abilities_guldan(self):   
@@ -4064,9 +4064,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @guldan.command(name="trait", pass_context=False)
     async def _trait_guldan(self):   
@@ -4091,9 +4091,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @guldan.command(name="heroics", pass_context=False)
     async def _heroics_guldan(self):   
@@ -4138,9 +4138,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @guldan.command(name="tlv1", pass_context=False)
     async def _talents1_guldan(self):   
@@ -4200,9 +4200,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @guldan.command(name="tlv4", pass_context=False)
     async def _talents4_guldan(self):   
@@ -4251,9 +4251,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @guldan.command(name="tlv7", pass_context=False)
     async def _talents7_guldan(self):   
@@ -4313,9 +4313,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @guldan.command(name="tlv13", pass_context=False)
     async def _talents13_guldan(self):   
@@ -4375,9 +4375,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @guldan.command(name="tlv16", pass_context=False)
     async def _talents16_guldan(self):   
@@ -4426,9 +4426,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @guldan.command(name="tlv20", pass_context=False)
     async def _talents20_guldan(self):   
@@ -4477,9 +4477,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def illidan(self, ctx):
@@ -4560,9 +4560,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @illidan.command(name="abilities", pass_context=False)
     async def _abilities_illidan(self):   
@@ -4619,9 +4619,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @illidan.command(name="trait", pass_context=False)
     async def _trait_illidan(self):   
@@ -4646,9 +4646,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @illidan.command(name="heroics", pass_context=False)
     async def _heroics_illidan(self):   
@@ -4691,9 +4691,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @illidan.command(name="tlv1", pass_context=False)
     async def _talents1_illidan(self):   
@@ -4742,9 +4742,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @illidan.command(name="tlv4", pass_context=False)
     async def _talents4_illidan(self):   
@@ -4793,9 +4793,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @illidan.command(name="tlv7", pass_context=False)
     async def _talents7_illidan(self):   
@@ -4844,9 +4844,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @illidan.command(name="tlv13", pass_context=False)
     async def _talents13_illidan(self):   
@@ -4895,9 +4895,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @illidan.command(name="tlv16", pass_context=False)
     async def _talents16_illidan(self):   
@@ -4946,9 +4946,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @illidan.command(name="tlv20", pass_context=False)
     async def _talents20_illidan(self):   
@@ -5008,9 +5008,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def jaina(self, ctx):
@@ -5091,9 +5091,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @jaina.command(name="abilities", pass_context=False)
     async def _abilities_jaina(self):   
@@ -5153,9 +5153,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @jaina.command(name="trait", pass_context=False)
     async def _trait_jaina(self):   
@@ -5180,9 +5180,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @jaina.command(name="heroics", pass_context=False)
     async def _heroics_jaina(self):   
@@ -5227,9 +5227,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @jaina.command(name="tlv1", pass_context=False)
     async def _talents1_jaina(self):   
@@ -5289,9 +5289,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @jaina.command(name="tlv4", pass_context=False)
     async def _talents4_jaina(self):   
@@ -5340,9 +5340,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @jaina.command(name="tlv7", pass_context=False)
     async def _talents7_jaina(self):   
@@ -5391,9 +5391,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @jaina.command(name="tlv13", pass_context=False)
     async def _talents13_jaina(self):   
@@ -5442,9 +5442,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @jaina.command(name="tlv16", pass_context=False)
     async def _talents16_jaina(self):   
@@ -5493,9 +5493,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @jaina.command(name="tlv20", pass_context=False)
     async def _talents20_jaina(self):   
@@ -5555,9 +5555,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def kaelthas(self, ctx):
@@ -5638,9 +5638,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kaelthas.command(name="abilities", pass_context=False)
     async def _abilities_kaelthas(self):   
@@ -5699,9 +5699,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kaelthas.command(name="trait", pass_context=False)
     async def _trait_kaelthas(self):   
@@ -5726,9 +5726,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kaelthas.command(name="heroics", pass_context=False)
     async def _heroics_kaelthas(self):   
@@ -5773,9 +5773,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kaelthas.command(name="tlv1", pass_context=False)
     async def _talents1_kaelthas(self):   
@@ -5824,9 +5824,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kaelthas.command(name="tlv4", pass_context=False)
     async def _talents4_kaelthas(self):   
@@ -5875,9 +5875,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kaelthas.command(name="tlv7", pass_context=False)
     async def _talents7_kaelthas(self):   
@@ -5926,9 +5926,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kaelthas.command(name="tlv13", pass_context=False)
     async def _talents13_kaelthas(self):   
@@ -5977,9 +5977,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kaelthas.command(name="tlv16", pass_context=False)
     async def _talents16_kaelthas(self):   
@@ -6028,9 +6028,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kaelthas.command(name="tlv20", pass_context=False)
     async def _talents20_kaelthas(self):   
@@ -6090,9 +6090,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def kerrigan(self, ctx):
@@ -6173,9 +6173,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kerrigan.command(name="abilities", pass_context=False)
     async def _abilities_kerrigan(self):   
@@ -6234,9 +6234,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kerrigan.command(name="trait", pass_context=False)
     async def _trait_kerrigan(self):   
@@ -6261,9 +6261,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kerrigan.command(name="heroics", pass_context=False)
     async def _heroics_kerrigan(self):   
@@ -6308,9 +6308,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kerrigan.command(name="tlv1", pass_context=False)
     async def _talents1_kerrigan(self):   
@@ -6370,9 +6370,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kerrigan.command(name="tlv4", pass_context=False)
     async def _talents4_kerrigan(self):   
@@ -6432,9 +6432,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kerrigan.command(name="tlv7", pass_context=False)
     async def _talents7_kerrigan(self):   
@@ -6494,9 +6494,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kerrigan.command(name="tlv13", pass_context=False)
     async def _talents13_kerrigan(self):   
@@ -6556,9 +6556,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kerrigan.command(name="tlv16", pass_context=False)
     async def _talents16_kerrigan(self):   
@@ -6607,9 +6607,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kerrigan.command(name="tlv20", pass_context=False)
     async def _talents20_kerrigan(self):   
@@ -6669,9 +6669,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
@@ -6753,9 +6753,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @liming.command(name="abilities", pass_context=False)
     async def _abilities_liming(self):   
@@ -6815,9 +6815,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @liming.command(name="trait", pass_context=False)
     async def _trait_liming(self):   
@@ -6842,9 +6842,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @liming.command(name="heroics", pass_context=False)
     async def _heroics_liming(self):   
@@ -6889,9 +6889,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @liming.command(name="tlv1", pass_context=False)
     async def _talents1_liming(self):   
@@ -6951,9 +6951,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @liming.command(name="tlv4", pass_context=False)
     async def _talents4_liming(self):   
@@ -7002,9 +7002,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @liming.command(name="tlv7", pass_context=False)
     async def _talents7_liming(self):   
@@ -7053,9 +7053,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @liming.command(name="tlv13", pass_context=False)
     async def _talents13_liming(self):   
@@ -7104,9 +7104,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @liming.command(name="tlv16", pass_context=False)
     async def _talents16_liming(self):   
@@ -7166,9 +7166,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @liming.command(name="tlv20", pass_context=False)
     async def _talents20_liming(self):   
@@ -7228,9 +7228,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")			
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")			
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def lunara(self, ctx):
@@ -7311,9 +7311,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @lunara.command(name="abilities", pass_context=False)
     async def _abilities_lunara(self):   
@@ -7387,9 +7387,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @lunara.command(name="trait", pass_context=False)
     async def _trait_lunara(self):   
@@ -7414,9 +7414,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 
     @lunara.command(name="mount", pass_context=False)
     async def _mount_lunara(self):   
@@ -7441,9 +7441,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @lunara.command(name="heroics", pass_context=False)
     async def _heroics_lunara(self):   
@@ -7488,9 +7488,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @lunara.command(name="tlv1", pass_context=False)
     async def _talents1_lunara(self):   
@@ -7550,9 +7550,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @lunara.command(name="tlv4", pass_context=False)
     async def _talents4_lunara(self):   
@@ -7612,9 +7612,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @lunara.command(name="tlv7", pass_context=False)
     async def _talents7_lunara(self):   
@@ -7674,9 +7674,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @lunara.command(name="tlv13", pass_context=False)
     async def _talents13_lunara(self):   
@@ -7736,9 +7736,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @lunara.command(name="tlv16", pass_context=False)
     async def _talents16_lunara(self):   
@@ -7798,9 +7798,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @lunara.command(name="tlv20", pass_context=False)
     async def _talents20_lunara(self):   
@@ -7860,9 +7860,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
 ##################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def malthael(self, ctx):
@@ -7943,9 +7943,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @malthael.command(name="abilities", pass_context=False)
     async def _abilities_malthael(self):   
@@ -8005,9 +8005,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @malthael.command(name="trait", pass_context=False)
     async def _trait_malthael(self):   
@@ -8032,9 +8032,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @malthael.command(name="heroics", pass_context=False)
     async def _heroics_malthael(self):   
@@ -8079,9 +8079,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @malthael.command(name="tlv1", pass_context=False)
     async def _talents1_malthael(self):   
@@ -8130,9 +8130,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @malthael.command(name="tlv4", pass_context=False)
     async def _talents4_malthael(self):   
@@ -8181,9 +8181,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @malthael.command(name="tlv7", pass_context=False)
     async def _talents7_malthael(self):   
@@ -8232,9 +8232,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @malthael.command(name="tlv13", pass_context=False)
     async def _talents13_malthael(self):   
@@ -8294,9 +8294,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @malthael.command(name="tlv16", pass_context=False)
     async def _talents16_malthael(self):   
@@ -8345,9 +8345,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @malthael.command(name="tlv20", pass_context=False)
     async def _talents20_malthael(self):   
@@ -8407,9 +8407,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def nova(self, ctx):
@@ -8490,9 +8490,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @nova.command(name="abilities", pass_context=False)
     async def _abilities_nova(self):   
@@ -8552,9 +8552,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @nova.command(name="trait", pass_context=False)
     async def _trait_nova(self):   
@@ -8579,9 +8579,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @nova.command(name="heroics", pass_context=False)
     async def _heroics_nova(self):   
@@ -8626,9 +8626,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @nova.command(name="tlv1", pass_context=False)
     async def _talents1_nova(self):   
@@ -8677,9 +8677,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @nova.command(name="tlv4", pass_context=False)
     async def _talents4_nova(self):   
@@ -8739,9 +8739,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @nova.command(name="tlv7", pass_context=False)
     async def _talents7_nova(self):   
@@ -8790,9 +8790,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @nova.command(name="tlv13", pass_context=False)
     async def _talents13_nova(self):   
@@ -8841,9 +8841,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @nova.command(name="tlv16", pass_context=False)
     async def _talents16_nova(self):   
@@ -8892,9 +8892,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @nova.command(name="tlv20", pass_context=False)
     async def _talents20_nova(self):   
@@ -8954,9 +8954,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def ragnaros(self, ctx):
@@ -9037,9 +9037,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @ragnaros.command(name="abilities", pass_context=False)
     async def _abilities_ragnaros(self):   
@@ -9141,9 +9141,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @ragnaros.command(name="trait", pass_context=False)
     async def _trait_ragnaros(self):   
@@ -9170,9 +9170,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @ragnaros.command(name="heroics", pass_context=False)
     async def _heroics_ragnaros(self):   
@@ -9217,9 +9217,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @ragnaros.command(name="tlv1", pass_context=False)
     async def _talents1_ragnaros(self):   
@@ -9268,9 +9268,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @ragnaros.command(name="tlv4", pass_context=False)
     async def _talents4_ragnaros(self):   
@@ -9319,9 +9319,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @ragnaros.command(name="tlv7", pass_context=False)
     async def _talents7_ragnaros(self):   
@@ -9370,9 +9370,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @ragnaros.command(name="tlv13", pass_context=False)
     async def _talents13_ragnaros(self):   
@@ -9421,9 +9421,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @ragnaros.command(name="tlv16", pass_context=False)
     async def _talents16_ragnaros(self):   
@@ -9472,9 +9472,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @ragnaros.command(name="tlv20", pass_context=False)
     async def _talents20_ragnaros(self):   
@@ -9534,9 +9534,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################			
     @commands.group(pass_context=True)
     async def raynor(self, ctx):
@@ -9617,9 +9617,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @raynor.command(name="abilities", pass_context=False)
     async def _abilities_raynor(self):   
@@ -9678,9 +9678,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @raynor.command(name="trait", pass_context=False)
     async def _trait_raynor(self):   
@@ -9706,9 +9706,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @raynor.command(name="heroics", pass_context=False)
     async def _heroics_raynor(self):   
@@ -9753,9 +9753,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @raynor.command(name="tlv1", pass_context=False)
     async def _talents1_raynor(self):   
@@ -9804,9 +9804,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @raynor.command(name="tlv4", pass_context=False)
     async def _talents4_raynor(self):   
@@ -9866,9 +9866,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @raynor.command(name="tlv7", pass_context=False)
     async def _talents7_raynor(self):   
@@ -9928,9 +9928,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @raynor.command(name="tlv13", pass_context=False)
     async def _talents13_raynor(self):   
@@ -9979,9 +9979,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @raynor.command(name="tlv16", pass_context=False)
     async def _talents16_raynor(self):   
@@ -10030,9 +10030,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @raynor.command(name="tlv20", pass_context=False)
     async def _talents20_raynor(self):   
@@ -10103,9 +10103,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def samuro(self, ctx):
@@ -10186,9 +10186,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @samuro.command(name="abilities", pass_context=False)
     async def _abilities_samuro(self):   
@@ -10245,9 +10245,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @samuro.command(name="trait", pass_context=False)
     async def _trait_samuro(self):   
@@ -10273,9 +10273,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @samuro.command(name="heroics", pass_context=False)
     async def _heroics_samuro(self):   
@@ -10318,9 +10318,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @samuro.command(name="tlv1", pass_context=False)
     async def _talents1_samuro(self):   
@@ -10369,9 +10369,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @samuro.command(name="tlv4", pass_context=False)
     async def _talents4_samuro(self):   
@@ -10420,9 +10420,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @samuro.command(name="tlv7", pass_context=False)
     async def _talents7_samuro(self):   
@@ -10471,9 +10471,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @samuro.command(name="tlv13", pass_context=False)
     async def _talents13_samuro(self):   
@@ -10522,9 +10522,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @samuro.command(name="tlv16", pass_context=False)
     async def _talents16_samuro(self):   
@@ -10573,9 +10573,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @samuro.command(name="tlv20", pass_context=False)
     async def _talents20_samuro(self):   
@@ -10635,9 +10635,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def butcher(self, ctx):
@@ -10718,9 +10718,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @butcher.command(name="abilities", pass_context=False)
     async def _abilities_butcher(self):   
@@ -10780,9 +10780,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @butcher.command(name="trait", pass_context=False)
     async def _trait_butcher(self):   
@@ -10808,9 +10808,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @butcher.command(name="heroics", pass_context=False)
     async def _heroics_butcher(self):   
@@ -10855,9 +10855,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @butcher.command(name="tlv1", pass_context=False)
     async def _talents1_butcher(self):   
@@ -10906,9 +10906,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @butcher.command(name="tlv4", pass_context=False)
     async def _talents4_butcher(self):   
@@ -10957,9 +10957,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @butcher.command(name="tlv7", pass_context=False)
     async def _talents7_butcher(self):   
@@ -11008,9 +11008,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @butcher.command(name="tlv13", pass_context=False)
     async def _talents13_butcher(self):   
@@ -11059,9 +11059,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @butcher.command(name="tlv16", pass_context=False)
     async def _talents16_butcher(self):   
@@ -11110,9 +11110,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @butcher.command(name="tlv20", pass_context=False)
     async def _talents20_butcher(self):   
@@ -11172,9 +11172,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def thrall(self, ctx):
@@ -11255,9 +11255,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @thrall.command(name="abilities", pass_context=False)
     async def _abilities_thrall(self):   
@@ -11317,9 +11317,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @thrall.command(name="trait", pass_context=False)
     async def _trait_thrall(self):   
@@ -11345,9 +11345,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @thrall.command(name="heroics", pass_context=False)
     async def _heroics_thrall(self):   
@@ -11392,9 +11392,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @thrall.command(name="tlv1", pass_context=False)
     async def _talents1_thrall(self):   
@@ -11443,9 +11443,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @thrall.command(name="tlv4", pass_context=False)
     async def _talents4_thrall(self):   
@@ -11494,9 +11494,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @thrall.command(name="tlv7", pass_context=False)
     async def _talents7_thrall(self):   
@@ -11545,9 +11545,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @thrall.command(name="tlv13", pass_context=False)
     async def _talents13_thrall(self):   
@@ -11596,9 +11596,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @thrall.command(name="tlv16", pass_context=False)
     async def _talents16_thrall(self):   
@@ -11647,9 +11647,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @thrall.command(name="tlv20", pass_context=False)
     async def _talents20_thrall(self):   
@@ -11709,9 +11709,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def tracer(self, ctx):
@@ -11792,9 +11792,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tracer.command(name="abilities", pass_context=False)
     async def _abilities_tracer(self):   
@@ -11851,9 +11851,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tracer.command(name="trait", pass_context=False)
     async def _trait_tracer(self):   
@@ -11881,9 +11881,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tracer.command(name="heroic", pass_context=False)
     async def _heroics_tracer(self):   
@@ -11911,9 +11911,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tracer.command(name="tlv1", pass_context=False)
     async def _talents1_tracer(self):   
@@ -11962,9 +11962,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tracer.command(name="tlv4", pass_context=False)
     async def _talents4_tracer(self):   
@@ -12013,9 +12013,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tracer.command(name="tlv7", pass_context=False)
     async def _talents7_tracer(self):   
@@ -12064,9 +12064,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tracer.command(name="tlv10", pass_context=False)
     async def _talents10_tracer(self):   
@@ -12115,9 +12115,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tracer.command(name="tlv13", pass_context=False)
     async def _talents13_tracer(self):   
@@ -12166,9 +12166,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tracer.command(name="tlv16", pass_context=False)
     async def _talents16_tracer(self):   
@@ -12217,9 +12217,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tracer.command(name="tlv20", pass_context=False)
     async def _talents20_tracer(self):   
@@ -12268,9 +12268,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def tychus(self, ctx):
@@ -12351,9 +12351,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tychus.command(name="abilities", pass_context=False)
     async def _abilities_tychus(self):   
@@ -12455,9 +12455,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tychus.command(name="trait", pass_context=False)
     async def _trait_tychus(self):   
@@ -12486,9 +12486,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tychus.command(name="heroics", pass_context=False)
     async def _heroics_tychus(self):   
@@ -12533,9 +12533,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tychus.command(name="tlv1", pass_context=False)
     async def _talents1_tychus(self):   
@@ -12584,9 +12584,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tychus.command(name="tlv4", pass_context=False)
     async def _talents4_tychus(self):   
@@ -12646,9 +12646,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tychus.command(name="tlv7", pass_context=False)
     async def _talents7_tychus(self):   
@@ -12697,9 +12697,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tychus.command(name="tlv13", pass_context=False)
     async def _talents13_tychus(self):   
@@ -12748,9 +12748,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tychus.command(name="tlv16", pass_context=False)
     async def _talents16_tychus(self):   
@@ -12799,9 +12799,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @tychus.command(name="tlv20", pass_context=False)
     async def _talents20_tychus(self):   
@@ -12861,9 +12861,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def valeera(self, ctx):
@@ -12944,9 +12944,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valeera.command(name="abilities", pass_context=False)
     async def _abilities_valeera(self):   
@@ -13051,9 +13051,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valeera.command(name="trait", pass_context=False)
     async def _trait_valeera(self):   
@@ -13081,9 +13081,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valeera.command(name="heroics", pass_context=False)
     async def _heroics_valeera(self):   
@@ -13126,9 +13126,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valeera.command(name="tlv1", pass_context=False)
     async def _talents1_valeera(self):   
@@ -13188,9 +13188,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valeera.command(name="tlv4", pass_context=False)
     async def _talents4_valeera(self):   
@@ -13250,9 +13250,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valeera.command(name="tlv7", pass_context=False)
     async def _talents7_valeera(self):   
@@ -13312,9 +13312,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valeera.command(name="tlv13", pass_context=False)
     async def _talents13_valeera(self):   
@@ -13374,9 +13374,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valeera.command(name="tlv16", pass_context=False)
     async def _talents16_valeera(self):   
@@ -13436,9 +13436,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valeera.command(name="tlv20", pass_context=False)
     async def _talents20_valeera(self):   
@@ -13487,9 +13487,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def valla(self, ctx):
@@ -13570,9 +13570,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valla.command(name="abilities", pass_context=False)
     async def _abilities_valla(self):   
@@ -13632,9 +13632,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valla.command(name="trait", pass_context=False)
     async def _trait_valla(self):   
@@ -13660,9 +13660,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valla.command(name="heroics", pass_context=False)
     async def _heroics_valla(self):   
@@ -13707,9 +13707,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valla.command(name="tlv1", pass_context=False)
     async def _talents1_valla(self):   
@@ -13758,9 +13758,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valla.command(name="tlv4", pass_context=False)
     async def _talents4_valla(self):   
@@ -13809,9 +13809,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valla.command(name="tlv7", pass_context=False)
     async def _talents7_valla(self):   
@@ -13860,9 +13860,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valla.command(name="tlv13", pass_context=False)
     async def _talents13_valla(self):   
@@ -13911,9 +13911,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valla.command(name="tlv16", pass_context=False)
     async def _talents16_valla(self):   
@@ -13962,9 +13962,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @valla.command(name="tlv20", pass_context=False)
     async def _talents20_valla(self):   
@@ -14024,9 +14024,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def varian(self, ctx):
@@ -14107,9 +14107,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @varian.command(name="abilities", pass_context=False)
     async def _abilities_varian(self):   
@@ -14169,9 +14169,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @varian.command(name="trait", pass_context=False)
     async def _trait_varian(self):   
@@ -14199,9 +14199,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @varian.command(name="heroics", pass_context=False)
     async def _heroics_varian(self):   
@@ -14258,9 +14258,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @varian.command(name="tlv1", pass_context=False)
     async def _talents1_varian(self):   
@@ -14309,9 +14309,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @varian.command(name="tlv4", pass_context=False)
     async def _talents4_varian(self):   
@@ -14349,9 +14349,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @varian.command(name="tlv7", pass_context=False)
     async def _talents7_varian(self):   
@@ -14400,9 +14400,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @varian.command(name="tlv13", pass_context=False)
     async def _talents13_varian(self):   
@@ -14451,9 +14451,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @varian.command(name="tlv16", pass_context=False)
     async def _talents16_varian(self):   
@@ -14502,9 +14502,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @varian.command(name="tlv20", pass_context=False)
     async def _talents20_varian(self):   
@@ -14575,9 +14575,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def zeratul(self, ctx):
@@ -14658,9 +14658,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zeratul.command(name="abilities", pass_context=False)
     async def _abilities_zeratul(self):   
@@ -14720,9 +14720,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zeratul.command(name="trait", pass_context=False)
     async def _trait_zeratul(self):   
@@ -14750,9 +14750,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zeratul.command(name="heroics", pass_context=False)
     async def _heroics_zeratul(self):   
@@ -14797,9 +14797,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zeratul.command(name="tlv1", pass_context=False)
     async def _talents1_zeratul(self):   
@@ -14848,9 +14848,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zeratul.command(name="tlv4", pass_context=False)
     async def _talents4_zeratul(self):   
@@ -14899,9 +14899,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zeratul.command(name="tlv7", pass_context=False)
     async def _talents7_zeratul(self):   
@@ -14950,9 +14950,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zeratul.command(name="tlv13", pass_context=False)
     async def _talents13_zeratul(self):   
@@ -15001,9 +15001,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zeratul.command(name="tlv16", pass_context=False)
     async def _talents16_zeratul(self):   
@@ -15052,9 +15052,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zeratul.command(name="tlv20", pass_context=False)
     async def _talents20_zeratul(self):   
@@ -15114,9 +15114,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def zuljin(self, ctx):
@@ -15197,9 +15197,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zuljin.command(name="abilities", pass_context=False)
     async def _abilities_zuljin(self):   
@@ -15259,9 +15259,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zuljin.command(name="trait", pass_context=False)
     async def _trait_zuljin(self):   
@@ -15289,9 +15289,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zuljin.command(name="heroics", pass_context=False)
     async def _heroics_zuljin(self):   
@@ -15336,9 +15336,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zuljin.command(name="tlv1", pass_context=False)
     async def _talents1_zuljin(self):   
@@ -15387,9 +15387,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zuljin.command(name="tlv4", pass_context=False)
     async def _talents4_zuljin(self):   
@@ -15438,9 +15438,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zuljin.command(name="tlv7", pass_context=False)
     async def _talents7_zuljin(self):   
@@ -15489,9 +15489,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zuljin.command(name="tlv13", pass_context=False)
     async def _talents13_zuljin(self):   
@@ -15540,9 +15540,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zuljin.command(name="tlv16", pass_context=False)
     async def _talents16_zuljin(self):   
@@ -15591,9 +15591,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @zuljin.command(name="tlv20", pass_context=False)
     async def _talents20_zuljin(self):   
@@ -15642,9 +15642,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def kelthuzad(self, ctx):
@@ -15725,9 +15725,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kelthuzad.command(name="abilities", pass_context=False)
     async def _abilities_kelthuzad(self):   
@@ -15787,9 +15787,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kelthuzad.command(name="trait", pass_context=False)
     async def _trait_kelthuzad(self):   
@@ -15816,9 +15816,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kelthuzad.command(name="heroics", pass_context=False)
     async def _heroics_kelthuzad(self):   
@@ -15863,9 +15863,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kelthuzad.command(name="tlv1", pass_context=False)
     async def _talents1_kelthuzad(self):   
@@ -15914,9 +15914,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kelthuzad.command(name="tlv4", pass_context=False)
     async def _talents4_kelthuzad(self):   
@@ -15965,9 +15965,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kelthuzad.command(name="tlv7", pass_context=False)
     async def _talents7_kelthuzad(self):   
@@ -16016,9 +16016,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kelthuzad.command(name="tlv13", pass_context=False)
     async def _talents13_kelthuzad(self):   
@@ -16067,9 +16067,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kelthuzad.command(name="tlv16", pass_context=False)
     async def _talents16_kelthuzad(self):   
@@ -16118,9 +16118,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @kelthuzad.command(name="tlv20", pass_context=False)
     async def _talents20_kelthuzad(self):   
@@ -16180,9 +16180,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def anubarak(self, ctx):
@@ -16263,9 +16263,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @anubarak.command(name="abilities", pass_context=False)
     async def _abilities_anubarak(self):   
@@ -16325,9 +16325,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @anubarak.command(name="trait", pass_context=False)
     async def _trait_anubarak(self):   
@@ -16354,9 +16354,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @anubarak.command(name="heroics", pass_context=False)
     async def _heroics_anubarak(self):   
@@ -16401,9 +16401,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @anubarak.command(name="tlv1", pass_context=False)
     async def _talents1_anubarak(self):   
@@ -16452,9 +16452,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @anubarak.command(name="tlv4", pass_context=False)
     async def _talents4_anubarak(self):   
@@ -16514,9 +16514,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @anubarak.command(name="tlv7", pass_context=False)
     async def _talents7_anubarak(self):   
@@ -16565,9 +16565,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @anubarak.command(name="tlv13", pass_context=False)
     async def _talents13_anubarak(self):   
@@ -16616,9 +16616,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @anubarak.command(name="tlv16", pass_context=False)
     async def _talents16_anubarak(self):   
@@ -16667,9 +16667,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @anubarak.command(name="tlv20", pass_context=False)
     async def _talents20_anubarak(self):   
@@ -16729,9 +16729,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def artanis(self, ctx):
@@ -16812,9 +16812,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @artanis.command(name="abilities", pass_context=False)
     async def _abilities_artanis(self):   
@@ -16874,9 +16874,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @artanis.command(name="trait", pass_context=False)
     async def _trait_artanis(self):   
@@ -16904,9 +16904,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @artanis.command(name="heroics", pass_context=False)
     async def _heroics_artanis(self):   
@@ -16951,9 +16951,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @artanis.command(name="tlv1", pass_context=False)
     async def _talents1_artanis(self):   
@@ -17002,9 +17002,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @artanis.command(name="tlv4", pass_context=False)
     async def _talents4_artanis(self):   
@@ -17053,9 +17053,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @artanis.command(name="tlv7", pass_context=False)
     async def _talents7_artanis(self):   
@@ -17115,9 +17115,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @artanis.command(name="tlv13", pass_context=False)
     async def _talents13_artanis(self):   
@@ -17177,9 +17177,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @artanis.command(name="tlv16", pass_context=False)
     async def _talents16_artanis(self):   
@@ -17239,9 +17239,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @artanis.command(name="tlv20", pass_context=False)
     async def _talents20_artanis(self):   
@@ -17301,9 +17301,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def arthas(self, ctx):
@@ -17384,9 +17384,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @arthas.command(name="abilities", pass_context=False)
     async def _abilities_arthas(self):   
@@ -17445,9 +17445,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @arthas.command(name="trait", pass_context=False)
     async def _trait_arthas(self):   
@@ -17476,9 +17476,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @arthas.command(name="heroics", pass_context=False)
     async def _heroics_arthas(self):   
@@ -17523,9 +17523,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @arthas.command(name="tlv1", pass_context=False)
     async def _talents1_arthas(self):   
@@ -17574,9 +17574,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @arthas.command(name="tlv4", pass_context=False)
     async def _talents4_arthas(self):   
@@ -17625,9 +17625,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @arthas.command(name="tlv7", pass_context=False)
     async def _talents7_arthas(self):   
@@ -17676,9 +17676,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @arthas.command(name="tlv13", pass_context=False)
     async def _talents13_arthas(self):   
@@ -17727,9 +17727,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @arthas.command(name="tlv16", pass_context=False)
     async def _talents16_arthas(self):   
@@ -17778,9 +17778,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @arthas.command(name="tlv20", pass_context=False)
     async def _talents20_arthas(self):   
@@ -17840,9 +17840,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def chen(self, ctx):
@@ -17923,9 +17923,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chen.command(name="abilities", pass_context=False)
     async def _abilities_chen(self):   
@@ -17985,9 +17985,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chen.command(name="trait", pass_context=False)
     async def _trait_chen(self):   
@@ -18016,9 +18016,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chen.command(name="heroics", pass_context=False)
     async def _heroics_chen(self):   
@@ -18061,9 +18061,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chen.command(name="tlv1", pass_context=False)
     async def _talents1_chen(self):   
@@ -18112,9 +18112,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chen.command(name="tlv4", pass_context=False)
     async def _talents4_chen(self):   
@@ -18163,9 +18163,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chen.command(name="tlv7", pass_context=False)
     async def _talents7_chen(self):   
@@ -18214,9 +18214,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chen.command(name="tlv13", pass_context=False)
     async def _talents13_chen(self):   
@@ -18265,9 +18265,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chen.command(name="tlv16", pass_context=False)
     async def _talents16_chen(self):   
@@ -18316,9 +18316,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @chen.command(name="tlv20", pass_context=False)
     async def _talents20_chen(self):   
@@ -18367,9 +18367,9 @@ class hots:
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
     async def cho(self, ctx):
@@ -18448,11 +18448,11 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cho.command(name="abilities", pass_context=False)
     async def _abilities_cho(self):   
@@ -18507,11 +18507,11 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cho.command(name="trait", pass_context=False)
     async def _trait_cho(self):   
@@ -18537,11 +18537,11 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cho.command(name="heroics", pass_context=False)
     async def _heroics_cho(self):   
@@ -18582,11 +18582,11 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cho.command(name="tlv1", pass_context=False)
     async def _talents1_cho(self):   
@@ -18633,11 +18633,11 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cho.command(name="tlv4", pass_context=False)
     async def _talents4_cho(self):   
@@ -18684,11 +18684,11 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cho.command(name="tlv7", pass_context=False)
     async def _talents7_cho(self):   
@@ -18735,11 +18735,11 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cho.command(name="tlv13", pass_context=False)
     async def _talents13_cho(self):   
@@ -18786,11 +18786,11 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cho.command(name="tlv16", pass_context=False)
     async def _talents16_cho(self):   
@@ -18837,11 +18837,11 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @cho.command(name="tlv20", pass_context=False)
     async def _talents20_cho(self):   
@@ -18899,11 +18899,11 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
 ################################################################################################################################################################################################################################################
     @commands.group(pass_context=True)
@@ -18983,11 +18983,11 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @dehaka.command(name="abilities", pass_context=False)
     async def _abilities_dehaka(self):   
@@ -19045,11 +19045,11 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @dehaka.command(name="trait", pass_context=False)
     async def _trait_dehaka(self):   
@@ -19075,11 +19075,11 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 
     @dehaka.command(name="mount", pass_context=False)
     async def _mount_dehaka(self):   
@@ -19105,11 +19105,11 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @dehaka.command(name="heroics", pass_context=False)
     async def _heroics_dehaka(self):   
@@ -19152,11 +19152,11 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @dehaka.command(name="tlv1", pass_context=False)
     async def _talents1_dehaka(self):   
@@ -19203,11 +19203,11 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @dehaka.command(name="tlv4", pass_context=False)
     async def _talents4_dehaka(self):   
@@ -19254,11 +19254,11 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @dehaka.command(name="tlv7", pass_context=False)
     async def _talents7_dehaka(self):   
@@ -19305,11 +19305,11 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @dehaka.command(name="tlv13", pass_context=False)
     async def _talents13_dehaka(self):   
@@ -19356,11 +19356,11 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @dehaka.command(name="tlv16", pass_context=False)
     async def _talents16_dehaka(self):   
@@ -19407,11 +19407,11 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 			
     @dehaka.command(name="tlv20", pass_context=False)
     async def _talents20_dehaka(self):   
@@ -19469,11 +19469,11 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+            await self.bot.say("Unexpected Error occurred retrieving character info, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
 def setup(bot):
     if soupAvailable is False:
