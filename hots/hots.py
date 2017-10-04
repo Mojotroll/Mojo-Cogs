@@ -97,7 +97,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -159,7 +159,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -186,7 +186,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -233,7 +233,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -284,7 +284,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -335,7 +335,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -386,7 +386,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -437,7 +437,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -488,7 +488,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -550,7 +550,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -633,7 +633,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -695,7 +695,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -722,7 +722,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -769,7 +769,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -820,7 +820,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -871,7 +871,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -922,7 +922,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -984,7 +984,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1035,7 +1035,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1086,7 +1086,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1169,7 +1169,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1231,7 +1231,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1258,7 +1258,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1305,7 +1305,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1356,7 +1356,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1407,7 +1407,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1458,7 +1458,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1509,7 +1509,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1560,7 +1560,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1622,7 +1622,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1705,7 +1705,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1767,7 +1767,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1794,7 +1794,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1821,7 +1821,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1868,7 +1868,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1919,7 +1919,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -1970,7 +1970,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2021,7 +2021,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2072,7 +2072,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2123,7 +2123,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2185,7 +2185,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2268,7 +2268,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2327,7 +2327,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2354,7 +2354,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2381,7 +2381,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2408,7 +2408,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2466,7 +2466,7 @@ class hots:
             await self.bot.say(embed=embed5)	
             await self.bot.say(embed=embed6)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2517,7 +2517,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2568,7 +2568,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2619,7 +2619,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2670,7 +2670,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2721,7 +2721,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2783,7 +2783,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2866,7 +2866,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2928,7 +2928,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -2955,7 +2955,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3002,7 +3002,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3053,7 +3053,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3104,7 +3104,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3166,7 +3166,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3217,7 +3217,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3268,7 +3268,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3330,7 +3330,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3413,7 +3413,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3505,7 +3505,7 @@ class hots:
             await self.bot.say(embed=embed4)
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3532,7 +3532,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3579,7 +3579,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3630,7 +3630,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3692,7 +3692,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3743,7 +3743,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3805,7 +3805,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3856,7 +3856,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -3918,7 +3918,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4001,7 +4001,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4062,7 +4062,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4089,7 +4089,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4136,7 +4136,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4198,7 +4198,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4249,7 +4249,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4311,7 +4311,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4373,7 +4373,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4424,7 +4424,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4475,7 +4475,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4558,7 +4558,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4617,7 +4617,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4644,7 +4644,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4689,7 +4689,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4740,7 +4740,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4791,7 +4791,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4842,7 +4842,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4893,7 +4893,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -4944,7 +4944,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5006,7 +5006,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5089,7 +5089,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5151,7 +5151,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5178,7 +5178,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5225,7 +5225,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5287,7 +5287,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5338,7 +5338,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5389,7 +5389,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5440,7 +5440,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5491,7 +5491,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5553,7 +5553,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5636,7 +5636,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5697,7 +5697,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5724,7 +5724,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5771,7 +5771,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5822,7 +5822,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5873,7 +5873,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5924,7 +5924,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -5975,7 +5975,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6026,7 +6026,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6088,7 +6088,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6171,7 +6171,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6232,7 +6232,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6259,7 +6259,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6306,7 +6306,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6368,7 +6368,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6430,7 +6430,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6492,7 +6492,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6554,7 +6554,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6605,7 +6605,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6667,7 +6667,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6751,7 +6751,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6813,7 +6813,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6840,7 +6840,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6887,7 +6887,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -6949,7 +6949,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7000,7 +7000,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7051,7 +7051,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7102,7 +7102,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7164,7 +7164,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7226,7 +7226,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7309,7 +7309,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7385,7 +7385,7 @@ class hots:
             await self.bot.say(embed=embed3)
             await self.bot.say(embed=embed4)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7412,7 +7412,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7439,7 +7439,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7486,7 +7486,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7548,7 +7548,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7610,7 +7610,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7672,7 +7672,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7734,7 +7734,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7796,7 +7796,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7858,7 +7858,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -7941,7 +7941,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8003,7 +8003,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8030,7 +8030,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8077,7 +8077,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8128,7 +8128,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8179,7 +8179,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8230,7 +8230,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8292,7 +8292,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8343,7 +8343,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8405,7 +8405,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8488,7 +8488,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8550,7 +8550,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8577,7 +8577,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8624,7 +8624,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8675,7 +8675,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8737,7 +8737,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8788,7 +8788,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8839,7 +8839,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8890,7 +8890,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -8952,7 +8952,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9035,7 +9035,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9139,7 +9139,7 @@ class hots:
             await self.bot.say(embed=embed5)
             await self.bot.say(embed=embed6)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9168,7 +9168,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9215,7 +9215,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9266,7 +9266,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9317,7 +9317,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9368,7 +9368,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9419,7 +9419,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9470,7 +9470,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9532,7 +9532,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9615,7 +9615,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9676,7 +9676,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9704,7 +9704,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9751,7 +9751,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9802,7 +9802,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9864,7 +9864,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9926,7 +9926,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -9977,7 +9977,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10028,7 +10028,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10101,7 +10101,7 @@ class hots:
             await self.bot.say(embed=embed3)	
             await self.bot.say(embed=embed4)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10184,7 +10184,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10243,7 +10243,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10271,7 +10271,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10316,7 +10316,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10367,7 +10367,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10418,7 +10418,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10469,7 +10469,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10520,7 +10520,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10571,7 +10571,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10633,7 +10633,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10716,7 +10716,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10778,7 +10778,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10806,7 +10806,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10853,7 +10853,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10904,7 +10904,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -10955,7 +10955,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11006,7 +11006,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11057,7 +11057,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11108,7 +11108,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11170,7 +11170,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11253,7 +11253,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11315,7 +11315,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11343,7 +11343,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11390,7 +11390,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11441,7 +11441,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11492,7 +11492,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11543,7 +11543,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11594,7 +11594,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11645,7 +11645,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11707,7 +11707,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11790,7 +11790,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11849,7 +11849,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11879,7 +11879,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11909,7 +11909,7 @@ class hots:
 
             await self.bot.say(embed=embed4)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -11960,7 +11960,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12011,7 +12011,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12062,7 +12062,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12113,7 +12113,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12164,7 +12164,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12215,7 +12215,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12266,7 +12266,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12349,7 +12349,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12453,7 +12453,7 @@ class hots:
             await self.bot.say(embed=embed5)
             await self.bot.say(embed=embed6)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12484,7 +12484,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12531,7 +12531,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12582,7 +12582,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12644,7 +12644,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12695,7 +12695,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12746,7 +12746,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12797,7 +12797,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12859,7 +12859,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -12942,7 +12942,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13049,7 +13049,7 @@ class hots:
             await self.bot.say(embed=embed5)
             await self.bot.say(embed=embed6)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13079,7 +13079,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13124,7 +13124,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13186,7 +13186,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13248,7 +13248,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13310,7 +13310,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13372,7 +13372,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13434,7 +13434,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13485,7 +13485,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13568,7 +13568,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13630,7 +13630,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13658,7 +13658,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13705,7 +13705,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13756,7 +13756,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13807,7 +13807,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13858,7 +13858,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13909,7 +13909,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -13960,7 +13960,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14022,7 +14022,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14105,7 +14105,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14167,7 +14167,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14197,7 +14197,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14256,7 +14256,7 @@ class hots:
             await self.bot.say(embed=embed5)
             await self.bot.say(embed=embed6)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14307,7 +14307,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14347,7 +14347,7 @@ class hots:
             await self.bot.say(embed=embed)	
             await self.bot.say(embed=embed1)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14398,7 +14398,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14449,7 +14449,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14500,7 +14500,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14573,7 +14573,7 @@ class hots:
             await self.bot.say(embed=embed3)
             await self.bot.say(embed=embed4)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14656,7 +14656,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14718,7 +14718,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14748,7 +14748,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14795,7 +14795,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14846,7 +14846,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14897,7 +14897,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14948,7 +14948,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -14999,7 +14999,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15050,7 +15050,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15112,7 +15112,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15195,7 +15195,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15257,7 +15257,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15287,7 +15287,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15334,7 +15334,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15385,7 +15385,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15436,7 +15436,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15487,7 +15487,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15538,7 +15538,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15589,7 +15589,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15640,7 +15640,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15723,7 +15723,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15785,7 +15785,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15814,7 +15814,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15861,7 +15861,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15912,7 +15912,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -15963,7 +15963,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16014,7 +16014,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16065,7 +16065,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16116,7 +16116,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16178,7 +16178,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16261,7 +16261,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16323,7 +16323,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16352,7 +16352,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16399,7 +16399,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16450,7 +16450,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16512,7 +16512,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16563,7 +16563,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16614,7 +16614,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16665,7 +16665,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16727,7 +16727,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16810,7 +16810,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16872,7 +16872,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)		
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16902,7 +16902,7 @@ class hots:
 
             await self.bot.say(embed=embed)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -16949,7 +16949,7 @@ class hots:
             await self.bot.say(embed=embed4)	
             await self.bot.say(embed=embed5)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -17000,7 +17000,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -17051,7 +17051,7 @@ class hots:
             await self.bot.say(embed=embed1)
             await self.bot.say(embed=embed2)				
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -17113,7 +17113,7 @@ class hots:
             await self.bot.say(embed=embed2)
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -17175,7 +17175,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -17237,7 +17237,7 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
@@ -17299,11 +17299,2181 @@ class hots:
             await self.bot.say(embed=embed2)	
             await self.bot.say(embed=embed3)			
         except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+################################################################################################################################################################################################################################################
+    @commands.group(pass_context=True)
+    async def arthas(self, ctx):
+        """The Lich King"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)  
+			
+    @arthas.command(name="info", pass_context=False)
+    async def _info_arthas(self):   
+        """Basic Info about Arthas"""
+        url = "https://heroesofthestorm.gamepedia.com/Arthas"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find('table', attrs={'class': "infobox2"})
+            name = table.find_all('tr')[0]
+            pic = table.find_all('tr')[1]
+            binfo = table.find_all('tr')[2]
+            title = table.find_all('tr')[3]
+            role = table.find_all('tr')[4]
+            fran = table.find_all('tr')[5]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
+
+            tname = name.find('th').get_text()	
+            picture = pic.find('img').get('src')		
+            info = binfo.find('th').get_text()			
+            ttl = title.find('th').get_text()
+            ttl1 = title.find('td').get_text()
+            role1 = role.find('th').get_text()
+            role2 = role.find('td').get_text()
+            franc = fran.find('th').get_text()
+            franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
+            date = reld.find('th').get_text()
+            date1 = reld.find('td').get_text()
+            htit = hlt.find('th').get_text()
+            hdat = hlt.find('td').get_text()
+            hregt = hreg.find('th').get_text()
+            hregdat = hreg.find('td').get_text()
+            ent = eng.find('th').get_text()
+            endat = eng.find('td').get_text()
+            armt = arm.find('th').get_text()
+            armdat = arm.find('td').get_text()
+            spt = spd.find('th').get_text()
+            spdat = spd.find('td').get_text()
+            atst = ats.find('th').get_text()
+            atsdat = ats.find('td').get_text()
+            atrt = atr.find('th').get_text()
+            atrdat = atr.find('td').get_text()
+            atdt = atd.find('th').get_text()
+            atddat = atd.find('td').get_text()
+            stats = stat.find('th').get_text()
+            nail = role.find('img').get('src')
+			
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
+            tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
+			
+            embed = discord.Embed()
+            embed.title = "{tname}".format(tname=tname)
+            embed.set_image(url='{picture}'.format(picture=picture))
+            embed.set_thumbnail(url="{nail}".format(nail=nail))
+            embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
+            embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @arthas.command(name="abilities", pass_context=False)
+    async def _abilities_arthas(self):   
+        """Abilities for Arthas"""
+        url = "https://heroesofthestorm.gamepedia.com/Arthas"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab1 = skill.find_all(class_='skill')[1]
+            ab2 = skill.find_all(class_='skill')[2]
+            ab3 = skill.find_all(class_='skill')[3]
+			
+            abimg = ab1.find(class_='skill-image').find('img').get('src')
+            absk = ab1.find(class_='skill-key').get_text()
+            abname = ab1.find(class_='skill-heading').find('span').get_text()
+            abcst = ab1.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            abcd = ab1.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            abdesc = ab1.find(class_='skill-description').get_text()
+			
+            ab1img = ab2.find(class_='skill-image').find('img').get('src')
+            ab1sk = ab2.find(class_='skill-key').get_text()
+            ab1name = ab2.find(class_='skill-heading').find('span').get_text()
+            ab1cst = ab2.find(class_='skill-details').find(class_='skill-cost').get_text()
+            ab1cd = ab2.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab1desc = ab2.find(class_='skill-description').get_text()	
+
+            ab2img = ab3.find(class_='skill-image').find('img').get('src')
+            ab2sk = ab3.find(class_='skill-key').get_text()
+            ab2name = ab3.find(class_='skill-heading').find('span').get_text()
+            ab2cd = ab3.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab2desc = ab3.find(class_='skill-description').get_text()			
+
+            mpA = "```" + abcst + "|" + abcd + "\n" + abdesc + "```"	
+            mpC = "```" + ab2cd + "\n" + ab2desc + "```"	
+            mpB = "```" + ab1cst + "|" + ab1cd + "\n" + ab1desc + "```"				
+			
+            embed1 = discord.Embed()
+            embed1.title = "{absk}".format(absk=absk)
+            embed1.set_image(url='{abimg}'.format(abimg=abimg))
+            embed1.add_field(name="{abname}".format(abname=abname), value=mpA)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{ab1sk}".format(ab1sk=ab1sk)
+            embed2.set_image(url='{ab1img}'.format(ab1img=ab1img))
+            embed2.add_field(name="{ab1name}".format(ab1name=ab1name), value=mpB)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{ab2sk}".format(ab2sk=ab2sk)
+            embed3.set_image(url='{ab2img}'.format(ab2img=ab2img))
+            embed3.add_field(name="{ab2name}".format(ab2name=ab2name), value=mpC)
+
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+            await self.bot.say(embed=embed3)		
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @arthas.command(name="trait", pass_context=False)
+    async def _trait_arthas(self):   
+        """Trait for Arthas"""
+        url = "https://heroesofthestorm.gamepedia.com/Arthas"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            trait = skill.find_all(class_='skill')[0]
+			
+            timg = trait.find(class_='skill-image').find('img').get('src')
+            tname = trait.find(class_='skill-heading').find('span').get_text()
+            tsk = trait.find(class_='skill-key').get_text()
+            tcd = trait.find(class_='skill-details').find(class_='skill-cooldown').get_text()
+            tdesc = trait.find(class_='skill-description').get_text()	
+
+            mpA = "```" + tcd + "\n" + tdesc + "```"		
+			
+            embed = discord.Embed()
+            embed.title = "Trait({tsk})".format(tsk=tsk)
+            embed.set_image(url='{timg}'.format(timg=timg))
+            embed.add_field(name="{tname}".format(tname=tname), value=mpA)
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @arthas.command(name="heroics", pass_context=False)
+    async def _heroics_arthas(self):   
+        """Heroic Abilities for Arthas"""
+        url = "https://heroesofthestorm.gamepedia.com/Arthas"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab4 = skill.find_all(class_='skill')[4]
+            ab5 = skill.find_all(class_='skill')[5]
+			
+            ab3img = ab4.find(class_='skill-image').find('img').get('src')
+            ab3sk = ab4.find(class_='skill-key').get_text()
+            ab3name = ab4.find(class_='skill-heading').find('span').get_text()
+            ab3cst = ab4.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            ab3cd = ab4.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab3desc = ab4.find(class_='skill-description').get_text()	
+
+            ab4img = ab5.find(class_='skill-image').find('img').get('src')
+            ab4sk = ab5.find(class_='skill-key').get_text()
+            ab4name = ab5.find(class_='skill-heading').find('span').get_text()
+            ab4cst = ab5.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            ab4cd = ab5.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab4desc = ab5.find(class_='skill-description').get_text()			
+
+            mpD = "```" + ab3cst + "|" + ab3cd + "\n" + ab3desc + "```"
+            mpE = "```" + ab4cst + "|" + ab4cd + "\n" + ab4desc + "```"		
+			
+            embed4 = discord.Embed()
+            embed4.title = "{ab3sk}".format(ab3sk=ab3sk)
+            embed4.set_image(url='{ab3img}'.format(ab3img=ab3img))
+            embed4.add_field(name="{ab3name}".format(ab3name=ab3name), value=mpD)
+			
+            embed5 = discord.Embed()
+            embed5.title = "{ab4sk}".format(ab4sk=ab4sk)
+            embed5.set_image(url='{ab4img}'.format(ab4img=ab4img))
+            embed5.add_field(name="{ab4name}".format(ab4name=ab4name), value=mpE)
+
+            await self.bot.say(embed=embed4)	
+            await self.bot.say(embed=embed5)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @arthas.command(name="tlv1", pass_context=False)
+    async def _talents1_arthas(self):   
+        """Level 1 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Arthas"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t1 = skill.find_all(class_='talent-tier')[0]
+			
+            tl1 = t1.find_all(class_='matched-height talent')[0]
+            tl2 = t1.find_all(class_='matched-height talent')[1]
+            tl3 = t1.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/6/63/Eternal_Hunger_Icon.png?version=0c34ad3915f5c325e2138273e2b3e15d')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/4/4e/Frost_Presence_Icon.png?version=9bcb3fa084e34b47c02bc37dc5a92bfa')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/5/53/Block_Icon.png?version=ce8c2cda2e2b84ad3cceec15d1d71bfe')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @arthas.command(name="tlv4", pass_context=False)
+    async def _talents4_arthas(self):   
+        """Level 4 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Arthas"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t2 = skill.find_all(class_='talent-tier')[1]
+			
+            tl1 = t2.find_all(class_='matched-height talent')[0]
+            tl2 = t2.find_all(class_='matched-height talent')[1]
+            tl3 = t2.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()		
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/4/4e/Frozen_Wastes_Icon.png?version=6ff650a2827c38589578c34217ae2903')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/7/7c/Biting_Cold_Icon.png?version=8867bb9fc8b18e3ac2771c648c2535c3')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/c/cf/Deathlord_Icon.png?version=4953ffc9d4b4dd7243eba6e2e29ab923')
+            embed2.add_field(name="Description", value=mpC)
+			
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @arthas.command(name="tlv7", pass_context=False)
+    async def _talents7_arthas(self):   
+        """Level 7 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Arthas"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t3 = skill.find_all(class_='talent-tier')[2]
+			
+            tl1 = t3.find_all(class_='matched-height talent')[0]
+            tl2 = t3.find_all(class_='matched-height talent')[1]
+            tl3 = t3.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/f/f2/Rune_Tap_Icon.png?version=15f3ef4954fc2a4c3b53e379140a5936')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/0/05/Immortal_Coil_Icon.png?version=dadd7970309f8d97956af1e24c08c053')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/1e/Icebound_Fortitude_Icon.png?version=f50ccddd00b02cc1a967c3d2c0bc8aad')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)		
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @arthas.command(name="tlv13", pass_context=False)
+    async def _talents13_arthas(self):   
+        """Level 13 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Arthas"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t5 = skill.find_all(class_='talent-tier')[4]
+			
+            tl1 = t5.find_all(class_='matched-height talent')[0]
+            tl2 = t5.find_all(class_='matched-height talent')[1]
+            tl3 = t5.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/4/4b/Trail_of_Frost_Icon.png?version=a8e6f985beca0c01c6711b42bc0a788c')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/be/Frost_Strike_Icon.png?version=0969368340c43f5cdae8d06aaa553441')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/e/ec/Frigid_Winds_Icon.png?version=35c604711b9301e10a329d531c4599e7')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @arthas.command(name="tlv16", pass_context=False)
+    async def _talents16_arthas(self):   
+        """Level 16 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Arthas"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t6 = skill.find_all(class_='talent-tier')[5]
+			
+            tl1 = t6.find_all(class_='matched-height talent')[0]
+            tl2 = t6.find_all(class_='matched-height talent')[1]
+            tl3 = t6.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/a/a6/Remorseless_Winter_Icon.png?version=5287f3be2fb999910fef0d85534235f6')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/3/36/Frostmourne_Feeds_Icon.png?version=8068031b77d06d10a2a2abd9d28557a8')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/5/5f/Embrace_Death_Icon.png?version=9ed70b18b5136f896af3cad34bf3cb90')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @arthas.command(name="tlv20", pass_context=False)
+    async def _talents20_arthas(self):   
+        """Level 20 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Arthas"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t7 = skill.find_all(class_='talent-tier')[6]
+			
+            tl1 = t7.find_all(class_='matched-height talent')[0]
+            tl2 = t7.find_all(class_='matched-height talent')[1]
+            tl3 = t7.find_all(class_='matched-height talent')[2]
+            tl4 = t7.find_all(class_='matched-height talent')[3]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            tl4name = tl4.find(class_='talent-name').get_text()
+            tl4desc = tl4.find(class_='talent-description').get_text()
+            mpD = "```" + tl4desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/f/f6/Legion_of_Northrend_Icon.png?version=5def10b9c47a01462be53054e8625c68')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/9/9b/Absolute_Zero_Icon.png?version=c6cda255503ff16c1d6e83e95a6b8f23')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/0/02/Death%27s_Advance_Icon.png?version=a503ddad45c2bacfb2abfa0c3ec73cb6')
+            embed2.add_field(name="Description", value=mpC)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{tl4name}".format(tl4name=tl4name)
+            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/d/d8/Anti-Magic_Shield_Icon.png?version=d9c6960f99f2cf7cbca2487dd6144d7f')
+            embed3.add_field(name="Description", value=mpD)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)	
+            await self.bot.say(embed=embed3)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
+################################################################################################################################################################################################################################################
+    @commands.group(pass_context=True)
+    async def chen(self, ctx):
+        """The Legendary Brewmaster"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)  
+			
+    @chen.command(name="info", pass_context=False)
+    async def _info_chen(self):   
+        """Basic Info about Chen"""
+        url = "https://heroesofthestorm.gamepedia.com/Chen"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find('table', attrs={'class': "infobox2"})
+            name = table.find_all('tr')[0]
+            pic = table.find_all('tr')[1]
+            binfo = table.find_all('tr')[2]
+            title = table.find_all('tr')[3]
+            role = table.find_all('tr')[4]
+            fran = table.find_all('tr')[5]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
+
+            tname = name.find('th').get_text()	
+            picture = pic.find('img').get('src')		
+            info = binfo.find('th').get_text()			
+            ttl = title.find('th').get_text()
+            ttl1 = title.find('td').get_text()
+            role1 = role.find('th').get_text()
+            role2 = role.find('td').get_text()
+            franc = fran.find('th').get_text()
+            franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
+            date = reld.find('th').get_text()
+            date1 = reld.find('td').get_text()
+            htit = hlt.find('th').get_text()
+            hdat = hlt.find('td').get_text()
+            hregt = hreg.find('th').get_text()
+            hregdat = hreg.find('td').get_text()
+            ent = eng.find('th').get_text()
+            endat = eng.find('td').get_text()
+            armt = arm.find('th').get_text()
+            armdat = arm.find('td').get_text()
+            spt = spd.find('th').get_text()
+            spdat = spd.find('td').get_text()
+            atst = ats.find('th').get_text()
+            atsdat = ats.find('td').get_text()
+            atrt = atr.find('th').get_text()
+            atrdat = atr.find('td').get_text()
+            atdt = atd.find('th').get_text()
+            atddat = atd.find('td').get_text()
+            stats = stat.find('th').get_text()
+            nail = role.find('img').get('src')
+			
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
+            tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
+			
+            embed = discord.Embed()
+            embed.title = "{tname}".format(tname=tname)
+            embed.set_image(url='{picture}'.format(picture=picture))
+            embed.set_thumbnail(url="{nail}".format(nail=nail))
+            embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
+            embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @chen.command(name="abilities", pass_context=False)
+    async def _abilities_chen(self):   
+        """Abilities for Chen"""
+        url = "https://heroesofthestorm.gamepedia.com/Chen"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab1 = skill.find_all(class_='skill')[1]
+            ab2 = skill.find_all(class_='skill')[2]
+            ab3 = skill.find_all(class_='skill')[3]
+			
+            abimg = ab1.find(class_='skill-image').find('img').get('src')
+            absk = ab1.find(class_='skill-key').get_text()
+            abname = ab1.find(class_='skill-heading').find('span').get_text()
+            abcst = ab1.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            abcd = ab1.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            abdesc = ab1.find(class_='skill-description').get_text()
+			
+            ab1img = ab2.find(class_='skill-image').find('img').get('src')
+            ab1sk = ab2.find(class_='skill-key').get_text()
+            ab1name = ab2.find(class_='skill-heading').find('span').get_text()
+            ab1cst = ab2.find(class_='skill-details').find(class_='skill-cost').get_text()
+            ab1cd = ab2.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab1desc = ab2.find(class_='skill-description').get_text()	
+
+            ab2img = ab3.find(class_='skill-image').find('img').get('src')
+            ab2sk = ab3.find(class_='skill-key').get_text()
+            ab2name = ab3.find(class_='skill-heading').find('span').get_text()
+            ab2cd = ab3.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab2cst = ab3.find(class_='skill-details').find(class_='skill-cost').get_text()
+            ab2desc = ab3.find(class_='skill-description').get_text()			
+
+            mpA = "```" + abcst + "|" + abcd + "\n" + abdesc + "```"	
+            mpC = "```" + ab2cst + "|" + ab2cd + "\n" + ab2desc + "```"	
+            mpB = "```" + ab1cst + "|" + ab1cd + "\n" + ab1desc + "```"				
+			
+            embed1 = discord.Embed()
+            embed1.title = "{absk}".format(absk=absk)
+            embed1.set_image(url='{abimg}'.format(abimg=abimg))
+            embed1.add_field(name="{abname}".format(abname=abname), value=mpA)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{ab1sk}".format(ab1sk=ab1sk)
+            embed2.set_image(url='{ab1img}'.format(ab1img=ab1img))
+            embed2.add_field(name="{ab1name}".format(ab1name=ab1name), value=mpB)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{ab2sk}".format(ab2sk=ab2sk)
+            embed3.set_image(url='{ab2img}'.format(ab2img=ab2img))
+            embed3.add_field(name="{ab2name}".format(ab2name=ab2name), value=mpC)
+
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+            await self.bot.say(embed=embed3)		
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @chen.command(name="trait", pass_context=False)
+    async def _trait_chen(self):   
+        """Trait for Chen"""
+        url = "https://heroesofthestorm.gamepedia.com/Chen"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            trait = skill.find_all(class_='skill')[0]
+			
+            timg = trait.find(class_='skill-image').find('img').get('src')
+            tname = trait.find(class_='skill-heading').find('span').get_text()
+            tsk = trait.find(class_='skill-key').get_text()
+            tcd = trait.find(class_='skill-details').find(class_='skill-cooldown').get_text()
+            tdesc = trait.find(class_='skill-description').get_text()	
+
+            mpA = "```" + tcd + "\n" + tdesc + "```"		
+			
+            embed = discord.Embed()
+            embed.title = "Trait({tsk})".format(tsk=tsk)
+            embed.set_image(url='{timg}'.format(timg=timg))
+            embed.add_field(name="{tname}".format(tname=tname), value=mpA)
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @chen.command(name="heroics", pass_context=False)
+    async def _heroics_chen(self):   
+        """Heroic Abilities for Chen"""
+        url = "https://heroesofthestorm.gamepedia.com/Chen"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab4 = skill.find_all(class_='skill')[4]
+            ab5 = skill.find_all(class_='skill')[5]
+			
+            ab3img = ab4.find(class_='skill-image').find('img').get('src')
+            ab3sk = ab4.find(class_='skill-key').get_text()
+            ab3name = ab4.find(class_='skill-heading').find('span').get_text()	
+            ab3cd = ab4.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab3desc = ab4.find(class_='skill-description').get_text()	
+
+            ab4img = ab5.find(class_='skill-image').find('img').get('src')
+            ab4sk = ab5.find(class_='skill-key').get_text()
+            ab4name = ab5.find(class_='skill-heading').find('span').get_text()	
+            ab4cd = ab5.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab4desc = ab5.find(class_='skill-description').get_text()			
+
+            mpD = "```" + ab3cd + "\n" + ab3desc + "```"
+            mpE = "```" + ab4cd + "\n" + ab4desc + "```"		
+			
+            embed4 = discord.Embed()
+            embed4.title = "{ab3sk}".format(ab3sk=ab3sk)
+            embed4.set_image(url='{ab3img}'.format(ab3img=ab3img))
+            embed4.add_field(name="{ab3name}".format(ab3name=ab3name), value=mpD)
+			
+            embed5 = discord.Embed()
+            embed5.title = "{ab4sk}".format(ab4sk=ab4sk)
+            embed5.set_image(url='{ab4img}'.format(ab4img=ab4img))
+            embed5.add_field(name="{ab4name}".format(ab4name=ab4name), value=mpE)
+
+            await self.bot.say(embed=embed4)	
+            await self.bot.say(embed=embed5)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @chen.command(name="tlv1", pass_context=False)
+    async def _talents1_chen(self):   
+        """Level 1 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Chen"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t1 = skill.find_all(class_='talent-tier')[0]
+			
+            tl1 = t1.find_all(class_='matched-height talent')[0]
+            tl2 = t1.find_all(class_='matched-height talent')[1]
+            tl3 = t1.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/5/54/Ring_of_Fire_Icon.png?version=b704845b759cffe764e7dadc47b99091')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/8/8b/Freshest_Ingredients_Icon.png?version=c22786176522ace8795902932ade1dd8')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/0/01/Elusive_Brawler_Icon.png?version=16bbb3108ee01dd87fcd42ecf3e86063')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @chen.command(name="tlv4", pass_context=False)
+    async def _talents4_chen(self):   
+        """Level 4 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Chen"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t2 = skill.find_all(class_='talent-tier')[1]
+			
+            tl1 = t2.find_all(class_='matched-height talent')[0]
+            tl2 = t2.find_all(class_='matched-height talent')[1]
+            tl3 = t2.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()		
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/16/Deadly_Strike_Icon.png?version=bd88c3946604ffb54be0e369fd41524c')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/5/56/Keg_Toss_Icon.png?version=479e5df9b2d364a9b2a6767974a2dacb')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/5/54/Ring_of_Fire_Icon.png?version=b704845b759cffe764e7dadc47b99091')
+            embed2.add_field(name="Description", value=mpC)
+			
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @chen.command(name="tlv7", pass_context=False)
+    async def _talents7_chen(self):   
+        """Level 7 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Chen"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t3 = skill.find_all(class_='talent-tier')[2]
+			
+            tl1 = t3.find_all(class_='matched-height talent')[0]
+            tl2 = t3.find_all(class_='matched-height talent')[1]
+            tl3 = t3.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/6/6c/Brewmaster%27s_Balance_Icon.png?version=ccea66645c8ac7e41e5e0cb8a770c084')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/b8/Bolder_Flavor_Icon.png?version=83a3253f34d2bb25a1c0796a039f9a06')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/b8/Bolder_Flavor_Icon.png?version=83a3253f34d2bb25a1c0796a039f9a06')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)		
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @chen.command(name="tlv13", pass_context=False)
+    async def _talents13_chen(self):   
+        """Level 13 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Chen"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t5 = skill.find_all(class_='talent-tier')[4]
+			
+            tl1 = t5.find_all(class_='matched-height talent')[0]
+            tl2 = t5.find_all(class_='matched-height talent')[1]
+            tl3 = t5.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/c/c6/Pressure_Point_Icon.png?version=95da0d03f444d808ce39da87ddbc053c')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/5/52/A_Touch_of_Honey_Icon.png?version=aadae359aa9e6482b97b1f16cd93479e')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/a/ae/Withering_Flames_Icon.png?version=9211f5ade6b8f781a39be98373b4b914')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @chen.command(name="tlv16", pass_context=False)
+    async def _talents16_chen(self):   
+        """Level 16 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Chen"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t6 = skill.find_all(class_='talent-tier')[5]
+			
+            tl1 = t6.find_all(class_='matched-height talent')[0]
+            tl2 = t6.find_all(class_='matched-height talent')[1]
+            tl3 = t6.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/0/06/Flying_Leap_Icon.png?version=b6411852ea1d1ced61665f4b85a981aa')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/4/48/Another_Round_Icon.png?version=fcce7e3da5ffef194c823c91dc09e946')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/3/3a/Enough_to_Share_Icon.png?version=84c38cc77dc7e5ab42484cc685fdf8e3')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @chen.command(name="tlv20", pass_context=False)
+    async def _talents20_chen(self):   
+        """Level 20 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Chen"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t7 = skill.find_all(class_='talent-tier')[6]
+			
+            tl1 = t7.find_all(class_='matched-height talent')[0]
+            tl2 = t7.find_all(class_='matched-height talent')[1]
+            tl3 = t7.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/b1/Untapped_Potential_Icon.png?version=783159694755d1a169aceee027aa2d60')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/b6/Elemental_Conduit_Icon.png?version=ce3061f804a7a13d022e241c42a60958')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/8/80/Stormstout_Secret_Recipe_Icon.png?version=23dfa8fd4110cdaa63fa2bdfb789e60c')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)				
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post character info....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
+################################################################################################################################################################################################################################################
+    @commands.group(pass_context=True)
+    async def cho(self, ctx):
+        """The Twilight's Hammer Chieftain"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)  
+			
+    @cho.command(name="info", pass_context=False)
+    async def _info_cho(self):   
+        """Basic Info about Cho"""
+        url = "https://heroesofthestorm.gamepedia.com/Cho"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find('table', attrs={'class': "infobox2"})
+            name = table.find_all('tr')[0]
+            pic = table.find_all('tr')[1]
+            binfo = table.find_all('tr')[2]
+            title = table.find_all('tr')[3]
+            role = table.find_all('tr')[4]
+            fran = table.find_all('tr')[5]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
+
+            tname = name.find('th').get_text()	
+            picture = pic.find('img').get('src')		
+            info = binfo.find('th').get_text()			
+            ttl = title.find('th').get_text()
+            ttl1 = title.find('td').get_text()
+            role1 = role.find('th').get_text()
+            role2 = role.find('td').get_text()
+            franc = fran.find('th').get_text()
+            franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
+            date = reld.find('th').get_text()
+            date1 = reld.find('td').get_text()
+            htit = hlt.find('th').get_text()
+            hdat = hlt.find('td').get_text()
+            hregt = hreg.find('th').get_text()
+            hregdat = hreg.find('td').get_text()
+            ent = eng.find('th').get_text()
+            endat = eng.find('td').get_text()
+            armt = arm.find('th').get_text()
+            armdat = arm.find('td').get_text()
+            spt = spd.find('th').get_text()
+            spdat = spd.find('td').get_text()
+            atst = ats.find('th').get_text()
+            atsdat = ats.find('td').get_text()
+            atrt = atr.find('th').get_text()
+            atrdat = atr.find('td').get_text()
+            atdt = atd.find('th').get_text()
+            atddat = atd.find('td').get_text()
+            stats = stat.find('th').get_text()
+            nail = role.find('img').get('src')
+			
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
+            tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
+			
+            embed = discord.Embed()
+            embed.title = "{tname}".format(tname=tname)
+            embed.set_image(url='{picture}'.format(picture=picture))
+            embed.set_thumbnail(url="{nail}".format(nail=nail))
+            embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
+            embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @cho.command(name="abilities", pass_context=False)
+    async def _abilities_cho(self):   
+        """Abilities for Cho"""
+        url = "https://heroesofthestorm.gamepedia.com/Cho"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab1 = skill.find_all(class_='skill')[1]
+            ab2 = skill.find_all(class_='skill')[2]
+            ab3 = skill.find_all(class_='skill')[3]
+			
+            abimg = ab1.find(class_='skill-image').find('img').get('src')
+            absk = ab1.find(class_='skill-key').get_text()
+            abname = ab1.find(class_='skill-heading').find('span').get_text()			
+            abcd = ab1.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            abdesc = ab1.find(class_='skill-description').get_text()
+			
+            ab1img = ab2.find(class_='skill-image').find('img').get('src')
+            ab1sk = ab2.find(class_='skill-key').get_text()
+            ab1name = ab2.find(class_='skill-heading').find('span').get_text()
+            ab1cd = ab2.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab1desc = ab2.find(class_='skill-description').get_text()	
+
+            ab2img = ab3.find(class_='skill-image').find('img').get('src')
+            ab2sk = ab3.find(class_='skill-key').get_text()
+            ab2name = ab3.find(class_='skill-heading').find('span').get_text()
+            ab2cd = ab3.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab2desc = ab3.find(class_='skill-description').get_text()			
+
+            mpA = "```" + abcd + "\n" + abdesc + "```"
+            mpB = "```" + ab1cd + "\n" + ab1desc + "```"
+            mpC = "```" + ab2cd + "\n" + ab2desc + "```"			  
+			
+            embed1 = discord.Embed()
+            embed1.title = "{absk}".format(absk=absk)
+            embed1.set_image(url='{abimg}'.format(abimg=abimg))
+            embed1.add_field(name="{abname}".format(abname=abname), value=mpA)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{ab1sk}".format(ab1sk=ab1sk)
+            embed2.set_image(url='{ab1img}'.format(ab1img=ab1img))
+            embed2.add_field(name="{ab1name}".format(ab1name=ab1name), value=mpB)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{ab2sk}".format(ab2sk=ab2sk)
+            embed3.set_image(url='{ab2img}'.format(ab2img=ab2img))
+            embed3.add_field(name="{ab2name}".format(ab2name=ab2name), value=mpC)
+
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+            await self.bot.say(embed=embed3)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @cho.command(name="trait", pass_context=False)
+    async def _trait_cho(self):   
+        """Trait for Cho"""
+        url = "https://heroesofthestorm.gamepedia.com/Cho"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            trait = skill.find_all(class_='skill')[0]
+			
+            timg = trait.find(class_='skill-image').find('img').get('src')
+            tname = trait.find(class_='skill-heading').find('span').get_text()
+            tcd = trait.find(class_='skill-details').find(class_='skill-cooldown').get_text()
+            tdesc = trait.find(class_='skill-description').get_text()	
+
+            mpA = "```" + tcd + "\n" + tdesc + "```"				
+			
+            embed = discord.Embed()
+            embed.title = "Trait"
+            embed.set_image(url='{timg}'.format(timg=timg))
+            embed.add_field(name="{tname}".format(tname=tname), value=mpA)
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @cho.command(name="heroics", pass_context=False)
+    async def _heroics_cho(self):   
+        """Heroic Abilities for Cho"""
+        url = "https://heroesofthestorm.gamepedia.com/Cho"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab4 = skill.find_all(class_='skill')[4]
+            ab5 = skill.find_all(class_='skill')[5]
+			
+            ab3img = ab4.find(class_='skill-image').find('img').get('src')
+            ab3sk = ab4.find(class_='skill-key').get_text()
+            ab3name = ab4.find(class_='skill-heading').find('span').get_text()	
+            ab3cd = ab4.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab3desc = ab4.find(class_='skill-description').get_text()	
+
+            ab4img = ab5.find(class_='skill-image').find('img').get('src')
+            ab4sk = ab5.find(class_='skill-key').get_text()
+            ab4name = ab5.find(class_='skill-heading').find('span').get_text()
+            ab4cd = ab5.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab4desc = ab5.find(class_='skill-description').get_text()					
+
+            mpD = "```"  + ab3cd + "\n" + ab3desc + "```"
+            mpE = "```"  + ab4cd + "\n" + ab4desc + "```"	
+			
+            embed4 = discord.Embed()
+            embed4.title = "{ab3sk}".format(ab3sk=ab3sk)
+            embed4.set_image(url='{ab3img}'.format(ab3img=ab3img))
+            embed4.add_field(name="{ab3name}".format(ab3name=ab3name), value=mpD)
+			
+            embed5 = discord.Embed()
+            embed5.title = "{ab4sk}".format(ab4sk=ab4sk)
+            embed5.set_image(url='{ab4img}'.format(ab4img=ab4img))
+            embed5.add_field(name="{ab4name}".format(ab4name=ab4name), value=mpE)
+
+            await self.bot.say(embed=embed4)	
+            await self.bot.say(embed=embed5)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @cho.command(name="tlv1", pass_context=False)
+    async def _talents1_cho(self):   
+        """Level 1 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Cho"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t1 = skill.find_all(class_='talent-tier')[0]
+			
+            tl1 = t1.find_all(class_='matched-height talent')[0]
+            tl2 = t1.find_all(class_='matched-height talent')[1]
+            tl3 = t1.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/b1/Blazing_Bulwark_Icon.png?version=56387946e365c8f52351a5c35a73bd07')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/a/af/Fuel_for_the_Flame_Icon.png?version=e5003208d5ea5846dd0c4ca717da4e85')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/8/8a/Ogre_Hide_Icon.png?version=82ed9fd575a884d5b4f22492420a5f54')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @cho.command(name="tlv4", pass_context=False)
+    async def _talents4_cho(self):   
+        """Level 4 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Cho"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t2 = skill.find_all(class_='talent-tier')[1]
+			
+            tl1 = t2.find_all(class_='matched-height talent')[0]
+            tl2 = t2.find_all(class_='matched-height talent')[1]
+            tl3 = t2.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/0/0d/Power_Surge_Icon.png?version=087f82b789c59dcf9a6e4d08e36ed4ed')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/4/48/Rollback_Icon.png?version=efeca98a19ebb721ddd143e6d8347c45')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/27/Serrated_Spines_Icon.png?version=030057d7c101656645c7be329847c9fc')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @cho.command(name="tlv7", pass_context=False)
+    async def _talents7_cho(self):   
+        """Level 7 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Cho"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t3 = skill.find_all(class_='talent-tier')[2]
+			
+            tl1 = t3.find_all(class_='matched-height talent')[0]
+            tl2 = t3.find_all(class_='matched-height talent')[1]
+            tl3 = t3.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/0/0d/Power_Surge_Icon.png?version=087f82b789c59dcf9a6e4d08e36ed4ed')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/6/6c/Fire_Eater_Icon.png?version=65b22c9ca22401a93acb10417b06ee87')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/8/8a/Ogre_Hide_Icon.png?version=82ed9fd575a884d5b4f22492420a5f54')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)		
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @cho.command(name="tlv13", pass_context=False)
+    async def _talents13_cho(self):   
+        """Level 13 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Cho"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t5 = skill.find_all(class_='talent-tier')[4]
+			
+            tl1 = t5.find_all(class_='matched-height talent')[0]
+            tl2 = t5.find_all(class_='matched-height talent')[1]
+            tl3 = t5.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/b2/Frenzied_Fists_Icon.png?version=86f82efb7442608e6c00f9720d814308')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/e/e4/Runic_Feedback_Icon.png?version=36a480b47fc01fecf83836d1b60987c9')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/c/cf/Bladed_Momentum_Icon.png?version=24e10fc5b1cb7d349e64363c98c30083')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @cho.command(name="tlv16", pass_context=False)
+    async def _talents16_cho(self):   
+        """Level 16 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Cho"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t6 = skill.find_all(class_='talent-tier')[5]
+			
+            tl1 = t6.find_all(class_='matched-height talent')[0]
+            tl2 = t6.find_all(class_='matched-height talent')[1]
+            tl3 = t6.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/b2/Frenzied_Fists_Icon.png?version=86f82efb7442608e6c00f9720d814308')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/8/82/Hardened_Shield_Icon.png?version=3963ebea2ed34cce354e6acac5052bc5')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/d/d4/Molten_Block_Icon.png?version=c0807285e41c5d94296aec629e6e5e50')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)		
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @cho.command(name="tlv20", pass_context=False)
+    async def _talents20_cho(self):   
+        """Level 20 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Cho"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t7 = skill.find_all(class_='talent-tier')[6]
+			
+            tl1 = t7.find_all(class_='matched-height talent')[0]
+            tl2 = t7.find_all(class_='matched-height talent')[1]
+            tl3 = t7.find_all(class_='matched-height talent')[2]
+            tl4 = t7.find_all(class_='matched-height talent')[3]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            tl4name = tl4.find(class_='talent-name').get_text()
+            tl4desc = tl4.find(class_='talent-description').get_text()				
+            mpD = "```" + tl4desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/6/60/C%27thun%27s_Gift_Icon.png?version=4eecba54e0b4197471047beea4b72d84')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/c/cd/Favor_of_the_Old_Gods_Icon.png?version=23d8022da3305914f31dfb9983cad54d')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/8/8a/Ogre_Hide_Icon.png?version=82ed9fd575a884d5b4f22492420a5f54')
+            embed2.add_field(name="Description", value=mpC)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{tl4name}".format(tl4name=tl4name)
+            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/6/62/Hour_of_Twilight_Icon.png?version=d1d3f0fa7d9d90e6a6b9ce1ccd141e1e')
+            embed3.add_field(name="Description", value=mpD)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+            await self.bot.say(embed=embed3)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+################################################################################################################################################################################################################################################
+    @commands.group(pass_context=True)
+    async def dehaka(self, ctx):
+        """The Primal Pack Leader"""
+
+        if ctx.invoked_subcommand is None:
+            await send_cmd_help(ctx)  
+			
+    @dehaka.command(name="info", pass_context=False)
+    async def _info_dehaka(self):   
+        """Basic Info about Dehaka"""
+        url = "https://heroesofthestorm.gamepedia.com/Dehaka"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            table = soupObject.find('table', attrs={'class': "infobox2"})
+            name = table.find_all('tr')[0]
+            pic = table.find_all('tr')[1]
+            binfo = table.find_all('tr')[2]
+            title = table.find_all('tr')[3]
+            role = table.find_all('tr')[4]
+            fran = table.find_all('tr')[5]
+            pric = table.find_all('tr')[6]
+            reld = table.find_all('tr')[7]
+            stat = table.find_all('tr')[8]
+            hlt = table.find_all('tr')[9]
+            hreg = table.find_all('tr')[10]
+            eng = table.find_all('tr')[11]
+            arm = table.find_all('tr')[12]
+            spd = table.find_all('tr')[13]
+            ats = table.find_all('tr')[14]
+            atr = table.find_all('tr')[15]
+            atd = table.find_all('tr')[16]
+
+            tname = name.find('th').get_text()	
+            picture = pic.find('img').get('src')		
+            info = binfo.find('th').get_text()			
+            ttl = title.find('th').get_text()
+            ttl1 = title.find('td').get_text()
+            role1 = role.find('th').get_text()
+            role2 = role.find('td').get_text()
+            franc = fran.find('th').get_text()
+            franc1 = fran.find('td').get_text()
+            price = pric.find('th').get_text()
+            price1 = pric.find('td').get_text()
+            date = reld.find('th').get_text()
+            date1 = reld.find('td').get_text()
+            htit = hlt.find('th').get_text()
+            hdat = hlt.find('td').get_text()
+            hregt = hreg.find('th').get_text()
+            hregdat = hreg.find('td').get_text()
+            ent = eng.find('th').get_text()
+            endat = eng.find('td').get_text()
+            armt = arm.find('th').get_text()
+            armdat = arm.find('td').get_text()
+            spt = spd.find('th').get_text()
+            spdat = spd.find('td').get_text()
+            atst = ats.find('th').get_text()
+            atsdat = ats.find('td').get_text()
+            atrt = atr.find('th').get_text()
+            atrdat = atr.find('td').get_text()
+            atdt = atd.find('th').get_text()
+            atddat = atd.find('td').get_text()
+            stats = stat.find('th').get_text()
+            nail = role.find('img').get('src')
+			
+            tab = tabulate([[ttl, ttl1], [role1, role2], [franc, franc1], [price, price1], [date, date1]], tablefmt='grid', stralign='left')
+            tab1 = tabulate([[htit, hdat], [hregt, hregdat], [ent, endat], [armt, armdat], [spt, spdat], [atst, atsdat], [atrt, atrdat], [atdt, atddat]], tablefmt='grid', stralign='left')
+			
+            embed = discord.Embed()
+            embed.title = "{tname}".format(tname=tname)
+            embed.set_image(url='{picture}'.format(picture=picture))
+            embed.set_thumbnail(url="{nail}".format(nail=nail))
+            embed.add_field(name="{info}".format(info=info), value=tab, inline='true')
+            embed.add_field(name="{stats}".format(stats=stats), value=tab1, inline='true')
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @dehaka.command(name="abilities", pass_context=False)
+    async def _abilities_dehaka(self):   
+        """Abilities for Dehaka"""
+        url = "https://heroesofthestorm.gamepedia.com/Dehaka"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab1 = skill.find_all(class_='skill')[1]
+            ab2 = skill.find_all(class_='skill')[2]
+            ab3 = skill.find_all(class_='skill')[3]
+			
+            abimg = ab1.find(class_='skill-image').find('img').get('src')
+            absk = ab1.find(class_='skill-key').get_text()
+            abname = ab1.find(class_='skill-heading').find('span').get_text()	
+            abcst = ab1.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            abcd = ab1.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            abdesc = ab1.find(class_='skill-description').get_text()
+			
+            ab1img = ab2.find(class_='skill-image').find('img').get('src')
+            ab1sk = ab2.find(class_='skill-key').get_text()
+            ab1name = ab2.find(class_='skill-heading').find('span').get_text()	
+            ab1cst = ab2.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            ab1cd = ab2.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab1desc = ab2.find(class_='skill-description').get_text()	
+
+            ab2img = ab3.find(class_='skill-image').find('img').get('src')
+            ab2sk = ab3.find(class_='skill-key').get_text()
+            ab2name = ab3.find(class_='skill-heading').find('span').get_text()	
+            ab2cst = ab3.find(class_='skill-details').find(class_='skill-cost').get_text()	
+            ab2cd = ab3.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab2desc = ab3.find(class_='skill-description').get_text()			
+
+            mpA = "```" + abcst + "|" + abcd + "\n" + abdesc + "```"	
+            mpB = "```" + ab1cst + "|" + ab1cd + "\n" + ab1desc + "```"	
+            mpC = "```" + ab2cst + "|" + ab2cd + "\n" + ab2desc + "```"						
+			
+            embed1 = discord.Embed()
+            embed1.title = "{absk}".format(absk=absk)
+            embed1.set_image(url='{abimg}'.format(abimg=abimg))
+            embed1.add_field(name="{abname}".format(abname=abname), value=mpA)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{ab1sk}".format(ab1sk=ab1sk)
+            embed2.set_image(url='{ab1img}'.format(ab1img=ab1img))
+            embed2.add_field(name="{ab1name}".format(ab1name=ab1name), value=mpB)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{ab2sk}".format(ab2sk=ab2sk)
+            embed3.set_image(url='{ab2img}'.format(ab2img=ab2img))
+            embed3.add_field(name="{ab2name}".format(ab2name=ab2name), value=mpC)
+
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+            await self.bot.say(embed=embed3)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @dehaka.command(name="trait", pass_context=False)
+    async def _trait_dehaka(self):   
+        """Trait for Dehaka"""
+        url = "https://heroesofthestorm.gamepedia.com/Dehaka"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            trait = skill.find_all(class_='skill')[0]
+			
+            timg = trait.find(class_='skill-image').find('img').get('src')
+            tname = trait.find(class_='skill-heading').find('span').get_text()
+            tcd = trait.find(class_='skill-details').find(class_='skill-cooldown').get_text()
+            tdesc = trait.find(class_='skill-description').get_text()	
+
+            mpA = "```" + tcd + "\n" + tdesc + "```"				
+			
+            embed = discord.Embed()
+            embed.title = "Trait"
+            embed.set_image(url='{timg}'.format(timg=timg))
+            embed.add_field(name="{tname}".format(tname=tname), value=mpA)
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+
+    @dehaka.command(name="mount", pass_context=False)
+    async def _mount_dehaka(self):   
+        """Mount for Dehaka"""
+        url = "https://heroesofthestorm.gamepedia.com/Dehaka"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            mount = skill.find_all(class_='skill')[6]
+			
+            mimg = mount.find(class_='skill-image').find('img').get('src')
+            mname = mount.find(class_='skill-heading').find('span').get_text()
+            mcd = mount.find(class_='skill-details').find(class_='skill-cooldown').get_text()
+            mdesc = mount.find(class_='skill-description').get_text()	
+
+            mpA = "```" + mcd + "\n" + mdesc + "```"				
+			
+            embed = discord.Embed()
+            embed.title = "Mount"
+            embed.set_image(url='{mimg}'.format(mimg=mimg))
+            embed.add_field(name="{mname}".format(mname=mname), value=mpA)
+
+            await self.bot.say(embed=embed)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @dehaka.command(name="heroics", pass_context=False)
+    async def _heroics_dehaka(self):   
+        """Heroic Abilities for Dehaka"""
+        url = "https://heroesofthestorm.gamepedia.com/Dehaka"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "skills"})
+            ab4 = skill.find_all(class_='skill')[4]
+            ab5 = skill.find_all(class_='skill')[5]
+			
+            ab3img = ab4.find(class_='skill-image').find('img').get('src')
+            ab3sk = ab4.find(class_='skill-key').get_text()
+            ab3name = ab4.find(class_='skill-heading').find('span').get_text()
+            ab3cst = ab4.find(class_='skill-details').find(class_='skill-cost').get_text()
+            ab3cd = ab4.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab3desc = ab4.find(class_='skill-description').get_text()	
+
+            ab4img = ab5.find(class_='skill-image').find('img').get('src')
+            ab4sk = ab5.find(class_='skill-key').get_text()
+            ab4name = ab5.find(class_='skill-heading').find('span').get_text()
+            ab4cst = ab5.find(class_='skill-details').find(class_='skill-cost').get_text()
+            ab4cd = ab5.find(class_='skill-details').find(class_='skill-cooldown').get_text()	
+            ab4desc = ab5.find(class_='skill-description').get_text()			
+
+            mpD = "```" + ab3cst + "|" + ab3cd + "\n" + ab3desc + "```"
+            mpE = "```" + ab4cst + "|" + ab4cd + "\n" + ab4desc + "```"		
+			
+            embed4 = discord.Embed()
+            embed4.title = "{ab3sk}".format(ab3sk=ab3sk)
+            embed4.set_image(url='{ab3img}'.format(ab3img=ab3img))
+            embed4.add_field(name="{ab3name}".format(ab3name=ab3name), value=mpD)
+			
+            embed5 = discord.Embed()
+            embed5.title = "{ab4sk}".format(ab4sk=ab4sk)
+            embed5.set_image(url='{ab4img}'.format(ab4img=ab4img))
+            embed5.add_field(name="{ab4name}".format(ab4name=ab4name), value=mpE)
+
+            await self.bot.say(embed=embed4)	
+            await self.bot.say(embed=embed5)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @dehaka.command(name="tlv1", pass_context=False)
+    async def _talents1_dehaka(self):   
+        """Level 1 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Dehaka"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t1 = skill.find_all(class_='talent-tier')[0]
+			
+            tl1 = t1.find_all(class_='matched-height talent')[0]
+            tl2 = t1.find_all(class_='matched-height talent')[1]
+            tl3 = t1.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/7/7b/Enduring_Swarm_Icon.png?version=f8184520e4dcd8fb43ab781fdcf5064e')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/9/9c/Enhanced_Agility_Icon.png?version=b112f66451c46838d1273aac0180f267')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/9/99/Tissue_Regeneration_Icon.png?version=b10f4ec57063f0d5d5f48f165f1b7d76')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @dehaka.command(name="tlv4", pass_context=False)
+    async def _talents4_dehaka(self):   
+        """Level 4 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Dehaka"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t2 = skill.find_all(class_='talent-tier')[1]
+			
+            tl1 = t2.find_all(class_='matched-height talent')[0]
+            tl2 = t2.find_all(class_='matched-height talent')[1]
+            tl3 = t2.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/b9/Lurker_Strain_Icon.png?version=0de6e873a1c0955f8b4fcb332c0d159d')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/d/d1/One-Who-Collects_Icon.png?version=604176d553ccbfc0d02e2f9c19e46508')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/9/98/Hero_Stalker_Icon.png?version=bb813e4a29be16997ad0f3cb4f1eaf80')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @dehaka.command(name="tlv7", pass_context=False)
+    async def _talents7_dehaka(self):   
+        """Level 7 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Dehaka"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t3 = skill.find_all(class_='talent-tier')[2]
+			
+            tl1 = t3.find_all(class_='matched-height talent')[0]
+            tl2 = t3.find_all(class_='matched-height talent')[1]
+            tl3 = t3.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/0/0d/Feeding_Frenzy_Icon.png?version=67cfc55b7ed769756364f83806b346bc')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/b/be/Constriction_Icon.png?version=113945a04c008815aafb9cc5b5fa946c')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/5/5c/Symbiosis_Icon.png?version=aad981e5b5198a84e4fe62d2f7a72964')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)		
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @dehaka.command(name="tlv13", pass_context=False)
+    async def _talents13_dehaka(self):   
+        """Level 13 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Dehaka"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t5 = skill.find_all(class_='talent-tier')[4]
+			
+            tl1 = t5.find_all(class_='matched-height talent')[0]
+            tl2 = t5.find_all(class_='matched-height talent')[1]
+            tl3 = t5.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/d/d1/One-Who-Collects_Icon.png?version=604176d553ccbfc0d02e2f9c19e46508')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/5/5e/Ferocious_Stalker_Icon.png?version=e379549eaba8b73994fdfff8d93edacb')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/1e/Primal_Swarm_Icon.png?version=b2d328be186cd9ef23ab9a8d792a2135')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @dehaka.command(name="tlv16", pass_context=False)
+    async def _talents16_dehaka(self):   
+        """Level 16 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Dehaka"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t6 = skill.find_all(class_='talent-tier')[5]
+			
+            tl1 = t6.find_all(class_='matched-height talent')[0]
+            tl2 = t6.find_all(class_='matched-height talent')[1]
+            tl3 = t6.find_all(class_='matched-height talent')[2]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/a/ab/Paralyzing_Enzymes_Icon.png?version=977e4eb84700374d76e67bce895cdc89')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/5/5a/Elongated_Tongue_Icon.png?version=af8f7bde53ff037331ed2648d3140840')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/c/c1/Tunneling_Claws_Icon.png?version=434345bafbd7bd6646765324d7810f82')
+            embed2.add_field(name="Description", value=mpC)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)		
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+			
+    @dehaka.command(name="tlv20", pass_context=False)
+    async def _talents20_dehaka(self):   
+        """Level 20 Talents"""
+        url = "https://heroesofthestorm.gamepedia.com/Dehaka"  
+        async with aiohttp.get(url) as response:
+            soupObject = BeautifulSoup(await response.text(), "html.parser")
+        try:
+            skill = soupObject.find('div', attrs={'class': "talent-table"})
+            t7 = skill.find_all(class_='talent-tier')[6]
+			
+            tl1 = t7.find_all(class_='matched-height talent')[0]
+            tl2 = t7.find_all(class_='matched-height talent')[1]
+            tl3 = t7.find_all(class_='matched-height talent')[2]
+            tl4 = t7.find_all(class_='matched-height talent')[3]
+			
+            tl1name = tl1.find(class_='talent-name').get_text()
+            tl1desc = tl1.find(class_='talent-description').get_text()	
+            mpA = "```" + tl1desc + "```"
+			
+            tl2name = tl2.find(class_='talent-name').get_text()
+            tl2desc = tl2.find(class_='talent-description').get_text()		
+            mpB = "```" + tl2desc + "```"
+			
+            tl3name = tl3.find(class_='talent-name').get_text()
+            tl3desc = tl3.find(class_='talent-description').get_text()				
+            mpC = "```" + tl3desc + "```"
+			
+            tl4name = tl4.find(class_='talent-name').get_text()
+            tl4desc = tl4.find(class_='talent-description').get_text()				
+            mpD = "```" + tl4desc + "```"
+			
+            embed = discord.Embed()
+            embed.title = "{tl1name}".format(tl1name=tl1name)
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/e/ef/Contagion_Icon.png?version=1ac5739cb906cc7eb195e275efe87a91')
+            embed.add_field(name="Description", value=mpA)
+			
+            embed1 = discord.Embed()
+            embed1.title = "{tl2name}".format(tl2name=tl2name)
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/2e/Change_Is_Survival_Icon.png?version=ceb573a9173e4b0332c51b3b0c78b91f')
+            embed1.add_field(name="Description", value=mpB)
+			
+            embed2 = discord.Embed()
+            embed2.title = "{tl3name}".format(tl3name=tl3name)
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/7/75/Apex_Predator_Icon.png?version=486eab180f52ec436495e918aa816df8')
+            embed2.add_field(name="Description", value=mpC)
+			
+            embed3 = discord.Embed()
+            embed3.title = "{tl4name}".format(tl4name=tl4name)
+            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/2d/Essence_Claws_Icon.png?version=c01ce37d5608ab6e1ab4e7a11b15b8e3')
+            embed3.add_field(name="Description", value=mpD)
+
+            await self.bot.say(embed=embed)	
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
+            await self.bot.say(embed=embed3)			
+        except discord.errors.HTTPException:
+            await self.bot.say("Character Limit reached, unable to post frame data....")
+        except IndexError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
+        except KeyError:
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
 ################################################################################################################################################################################################################################################
 def setup(bot):
     if soupAvailable is False:
