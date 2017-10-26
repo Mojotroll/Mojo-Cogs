@@ -35,7 +35,7 @@ How does it work?
 
 ## What is HoTS and How do I use it?
 
-DISCLAIMER:  This Cog is currently in its public alpha stage, this cog may change during the course of development!
+DISCLAIMER: This Cog is currently in Beta, this cog may change during the remainder of development!
 
 This cog is used for obtaining Character info, trait, abilities, heroics, and Talents of Lv.1/4/7/(Not Level 10 as it is handled in Heroics)/13/16/20 (with the exception of chromie due to her trait) using the Wiki pages of each character on the [Gamepedia Wiki](https://heroesofthestorm.gamepedia.com/Heroes_of_the_Storm_Wiki).
 
