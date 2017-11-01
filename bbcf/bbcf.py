@@ -19,7 +19,7 @@ class bbcf:
 
     def __init__(self, bot):
         self.bot = bot
-        self.version = "1.5.3.2.1"
+        self.version = "1.5.3.3"
 
     @commands.group(pass_context=True)
     async def am(self, ctx):
@@ -6572,19 +6572,20 @@ class bbcf:
             my_table = table[3]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
-            movesp = table_body.find_all('tr')[2]
+            info = table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            info = movesp.find('p').get_text()
+            mp2 = info.find('p').get_text()
+            mp1 = info.find('li').get_text()
 
             tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mp = "```" + "*" + info + "```"			
+            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"			
 			
             embed = discord.Embed()
             embed.title = "5b"
             embed.set_image(url='http://www.dustloop.com/wiki/images/3/3a/BBCS_Jin_5B.png')
             embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Properties", value=mp, inline='true')
+            embed.add_field(name="Attack Properties", value=mpA, inline='true')
 			
             await self.bot.say(embed=embed)
         except discord.errors.HTTPException:
@@ -6605,20 +6606,20 @@ class bbcf:
             my_table = table[5]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
-            movesp = table_body.find_all('tr')[2]
+            info = table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = movesp.find('li').get_text()
-            mp2 = [po.get_text() for po in movesp.find_all('p')]
+            mp1 = info.find('li').get_text()
+            mp2 = [po.get_text() for po in info.find_all('p')]
 
             tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mp = "```" + "*" + mp1 + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"
+            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"
 			
             embed = discord.Embed()
             embed.title = "5C"
             embed.set_image(url='http://www.dustloop.com/wiki/images/7/79/BBCS_Jin_5C.png')
             embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Properties", value=mp, inline='true')
+            embed.add_field(name="Attack Properties", value=mpA, inline='true')
 			
             await self.bot.say(embed=embed)
         except discord.errors.HTTPException:
@@ -6743,10 +6744,11 @@ class bbcf:
             info =  table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = info.find('p').get_text()         
+            mp1 = info.find('li').get_text()  
+            mp2 = info.find('p').get_text()        
 
             tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mp = "```" + "*" + mp1 + "```"
+            mp = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
 			
             embed = discord.Embed()
             embed.title = "6A"
@@ -7220,7 +7222,7 @@ class bbcf:
             Data = [head.get_text() for head in headers.find_all('td')]		
             Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
             vrs = headers.find('th').get_text()
-            vrs1 = headers.find('th').get_text()			
+            vrs1 = headers1.find('th').get_text()			
 
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Guard", Data1[1]], ["Startup", Data1[2]], ["Active", Data1[3]], ["Recovery", Data1[4]], ["Frame Adv.", Data1[5]], ["Attribute", Data1[6]]], tablefmt='simple', stralign='left')
@@ -7470,7 +7472,7 @@ class bbcf:
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Guard", Data1[1]], ["Startup", Data1[2]], ["Active", Data1[3]], ["Recovery", Data1[4]], ["Frame Adv.", Data1[5]], ["Attribute", Data1[6]]], tablefmt='simple', stralign='left')
             mp = "```" + "*" + mp1 + "```"
 			
-            embed = discord.Embed()
+            embed = discord.Embed(description='Air OK')
             embed.title = "Hishouken"
             embed.set_image(url='http://www.dustloop.com/wiki/images/1/1d/BBCS_Jin_Hishouken.png')
             embed.add_field(name="Ground:  Frame Data", value=tab)
@@ -7627,6 +7629,7 @@ class bbcf:
 
     @jin.command(name="22c", pass_context=False)  # Jin from blazblue
     async def _s6_jin(self):   
+        """Snowstorm"""	
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jin_Kisaragi"  
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -7784,12 +7787,13 @@ class bbcf:
             Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
             vrs2 = headers2.find('th').get_text()
             Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
-            od1 = info.find('p').get_text()
+            mp2 = info.find('p').get_text()
+            mp1 = [op.get_text() for op in info.find_all('li')]
        
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Guard", Data1[1]], ["Startup", Data1[2]], ["Active", Data1[3]], ["Recovery", Data1[4]], ["Frame Adv.", Data1[5]], ["Attribute", Data1[6]]], tablefmt='simple', stralign='left')
             tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Guard", Data2[1]], ["Startup", Data2[2]], ["Active", Data2[3]], ["Recovery", Data2[4]], ["Frame Adv.", Data2[5]], ["Attribute", Data2[6]]], tablefmt='simple', stralign='left')
-            mp = "```" + "*" + od1 + "```"
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp2 + "```"
 			
             embed = discord.Embed()
             embed.title = "Yukikaze"
@@ -7797,7 +7801,7 @@ class bbcf:
             embed.add_field(name="Catch", value=tab)
             embed.add_field(name="Attack(Normal)", value=tab1)
             embed.add_field(name="Attack(OD)", value=tab2)
-            embed.add_field(name="Attack Props:", value=mp, inline='true')
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')
             
             await self.bot.say(embed=embed)
         except discord.errors.HTTPException:
@@ -7808,7 +7812,8 @@ class bbcf:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
 
     @jin.command(name="abcd", pass_context=False)  # Jin from blazblue
-    async def _abcd_jin(self):   
+    async def _abcd_jin(self):  
+        """DP#6""" 
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Jin_Kisaragi"  
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -7879,7 +7884,7 @@ class bbcf:
         except KeyError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")				
 ################################################################################################################################
-    @su.command(name="5a", pass_context=False)  # Susano'o from blazblue
+    @su.command(name="5a", pass_context=False)  # Susano'o from blazblue 
     async def _5a_su(self):
         """Short, but safe"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Susanoo"  
@@ -7912,7 +7917,7 @@ class bbcf:
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
 			
     @su.command(name="5b", pass_context=False)  # Susano'o from blazblue
     async def _5b_su(self):   
@@ -7947,7 +7952,9 @@ class bbcf:
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
+
+################# The God Button, I will spam this into 6b because I'm a fraud #############################################################		
 			
     @su.command(name="5c", pass_context=False)  # Susano'o from blazblue
     async def _5c_su(self): 
@@ -43132,7 +43139,7 @@ class bbcf:
         except KeyError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
 			
-    @iz.command(name="5d", pass_context=False)  # Izayoi from blazblue
+    @iz.command(name="5d", aliases=["2d"], pass_context=False)  # Izayoi from blazblue
     async def _5d_iz(self): 
         """Mode Change."""	
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Izayoi"  
@@ -43143,20 +43150,25 @@ class bbcf:
             my_table = table[37]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
+            headers1 = table_body.find_all('tr')[2]
             info = table_body.find_all('tr')[3]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
             mp2 = info.find('p').get_text()
             mp1 = [op.get_text() for op in info.find_all('li')]
             vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
 			
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Guard", Data1[1]], ["Startup", Data1[2]], ["Active", Data1[3]], ["Recovery", Data1[4]], ["Frame Adv.", Data1[5]], ["Attribute", Data1[6]]], tablefmt='simple', stralign='left')
             mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```"
 			
             embed = discord.Embed()
-            embed.title = "5D"
+            embed.title = "5D/2D"
             embed.set_image(url='http://www.dustloop.com/wiki/images/7/7c/BBCP_Izayoi_5D.png')
-            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="5D Frame Data", value=tab)
+            embed.add_field(name="2D Frame Data", value=tab1)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')
 			
             await self.bot.say(embed=embed)
@@ -43165,42 +43177,7 @@ class bbcf:
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
-			
-    @iz.command(name="2d", pass_context=False)  # Izayoi from blazblue
-    async def _2d_iz(self):   
-        """Mode Change."""	
-        url = "http://www.dustloop.com/wiki/index.php/BBCF/Izayoi"  
-        async with aiohttp.get(url) as response:
-            soupObject = BeautifulSoup(await response.text(), "html.parser")
-        try:
-            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[37]
-            table_body = my_table.find("table")
-            headers = table_body.find_all('tr')[2]
-            info = table_body.find_all('tr')[3]
-			
-            Data = [head.get_text() for head in headers.find_all('td')]
-            mp2 = info.find('p').get_text()
-            mp1 = [op.get_text() for op in info.find_all('li')]
-            vrs = headers.find('th').get_text()
-			
-            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```"
-			
-            embed = discord.Embed()
-            embed.title = "2D"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/f/fb/BBCP_Izayoi_2D.png')
-            embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')
-			
-            await self.bot.say(embed=embed)
-        except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
-        except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
-        except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")			
 			
     @iz.command(name="jd", pass_context=False)  # Izayoi from blazblue
     async def _jd_iz(self):   
@@ -43412,9 +43389,9 @@ class bbcf:
         except KeyError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
 
-    @iz.command(name="236a", pass_context=False)  # Izayoi from blazblue
+    @iz.command(name="236a", aliases=["236d"], pass_context=False)  # Izayoi from blazblue
     async def _s1_iz(self):   
-        """Sonicu Seiba!(A)"""
+        """Sonicu Seiba!(A/D)"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Izayoi"  
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -43424,72 +43401,52 @@ class bbcf:
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info =  table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            headers2 = table_body.find_all('tr')[4]
+            info1 =  table_body.find_all('tr')[5]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
             mp1 = [po.get_text() for po in info.find_all('li')]
             mp2 = info.find('p').get_text()
-            vrs = headers.find('th').get_text()
-
-            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```"
-			
-            embed = discord.Embed()
-            embed.title = "Sonic Sabre"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/a/a8/BBCP_Izayoi_SonicSabre.png')
-            embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')			
-			
-            await self.bot.say(embed=embed)
-        except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
-        except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
-        except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
-
-    @iz.command(name="236d", pass_context=False)  # Izayoi from blazblue
-    async def _s2_iz(self):   
-        """Sonicu Seiba!(D)"""
-        url = "http://www.dustloop.com/wiki/index.php/BBCF/Izayoi"  
-        async with aiohttp.get(url) as response:
-            soupObject = BeautifulSoup(await response.text(), "html.parser")
-        try:
-            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[51]
-            table_body = my_table.find("table")
-            headers = table_body.find_all('tr')[3]
-            headers1 = table_body.find_all('tr')[4]
-            info =  table_body.find_all('tr')[5]
-
-            Data = [head.get_text() for head in headers.find_all('td')]
-            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]					
-            mp1 = [po.get_text() for po in info.find_all('li')]
-            mp2 = info.find('p').get_text()
+            mp3 = [po1.get_text() for po1 in info1.find_all('li')]
+            mp4 = info1.find('p').get_text()
             vrs = headers.find('th').get_text()
             vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
 
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Guard", Data1[1]], ["Startup", Data1[2]], ["Active", Data1[3]], ["Recovery", Data1[4]], ["Frame Adv.", Data1[5]], ["Attribute", Data1[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp2 + "```"
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Guard", Data2[1]], ["Startup", Data2[2]], ["Active", Data2[3]], ["Recovery", Data2[4]], ["Frame Adv.", Data2[5]], ["Attribute", Data2[6]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```"
+            mpB = "```" + "*" + mp3[0] + "\n" + "*" + mp3[1] + "\n" + "*" + mp3[2] + "\n" + "*" + mp3[3] + "\n" + "*" + mp4 + "```"
 			
             embed = discord.Embed()
-            embed.title = "Sonic Sabre"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/a/a3/BBCF_Izayoi_SonicSabreD.png')
+            embed.title = "Sonic Sabre(A)"
+            embed.set_image(url='http://www.dustloop.com/wiki/images/a/a8/BBCP_Izayoi_SonicSabre.png')
             embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="OD Frame Data", value=tab1)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')			
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')	
+
+            embed1 = discord.Embed()
+            embed1.title = "Sonic Sabre(D)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/a/a3/BBCF_Izayoi_SonicSabreD.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            embed1.add_field(name="OD Frame Data", value=tab2)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')			
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")			
 
-    @iz.command(name="j236a", pass_context=False)  # Izayoi from blazblue
+    @iz.command(name="j236a", aliases=["j236d"], pass_context=False)  # Izayoi from blazblue
     async def _s3_iz(self):   
-        """Angled Sonic Sabre!(A)"""
+        """Angled Sonic Sabre!(A/D)"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Izayoi"  
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -43499,68 +43456,48 @@ class bbcf:
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info =  table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            headers2 = table_body.find_all('tr')[4]
+            info1 =  table_body.find_all('tr')[5]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]	
             mp1 = [po.get_text() for po in info.find_all('li')]
             mp2 = info.find('p').get_text()
+            mp3 = [po1.get_text() for po1 in info1.find_all('li')]
+            mp4 = info1.find('p').get_text()
             vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
 
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Guard", Data1[1]], ["Startup", Data1[2]], ["Active", Data1[3]], ["Recovery", Data1[4]], ["Frame Adv.", Data1[5]], ["Attribute", Data1[6]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Guard", Data2[1]], ["Startup", Data2[2]], ["Active", Data2[3]], ["Recovery", Data2[4]], ["Frame Adv.", Data2[5]], ["Attribute", Data2[6]]], tablefmt='simple', stralign='left')
             mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```"
+            mpB = "```" + "*" + mp3[0] + "\n" + "*" + mp3[1] + "\n" + "*" + mp3[2] + "\n" + "*" + mp3[3] + "\n" + "*" + mp3[4] + "\n" + "*" + mp4 + "```"
 			
             embed = discord.Embed()
             embed.title = "Air Sonic Sabre(A)"
             embed.set_image(url='http://www.dustloop.com/wiki/images/b/bb/BBCP_Izayoi_SonicSabreAir.png')
             embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')			
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')	
+
+            embed1 = discord.Embed()
+            embed1.title = "Air Sonic Sabre(D)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/8/89/BBCF_Izayoi_SonicSabreDAir.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            embed1.add_field(name="OD Frame Data", value=tab2)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')			
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
-
-    @iz.command(name="j236d", pass_context=False)  # Izayoi from blazblue
-    async def _s4_iz(self):   
-        """Angled Sonic Sabre!(D)"""
-        url = "http://www.dustloop.com/wiki/index.php/BBCF/Izayoi"  
-        async with aiohttp.get(url) as response:
-            soupObject = BeautifulSoup(await response.text(), "html.parser")
-        try:
-            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[53]
-            table_body = my_table.find("table")
-            headers = table_body.find_all('tr')[3]
-            headers1 = table_body.find_all('tr')[4]
-            info =  table_body.find_all('tr')[5]
-
-            Data = [head.get_text() for head in headers.find_all('td')]
-            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]					
-            mp1 = [po.get_text() for po in info.find_all('li')]
-            mp2 = info.find('p').get_text()
-            vrs = headers.find('th').get_text()
-            vrs1 = headers1.find('th').get_text()
-
-            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Guard", Data1[1]], ["Startup", Data1[2]], ["Active", Data1[3]], ["Recovery", Data1[4]], ["Frame Adv.", Data1[5]], ["Attribute", Data1[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "\n" + "*" + mp2 + "```"
-			
-            embed = discord.Embed()
-            embed.title = "Air Sonic Sabre"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/8/89/BBCF_Izayoi_SonicSabreDAir.png')
-            embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="OD Frame Data", value=tab1)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')			
-			
-            await self.bot.say(embed=embed)
-        except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
-        except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
-        except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")			
 
     @iz.command(name="623b", pass_context=False)  # Izayoi from blazblue
     async def _s5_iz(self):   
@@ -43602,7 +43539,7 @@ class bbcf:
             tab2 = tabulate([["Damage", Data2[0]], ["Guard", Data2[1]], ["Startup", Data2[2]], ["Active", Data2[3]], ["Recovery", Data2[4]], ["Frame Adv.", Data2[5]], ["Attribute", Data2[6]]], tablefmt='simple', stralign='left')
             tab3 = tabulate([["Damage", Data3[0]], ["Guard", Data3[1]], ["Startup", Data3[2]], ["Active", Data3[3]], ["Recovery", Data3[4]], ["Frame Adv.", Data3[5]], ["Attribute", Data3[6]]], tablefmt='simple', stralign='left')
             mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "\n" + "*" + mp2 + "```"
-            mpB = "```" + "*" + mp3[0] + "\n" + "*" + mp4 + "\n" + "*" + mp3[1] + "\n" + "*" + mp3[2] + "\n" + "*" + mp3[3] + "```"
+            mpB = "```" + "*" + mp4 + "\n" + "*" + mp3[0] + "\n" + "*" + mp3[1] + "\n" + "*" + mp3[2] + "```"
             mpC = "```" + "*" + mp5 + "\n" + "*" + mp6 + "```"
 			
             embed = discord.Embed(description='air OK')
@@ -43680,8 +43617,8 @@ class bbcf:
             tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Guard", Data3[1]], ["Startup", Data3[2]], ["Active", Data3[3]], ["Recovery", Data3[4]], ["Frame Adv.", Data3[5]], ["Attribute", Data3[6]]], tablefmt='simple', stralign='left')
             tab4 = tabulate([["Damage", Data4[0]], ["Guard", Data4[1]], ["Startup", Data4[2]], ["Active", Data4[3]], ["Recovery", Data4[4]], ["Frame Adv.", Data4[5]], ["Attribute", Data4[6]]], tablefmt='simple', stralign='left')
             mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "\n" + "*" + mp1[5] + "\n" + "*" + mp2 + "```"
-            mpB = "```" + "*" + mp3[0] + "\n" + "*" + mp3[1] + "\n" + "*" + mp3[2] + "\n" + "*" + mp3[3] + "```"
-            mpC = "```" + "*" + mp4[0] + "\n" + "*" + mp5 + "\n" + "*" + mp4[1] + "\n" + "*" + mp4[2] + "\n" + "*" + mp4[3] + "```"
+            mpB = "```" + "*" + mp3[0] + "\n" + "*" + mp3[1] + "\n" + "*" + mp3[2] + "\n" + "*" + mp3[3] + "\n" + "*" + mp3[4] + "```"
+            mpC = "```" + "*" + mp5 + "\n" + "*" + mp4[0] + "\n" + "*" + mp4[1] + "\n" + "*" + mp4[2] + "```"
 			
             embed = discord.Embed(description='air OK')
             embed.title = "Crusade Seraphim β"
@@ -43759,8 +43696,8 @@ class bbcf:
             tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Guard", Data3[1]], ["Startup", Data3[2]], ["Active", Data3[3]], ["Recovery", Data3[4]], ["Frame Adv.", Data3[5]], ["Attribute", Data3[6]]], tablefmt='simple', stralign='left')
             tab4 = tabulate([["Damage", Data4[0]], ["Guard", Data4[1]], ["Startup", Data4[2]], ["Active", Data4[3]], ["Recovery", Data4[4]], ["Frame Adv.", Data4[5]], ["Attribute", Data4[6]]], tablefmt='simple', stralign='left')
             mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "\n" + "*" + mp2 + "```"
-            mpB = "```" + "*" + mp3[0] + "\n" + "*" + mp3[1] + "\n" + "*" + mp3[2] + "\n" + "*" + mp3[3] + "```"
-            mpC = "```" + "*" + mp4[0] + "\n" + "*" + mp5 + "\n" + "*" + mp4[1] + "\n" + "*" + mp4[2] + "\n" + "*" + mp4[3] + "```"
+            mpB = "```" + "*" + mp3[0] + "\n" + "*" + mp3[1] + "\n" + "*" + mp3[2] + "\n" + "*" + mp3[3] + "\n" + "*" + mp3[4] + "```"
+            mpC = "```" + "*" + mp5 + "\n" + "*" + mp4[0] + "\n" + "*" + mp4[1] + "\n" + "*" + mp4[2] + "```"
 			
             embed = discord.Embed(description='air OK')
             embed.title = "Crusade Seraphim γ"
@@ -43861,9 +43798,9 @@ class bbcf:
         except KeyError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
 
-    @iz.command(name="214a", pass_context=False)  # Izayoi from blazblue
+    @iz.command(name="214a", aliases=["214b", "214c", "214d", "j214d"], pass_context=False)  # Izayoi from blazblue
     async def _s9_iz(self):   
-        """A stays in place"""
+        """Mirage Thruster(A/B/C/D/j214d)"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Izayoi"  
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -43873,163 +43810,50 @@ class bbcf:
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info =  table_body.find_all('tr')[5]
+            headers1 = table_body.find_all('tr')[2]
+            headers2 = table_body.find_all('tr')[3]
+            headers3 = table_body.find_all('tr')[4]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]
+            Data2 = [head2.get_text() for head2 in headers2.find_all('td')]
+            Data3 = [head3.get_text() for head3 in headers3.find_all('td')]
             mp1 = [po.get_text() for po in info.find_all('li')]
             mp2 = [op.get_text() for op in info.find_all('p')]
+            vrs = headers.find('th').get_text()
+            vrs1 = headers1.find('th').get_text()
+            vrs2 = headers2.find('th').get_text()
+            vrs3 = headers3.find('th').get_text()
 
-            tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"
-			
-            embed = discord.Embed()
+            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Guard", Data1[1]], ["Startup", Data1[2]], ["Active", Data1[3]], ["Recovery", Data1[4]], ["Frame Adv.", Data1[5]], ["Attribute", Data1[6]]], tablefmt='simple', stralign='left')
+            tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Guard", Data2[1]], ["Startup", Data2[2]], ["Active", Data2[3]], ["Recovery", Data2[4]], ["Frame Adv.", Data2[5]], ["Attribute", Data2[6]]], tablefmt='simple', stralign='left')
+            tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Guard", Data3[1]], ["Startup", Data3[2]], ["Active", Data3[3]], ["Recovery", Data3[4]], ["Frame Adv.", Data3[5]], ["Attribute", Data3[6]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "```"
+            mpB = "```" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"
+
+            embed = discord.Embed(description="A stays in place, B goes forward, C goes backward, D automatically teleports behind opponent!")
             embed.title = "Mirage Thruster"
             embed.set_image(url='http://www.dustloop.com/wiki/images/b/b6/BBCP_Izayoi_MirageThruster1.png')
-            embed.add_field(name="Frame Data", value=tab)
+            embed.add_field(name="A Frame Data", value=tab)
+            embed.add_field(name="B Frame Data", value=tab1)
+            embed.add_field(name="C Frame Data", value=tab2)
+            embed.add_field(name="D Frame Data", value=tab3)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            embed1 = discord.Embed()
+            embed1.title = "Mirage Thruster Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/0/01/BBCP_Izayoi_MirageThruster2.png')
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")			
-
-    @iz.command(name="214b", pass_context=False)  # Izayoi from blazblue
-    async def _s10_iz(self):   
-        """B goes forward"""
-        url = "http://www.dustloop.com/wiki/index.php/BBCF/Izayoi"  
-        async with aiohttp.get(url) as response:
-            soupObject = BeautifulSoup(await response.text(), "html.parser")
-        try:
-            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[71]
-            table_body = my_table.find("table")
-            headers = table_body.find_all('tr')[2]
-            info =  table_body.find_all('tr')[5]
-			
-            Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = [po.get_text() for po in info.find_all('li')]
-            mp2 = [op.get_text() for op in info.find_all('p')]
-
-            tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[1] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"
-			
-            embed = discord.Embed()
-            embed.title = "Mirage Thruster"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/b/b6/BBCP_Izayoi_MirageThruster1.png')
-            embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')
-			
-            await self.bot.say(embed=embed)
-        except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
-        except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
-        except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
-
-    @iz.command(name="214c", pass_context=False)  # Izayoi from blazblue
-    async def _s11_iz(self):   
-        """C goes backward"""
-        url = "http://www.dustloop.com/wiki/index.php/BBCF/Izayoi"  
-        async with aiohttp.get(url) as response:
-            soupObject = BeautifulSoup(await response.text(), "html.parser")
-        try:
-            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[71]
-            table_body = my_table.find("table")
-            headers = table_body.find_all('tr')[3]
-            info =  table_body.find_all('tr')[5]
-			
-            Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = [po.get_text() for po in info.find_all('li')]
-            mp2 = [op.get_text() for op in info.find_all('p')]
-
-            tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[2] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"
-			
-            embed = discord.Embed()
-            embed.title = "Mirage Thruster"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/b/b6/BBCP_Izayoi_MirageThruster1.png')
-            embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')
-			
-            await self.bot.say(embed=embed)
-        except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
-        except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
-        except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
-
-    @iz.command(name="214d", pass_context=False)  # Izayoi from blazblue
-    async def _s12_iz(self):   
-        """D automatically teleports behind opponent!"""
-        url = "http://www.dustloop.com/wiki/index.php/BBCF/Izayoi"  
-        async with aiohttp.get(url) as response:
-            soupObject = BeautifulSoup(await response.text(), "html.parser")
-        try:
-            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[71]
-            table_body = my_table.find("table")
-            headers = table_body.find_all('tr')[4]
-            info =  table_body.find_all('tr')[5]
-			
-            Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = [po.get_text() for po in info.find_all('li')]
-            mp2 = [op.get_text() for op in info.find_all('p')]
-
-            tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[3] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"
-			
-            embed = discord.Embed()
-            embed.title = "Mirage Thruster"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/0/01/BBCP_Izayoi_MirageThruster2.png')
-            embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')
-			
-            await self.bot.say(embed=embed)
-        except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
-        except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
-        except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")					
-			
-    @iz.command(name="j214d", pass_context=False)  # Izayoi from blazblue
-    async def _s13_iz(self):   
-        """D automatically teleports behind opponent!"""
-        url = "http://www.dustloop.com/wiki/index.php/BBCF/Izayoi"  
-        async with aiohttp.get(url) as response:
-            soupObject = BeautifulSoup(await response.text(), "html.parser")
-        try:
-            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[71]
-            table_body = my_table.find("table")
-            headers = table_body.find_all('tr')[4]
-            info =  table_body.find_all('tr')[5]
-			
-            Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = [po.get_text() for po in info.find_all('li')]
-            mp2 = [op.get_text() for op in info.find_all('p')]
-
-            tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[3] + "\n" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"
-			
-            embed = discord.Embed()
-            embed.title = "Mirage Thruster"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/0/01/BBCP_Izayoi_MirageThruster2.png')
-            embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')
-			
-            await self.bot.say(embed=embed)
-        except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
-        except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
-        except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")	
 			
     @iz.command(name="236236c", pass_context=False)  # Izayoi from blazblue
     async def _dd1_iz(self):
@@ -44073,7 +43897,7 @@ class bbcf:
 
     @iz.command(name="632146d", pass_context=False)  # Izayoi from blazblue
     async def _dd2_iz(self):
-        """Install!"""	
+        """Install! 632146D during Gain art"""	
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Izayoi"  
         async with aiohttp.get(url) as response:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
@@ -44096,7 +43920,7 @@ class bbcf:
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Guard", Data1[1]], ["Startup", Data1[2]], ["Active", Data1[3]], ["Recovery", Data1[4]], ["Frame Adv.", Data1[5]], ["Attribute", Data1[6]]], tablefmt='simple', stralign='left')
             mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
 			
-            embed = discord.Embed()
+            embed = discord.Embed(description="632146D during Gain art")
             embed.title = "Slaver Trans-Am"
             embed.set_image(url='http://www.dustloop.com/wiki/images/6/69/BBCP_Izayoi_SlaverTransAm.png')
             embed.add_field(name="Summon Frame Data", value=tab)
@@ -44720,7 +44544,7 @@ class bbcf:
         except KeyError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
 			
-    @mi.command(name="5d", pass_context=False)  # Izanami from blazblue
+    @mi.command(name="5d", aliases=["jd"], pass_context=False)  # Izanami from blazblue
     async def _5d_mi(self): 
         #"""Insert Tag Here"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Izanami"  
@@ -44740,7 +44564,7 @@ class bbcf:
             mpA = "```" + "*" + mp1 + "```"
 			
             embed = discord.Embed()
-            embed.title = "5D"
+            embed.title = "5D/J.D"
             embed.set_image(url='http://www.dustloop.com/wiki/images/d/da/BBCF_Izanami_5D.png')
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')
@@ -44751,42 +44575,9 @@ class bbcf:
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")			
 			
-    @mi.command(name="jd", pass_context=False)  # Izanami from blazblue
-    async def _jd_mi(self):   
-        #"""Insert Tag Here"""
-        url = "http://www.dustloop.com/wiki/index.php/BBCF/Izanami"  
-        async with aiohttp.get(url) as response:
-            soupObject = BeautifulSoup(await response.text(), "html.parser")
-        try:
-            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[37]
-            table_body = my_table.find("table")
-            headers = table_body.find_all('tr')[1]
-            info = table_body.find_all('tr')[2]
-			
-            Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = info.find('p').get_text()
-			
-            tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "```"
-			
-            embed = discord.Embed()
-            embed.title = "J.D"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/d/da/BBCF_Izanami_5D.png')
-            embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')
-			
-            await self.bot.say(embed=embed)
-        except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
-        except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
-        except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
-			
-    @mi.command(name="4d", pass_context=False)  # Izanami from blazblue
+    @mi.command(name="4d", aliases=["j4d"], pass_context=False)  # Izanami from blazblue
     async def _4d_mi(self):   
         #"""Insert Tag Here"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Izanami"  
@@ -44807,7 +44598,7 @@ class bbcf:
             mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
 			
             embed = discord.Embed()
-            embed.title = "4D"
+            embed.title = "4D/J.4D"
             embed.set_image(url='http://www.dustloop.com/wiki/images/3/3a/BBCF_Izanami_4D.png')
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="Attack Props:", value=mpA)
@@ -44818,43 +44609,9 @@ class bbcf:
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")			
 			
-    @mi.command(name="j4d", pass_context=False)  # Izanami from blazblue
-    async def _j4d_mi(self):   
-        #"""Insert Tag Here"""
-        url = "http://www.dustloop.com/wiki/index.php/BBCF/Izanami"  
-        async with aiohttp.get(url) as response:
-            soupObject = BeautifulSoup(await response.text(), "html.parser")
-        try:
-            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[39]
-            table_body = my_table.find("table")
-            headers = table_body.find_all('tr')[1]
-            info = table_body.find_all('tr')[2]
-
-            Data = [head.get_text() for head in headers.find_all('td')]			
-            mp1 = info.find('li').get_text()	
-            mp2 = info.find('p').get_text()			
-
-            tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
-			
-            embed = discord.Embed()
-            embed.title = "J.4D"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/3/3a/BBCF_Izanami_4D.png')
-            embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA)
-			
-            await self.bot.say(embed=embed)
-        except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
-        except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
-        except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
-			
-    @mi.command(name="6d", pass_context=False)  # Izanami from blazblue
+    @mi.command(name="6d", aliases=["j6d"], pass_context=False)  # Izanami from blazblue
     async def _6d_mi(self):   
         #"""Insert Tag Here"""	
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Izanami"  
@@ -44875,7 +44632,7 @@ class bbcf:
             mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
 			
             embed = discord.Embed()
-            embed.title = "6D"
+            embed.title = "6D/J.6D"
             embed.set_image(url='http://www.dustloop.com/wiki/images/f/f3/BBCF_Izanami_6D.png')
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="Attack Props:", value=mpA)
@@ -44886,43 +44643,9 @@ class bbcf:
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")			
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")				
 			
-    @mi.command(name="j6d", pass_context=False)  # Izanami from blazblue
-    async def _j6d_mi(self):   
-        #"""Insert Tag Here"""
-        url = "http://www.dustloop.com/wiki/index.php/BBCF/Izanami"  
-        async with aiohttp.get(url) as response:
-            soupObject = BeautifulSoup(await response.text(), "html.parser")
-        try:
-            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[41]
-            table_body = my_table.find("table")
-            headers = table_body.find_all('tr')[1]
-            info = table_body.find_all('tr')[2]
-
-            Data = [head.get_text() for head in headers.find_all('td')]			
-            mp1 = info.find('li').get_text()	
-            mp2 = info.find('p').get_text()			
-
-            tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
-			
-            embed = discord.Embed()
-            embed.title = "J.6D"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/f/f3/BBCF_Izanami_6D.png')
-            embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA)
-			
-            await self.bot.say(embed=embed)
-        except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
-        except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
-        except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
-			
-    @mi.command(name="2d", pass_context=False)  # Izanami from blazblue
+    @mi.command(name="2d", aliases=["j2d"], pass_context=False)  # Izanami from blazblue
     async def _2d_mi(self):   
         #"""Insert Tag Here"""	
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Izanami"  
@@ -44943,7 +44666,7 @@ class bbcf:
             mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
 			
             embed = discord.Embed()
-            embed.title = "2D"
+            embed.title = "2D/J.2D"
             embed.set_image(url='http://www.dustloop.com/wiki/images/c/cc/BBCF_Izanami_2D.png')
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="Attack Props:", value=mpA)
@@ -44954,43 +44677,9 @@ class bbcf:
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")			
 			
-    @mi.command(name="j2d", pass_context=False)  # Izanami from blazblue
-    async def _j2d_mi(self):   
-        #"""Insert Tag Here"""
-        url = "http://www.dustloop.com/wiki/index.php/BBCF/Izanami"  
-        async with aiohttp.get(url) as response:
-            soupObject = BeautifulSoup(await response.text(), "html.parser")
-        try:
-            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[43]
-            table_body = my_table.find("table")
-            headers = table_body.find_all('tr')[1]
-            info = table_body.find_all('tr')[2]
-
-            Data = [head.get_text() for head in headers.find_all('td')]			
-            mp1 = info.find('li').get_text()	
-            mp2 = info.find('p').get_text()			
-
-            tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
-			
-            embed = discord.Embed()
-            embed.title = "J.2D"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/c/cc/BBCF_Izanami_2D.png')
-            embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA)
-			
-            await self.bot.say(embed=embed)
-        except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
-        except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
-        except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
-			
-    @mi.command(name="3d", pass_context=False)  # Izanami from blazblue
+    @mi.command(name="3d", aliases=["j3d"], pass_context=False)  # Izanami from blazblue
     async def _3d_mi(self):   
         #"""Insert Tag Here"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Izanami"  
@@ -45011,7 +44700,7 @@ class bbcf:
             mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
 			
             embed = discord.Embed()
-            embed.title = "3D"
+            embed.title = "3D/J.3D"
             embed.set_image(url='http://www.dustloop.com/wiki/images/7/7b/BBCF_Izanami_3D.png')
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="Attack Props:", value=mpA)
@@ -45022,43 +44711,9 @@ class bbcf:
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")			
 			
-    @mi.command(name="j3d", pass_context=False)  # Izanami from blazblue
-    async def _j3d_mi(self):   
-        #"""Insert Tag Here"""
-        url = "http://www.dustloop.com/wiki/index.php/BBCF/Izanami"  
-        async with aiohttp.get(url) as response:
-            soupObject = BeautifulSoup(await response.text(), "html.parser")
-        try:
-            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[45]
-            table_body = my_table.find("table")
-            headers = table_body.find_all('tr')[1]
-            info = table_body.find_all('tr')[2]
-
-            Data = [head.get_text() for head in headers.find_all('td')]			
-            mp1 = info.find('li').get_text()	
-            mp2 = info.find('p').get_text()			
-
-            tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
-			
-            embed = discord.Embed()
-            embed.title = "J.3D"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/7/7b/BBCF_Izanami_3D.png')
-            embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA)
-			
-            await self.bot.say(embed=embed)
-        except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
-        except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
-        except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
-			
-    @mi.command(name="1d", pass_context=False)  # Izanami from blazblue
+    @mi.command(name="1d", aliases=["j1d"], pass_context=False)  # Izanami from blazblue
     async def _1d_mi(self):   
         #"""Insert Tag Here"""	
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Izanami"  
@@ -45079,7 +44734,7 @@ class bbcf:
             mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
 			
             embed = discord.Embed()
-            embed.title = "1D"
+            embed.title = "1D/J.1D"
             embed.set_image(url='http://www.dustloop.com/wiki/images/f/f3/BBCF_Izanami_1D.png')
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="Attack Props:", value=mpA)
@@ -45090,41 +44745,7 @@ class bbcf:
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
-			
-    @mi.command(name="j1d", pass_context=False)  # Izanami from blazblue
-    async def _j1d_mi(self):   
-        #"""Insert Tag Here"""
-        url = "http://www.dustloop.com/wiki/index.php/BBCF/Izanami"  
-        async with aiohttp.get(url) as response:
-            soupObject = BeautifulSoup(await response.text(), "html.parser")
-        try:
-            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[47]
-            table_body = my_table.find("table")
-            headers = table_body.find_all('tr')[1]
-            info = table_body.find_all('tr')[2]
-
-            Data = [head.get_text() for head in headers.find_all('td')]			
-            mp1 = info.find('li').get_text()	
-            mp2 = info.find('p').get_text()			
-
-            tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
-			
-            embed = discord.Embed()
-            embed.title = "J.1D"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/f/f3/BBCF_Izanami_1D.png')
-            embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA)
-			
-            await self.bot.say(embed=embed)
-        except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
-        except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
-        except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")			
 
     @mi.command(name="ft", pass_context=False)  # Izanami from blazblue
     async def _ft_mi(self):   
@@ -45140,11 +44761,11 @@ class bbcf:
             info =  table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = info.find('li').get_text()	
+            mp1 = [op.get_text() for op in info.find_all('li')]	
             mp2 = info.find('p').get_text()		
 
             tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp2 + "```"
 			
             embed = discord.Embed()
             embed.title = "Forward Throw"
@@ -45174,11 +44795,11 @@ class bbcf:
             info =  table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = info.find('li').get_text()	
+            mp1 = [op.get_text() for op in info.find_all('li')]		
             mp2 = info.find('p').get_text()		
 
             tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```"
 			
             embed = discord.Embed()
             embed.title = "Back Throw"
@@ -45327,7 +44948,7 @@ class bbcf:
         except KeyError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
 
-    @mi.command(name="214a", pass_context=False)  # Izanami from blazblue
+    @mi.command(name="214a", aliases=["214b"], pass_context=False)  # Izanami from blazblue
     async def _s2_mi(self):   
         #"""Insert Tag Here"""
         url = "http://www.dustloop.com/wiki/index.php/BBCF/Izanami"  
@@ -45339,62 +44960,44 @@ class bbcf:
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info =  table_body.find_all('tr')[2]
+            headers1 = table_body.find_all('tr')[3]
+            info1 =  table_body.find_all('tr')[4]
 
             Data = [head.get_text() for head in headers.find_all('td')]				
-            mp1 = info.find('li').get_text()
+            mp1 = [op.get_text() for op in info.find_all('li')]	
             mp2 = info.find('p').get_text()
             vrs = headers.find('th').get_text()
 
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]	
+            mp3 = [op1.get_text() for op1 in info1.find_all('li')]				
+            mp4 = info1.find('p').get_text()
+            vrs1 = headers1.find('th').get_text()
+
             tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
+            tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Guard", Data1[1]], ["Startup", Data1[2]], ["Active", Data1[3]], ["Recovery", Data1[4]], ["Frame Adv.", Data1[5]], ["Attribute", Data1[6]]], tablefmt='simple', stralign='left')
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```"
+            mpB = "```" + "*" + mp3[0] + "\n" + "*" + mp3[1] + "\n" + "*" + mp4 + "```"
 			
             embed = discord.Embed()
             embed.title = "Thunderbolt Lance(A)"
             embed.set_image(url='http://www.dustloop.com/wiki/images/f/f9/BBCF_Izanami_Tourai_no_Hoko_A.png')
             embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')			
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')	
+
+            embed1 = discord.Embed()
+            embed1.title = "Thunderbolt Lance(B)"
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/3/39/BBCF_Izanami_Tourai_no_Hoko_B.png')
+            embed1.add_field(name="Frame Data", value=tab1)
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')			
 			
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
             await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
         except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
-
-    @mi.command(name="214b", pass_context=False)  # Izanami from blazblue
-    async def _s3_mi(self):   
-        #"""Insert Tag Here"""
-        url = "http://www.dustloop.com/wiki/index.php/BBCF/Izanami"  
-        async with aiohttp.get(url) as response:
-            soupObject = BeautifulSoup(await response.text(), "html.parser")
-        try:
-            table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[61]
-            table_body = my_table.find("table")
-            headers = table_body.find_all('tr')[3]
-            info =  table_body.find_all('tr')[4]
-
-            Data = [head.get_text() for head in headers.find_all('td')]				
-            mp1 = info.find('p').get_text()
-            vrs = headers.find('th').get_text()
-
-            tab = tabulate([["Version", vrs], ["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "```"
-			
-            embed = discord.Embed()
-            embed.title = "Thunderbolt Lance(B)"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/3/39/BBCF_Izanami_Tourai_no_Hoko_B.png')
-            embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')			
-			
-            await self.bot.say(embed=embed)
-        except discord.errors.HTTPException:
-            await self.bot.say("Character Limit reached, unable to post frame data....")
-        except IndexError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")
-        except KeyError:
-            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")		
+            await self.bot.say("Unexpected Error occurred retrieving frame data, please report issue here: https://github.com/Mojotroll/Mojo-Cogs/issues")			
 
     @mi.command(name="623b", pass_context=False)  # Izanami from blazblue
     async def _s4_mi(self):   
@@ -45414,30 +45017,37 @@ class bbcf:
             info1 =  table_body1.find_all('tr')[2]
 
             Data = [head.get_text() for head in headers.find_all('td')]
-            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]					
-            mp1 = info.find('p').get_text()
-            mp2 = info1.find('li').get_text()
-            mp3 = info1.find('p').get_text()
+            Data1 = [head1.get_text() for head1 in headers1.find_all('td')]	
+            mp1 = [op.get_text() for op in info.find_all('li')]					
+            mp2 = [po.get_text() for po in info.find_all('p')]	
+            mp3 = info1.find('li').get_text()
+            mp4 = [po1.get_text() for po1 in info1.find_all('p')]	
 
             tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
             tab1 = tabulate([["Damage", Data1[0]], ["Guard", Data1[1]], ["Startup", Data1[2]], ["Active", Data1[3]], ["Recovery", Data1[4]], ["Frame Adv.", Data1[5]], ["Attribute", Data1[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "```"
-            mpB = "```" + "*" + mp2 + "\n" + "*" + mp3 + "```"
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "```"
+            mpB = "```" + "*" + mp2[0] + "\n" + "*" + mp2[1] + "```"
+            mpC = "```" + "*" + mp3 + "\n" + "*" + mp4[0] + "\n" + "*" + mp4[1] + "```"
 			
             embed = discord.Embed(description='Activate')
             embed.title = "Shield of Dreams"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/3/3d/BBCF_Izanami_Mujuu_no_Tate_Activate.png')
             embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mpA, inline='true')		
+            embed.add_field(name="Attack Props:", value=mpA, inline='true')	
 
-            embed1 = discord.Embed(description='Deactivate')
-            embed1.title = "Bulwark"
-            embed1.set_image(url='http://www.dustloop.com/wiki/images/a/a7/BBCF_Izanami_Mujuu_no_Tate_Deactivate.png')
-            embed1.add_field(name="Frame Data", value=tab1)
-            embed1.add_field(name="Attack Props:", value=mpB, inline='true')					
+            embed1 = discord.Embed()
+            embed1.title = "Shield of Dreams Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/3/3d/BBCF_Izanami_Mujuu_no_Tate_Activate.png')
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')		
+
+            embed2 = discord.Embed(description='Deactivate')
+            embed2.title = "Bulwark"
+            embed2.set_image(url='http://www.dustloop.com/wiki/images/a/a7/BBCF_Izanami_Mujuu_no_Tate_Deactivate.png')
+            embed2.add_field(name="Frame Data", value=tab1)
+            embed2.add_field(name="Attack Props:", value=mpC, inline='true')					
 			
             await self.bot.say(embed=embed)
             await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -45675,18 +45285,31 @@ class bbcf:
             info =  table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = info.find('p').get_text()
+            mp1 = [op.get_text() for op in info.find_all('li')]	
+            mp2 = info.find('p').get_text()
 
             tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1 + "```"
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "```"
+            mpB = "```" + "*" + mp1[5] + "\n" + "*" + mp1[6] + "\n" + "*" + mp1[7] + "\n" + "*" + mp1[8] + "\n" + "*" + mp1[9] + "```"
+            mpC = "```" + "*" + mp2 + "```"
 			
             embed = discord.Embed()
             embed.title = "Hour of Nihility"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/7/75/BBCF_Izanami_Kyomu_no_Koko.png')
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            embed1 = discord.Embed()
+            embed1.title = "Hour of Nihility Cont."
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
+
+            embed2 = discord.Embed()
+            embed2.title = "Hour of Nihility Cont."
+            embed2.set_image(url='http://www.dustloop.com/wiki/images/7/75/BBCF_Izanami_Kyomu_no_Koko.png')
+            embed2.add_field(name="Attack Props:", value=mpC, inline='true')
             
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
+            await self.bot.say(embed=embed2)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
@@ -45708,18 +45331,25 @@ class bbcf:
             info =  table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = [op.get_text() for op in info.find_all('p')]
+            mp1 = [op.get_text() for op in info.find_all('li')]
+            mp2 = info.find('p').get_text()
 
             tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "```"
-			
+            mpA = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] +  "\n" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "\n" + "*" + mp1[5] + "\n" + "*" + mp1[6] + "```"
+            mpB = "```" + "*" + mp2 + "```"
+
             embed = discord.Embed()
             embed.title = "Moment of Benevolence"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/c/ce/BBCF_Izanami_Jintou_no_Koku.png')
             embed.add_field(name="Frame Data", value=tab)
             embed.add_field(name="Attack Props:", value=mpA, inline='true')
+
+            embed1 = discord.Embed()
+            embed1.title = "Moment of Benevolence Cont."
+            embed1.set_image(url='http://www.dustloop.com/wiki/images/c/ce/BBCF_Izanami_Jintou_no_Koku.png')
+            embed1.add_field(name="Attack Props:", value=mpB, inline='true')
             
             await self.bot.say(embed=embed)
+            await self.bot.say(embed=embed1)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
