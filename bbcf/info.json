@@ -3,5 +3,5 @@
     "INSTALL_MSG" : "This Cog Requires Beautiful Soup 4 and Tabulate. Any issues please contact me at Mojotroll#6791",
     "NAME" : "bbcf",
     "SHORT" : "Blazblue Central Fiction Frame Data Search",
-    "DESCRIPTION" : "Blazblue Central Fiction: Frame Data Search v1.5.3.6, Searches for all character's frame data on moves Using the Dustloop Wiki Frame Data."
+    "DESCRIPTION" : "Blazblue Central Fiction: Frame Data Search v1.5.4, Searches for all character's frame data on moves Using the Dustloop Wiki Frame Data."
 }
