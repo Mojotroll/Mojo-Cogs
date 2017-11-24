@@ -29934,7 +29934,6 @@ class hots:
             tl1 = t1.find_all(class_='matched-height talent')[0]
             tl2 = t1.find_all(class_='matched-height talent')[1]
             tl3 = t1.find_all(class_='matched-height talent')[2]
-            tl4 = t1.find_all(class_='matched-height talent')[3]
 			
             tl1name = tl1.find(class_='talent-name').get_text()
             tl1desc = tl1.find(class_='talent-description').get_text()	
@@ -29947,35 +29946,25 @@ class hots:
             tl3name = tl3.find(class_='talent-name').get_text()
             tl3desc = tl3.find(class_='talent-description').get_text()				
             mpC = "```" + tl3desc + "```"
-
-            tl4name = tl4.find(class_='talent-name').get_text()
-            tl4desc = tl4.find(class_='talent-description').get_text()				
-            mpD = "```" + tl4desc + "```"
 			
             embed = discord.Embed()
             embed.title = "{tl1name}".format(tl1name=tl1name)
-            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/d/dd/Conjurer%27s_Pursuit_Icon.png?version=408d95846a05d88ab876b29de4be03e5')
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/6/61/Free_Drinks_Icon.png?version=a0eef0c7af69b75163e21e9525eb67e3')
             embed.add_field(name="Description", value=mpA)
 			
             embed1 = discord.Embed()
             embed1.title = "{tl2name}".format(tl2name=tl2name)
-            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/6/67/Pro_Toss_Icon.png?version=6d59023a0a6ef1656b87a3b112cbf44c')
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/3/33/Wind_Serpent_Icon.png?version=34ceb5d8cfb12f9bdf5facbb7b8e1c32')
             embed1.add_field(name="Description", value=mpB)
 			
             embed2 = discord.Embed()
             embed2.title = "{tl3name}".format(tl3name=tl3name)
-            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/2d/Timeless_Creature_Icon.png?version=c9b265340034fe65ca0cd057375ca9ca')
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/21/Eager_Adventurer_Icon.png?version=bbf522b0ade7c94fddf054433ec5fddc')
             embed2.add_field(name="Description", value=mpC)
-
-            embed3 = discord.Embed()
-            embed3.title = "{tl4name}".format(tl4name=tl4name)
-            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/26/Gale_Force_Icon.png?version=b99adbfac7c6ece7a7a9c208d51bda9d')
-            embed3.add_field(name="Description", value=mpD)
 
             await self.bot.say(embed=embed)	
             await self.bot.say(embed=embed1)
-            await self.bot.say(embed=embed2)
-            await self.bot.say(embed=embed3)	
+            await self.bot.say(embed=embed2)	
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
@@ -29996,7 +29985,6 @@ class hots:
             tl1 = t2.find_all(class_='matched-height talent')[0]
             tl2 = t2.find_all(class_='matched-height talent')[1]
             tl3 = t2.find_all(class_='matched-height talent')[2]
-            tl4 = t2.find_all(class_='matched-height talent')[3]
 			
             tl1name = tl1.find(class_='talent-name').get_text()
             tl1desc = tl1.find(class_='talent-description').get_text()	
@@ -30009,35 +29997,25 @@ class hots:
             tl3name = tl3.find(class_='talent-name').get_text()
             tl3desc = tl3.find(class_='talent-description').get_text()		
             mpC = "```" + tl3desc + "```"
-
-            tl4name = tl4.find(class_='talent-name').get_text()
-            tl4desc = tl4.find(class_='talent-description').get_text()		
-            mpD = "```" + tl4desc + "```"
 			
             embed = discord.Embed()
             embed.title = "{tl1name}".format(tl1name=tl1name)
-            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/2f/Healing_Ward_Icon.png?version=7485180cf076c62093a14b9430905ca5')
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/f/f1/Serpent_Sidekick_Icon.png?version=23a452fda0d9a0773b89825f415f8263')
             embed.add_field(name="Description", value=mpA)
 			
             embed1 = discord.Embed()
             embed1.title = "{tl2name}".format(tl2name=tl2name)
-            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/e/ef/Mending_Serpent_Icon.png?version=0e9c184cb1d41e3b376bd05908b7b3eb')
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/21/Hindering_Winds_Icon.png?version=4277315aa90331c86aa2bb737f817da7')
             embed1.add_field(name="Description", value=mpB)
 			
             embed2 = discord.Embed()
             embed2.title = "{tl3name}".format(tl3name=tl3name)
-            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/8/80/Mass_Vortex_Icon.png?version=c47eca249458cf3bc547835dfeb79467')
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/2c/Safety_Sprint_Icon.png?version=b9b505a79890fd3f218475b7b6e05bf8')
             embed2.add_field(name="Description", value=mpC)
-
-            embed3 = discord.Embed()
-            embed3.title = "{tl4name}".format(tl4name=tl4name)
-            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/c/cb/Lingering_Blind_Icon.png?version=23373deb43fdbf67855194931890f952')
-            embed3.add_field(name="Description", value=mpD)
 			
             await self.bot.say(embed=embed)	
             await self.bot.say(embed=embed1)
-            await self.bot.say(embed=embed2)
-            await self.bot.say(embed=embed3)			
+            await self.bot.say(embed=embed2)			
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
@@ -30058,7 +30036,6 @@ class hots:
             tl1 = t3.find_all(class_='matched-height talent')[0]
             tl2 = t3.find_all(class_='matched-height talent')[1]
             tl3 = t3.find_all(class_='matched-height talent')[2]
-            tl4 = t3.find_all(class_='matched-height talent')[3]
 			
             tl1name = tl1.find(class_='talent-name').get_text()
             tl1desc = tl1.find(class_='talent-description').get_text()	
@@ -30071,35 +30048,25 @@ class hots:
             tl3name = tl3.find(class_='talent-name').get_text()
             tl3desc = tl3.find(class_='talent-description').get_text()				
             mpC = "```" + tl3desc + "```"
-
-            tl4name = tl4.find(class_='talent-name').get_text()
-            tl4desc = tl4.find(class_='talent-description').get_text()				
-            mpD = "```" + tl4desc + "```"
 			
             embed = discord.Embed()
             embed.title = "{tl1name}".format(tl1name=tl1name)
-            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/9/94/Pitch_Perfect_Icon.png?version=9a7e176a4cc93940da4a4c5befc5d943')
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/7/70/The_Good_Stuff_Icon.png?version=3e7c7c1127a2fedf4dbb878e73a8cee2')
             embed.add_field(name="Description", value=mpA)
 			
             embed1 = discord.Embed()
             embed1.title = "{tl2name}".format(tl2name=tl2name)
-            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/7/70/The_Good_Stuff_Icon.png?version=3e7c7c1127a2fedf4dbb878e73a8cee2')
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/18/Lightning_Serpent_Icon.png?version=4be26cc5b7cd6fc83a25dbc60d8cdd18')
             embed1.add_field(name="Description", value=mpB)
 			
             embed2 = discord.Embed()
             embed2.title = "{tl3name}".format(tl3name=tl3name)
-            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/18/Lightning_Serpent_Icon.png?version=4be26cc5b7cd6fc83a25dbc60d8cdd18')
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/d/d8/Let%27s_Go%21_Icon.png?version=2ce803cd639973122e4d83881530df5e')
             embed2.add_field(name="Description", value=mpC)
-
-            embed3 = discord.Embed()
-            embed3.title = "{tl4name}".format(tl4name=tl4name)
-            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/d/db/Cleanse_Icon.png?version=33f7b8b33585111207195757c865f3f2')
-            embed3.add_field(name="Description", value=mpD)
 
             await self.bot.say(embed=embed)	
             await self.bot.say(embed=embed1)
-            await self.bot.say(embed=embed2)
-            await self.bot.say(embed=embed3)	
+            await self.bot.say(embed=embed2)	
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
@@ -30120,7 +30087,6 @@ class hots:
             tl1 = t5.find_all(class_='matched-height talent')[0]
             tl2 = t5.find_all(class_='matched-height talent')[1]
             tl3 = t5.find_all(class_='matched-height talent')[2]
-            tl4 = t5.find_all(class_='matched-height talent')[3]
 			
             tl1name = tl1.find(class_='talent-name').get_text()
             tl1desc = tl1.find(class_='talent-description').get_text()	
@@ -30133,35 +30099,25 @@ class hots:
             tl3name = tl3.find(class_='talent-name').get_text()
             tl3desc = tl3.find(class_='talent-description').get_text()				
             mpC = "```" + tl3desc + "```"
-
-            tl4name = tl4.find(class_='talent-name').get_text()
-            tl4desc = tl4.find(class_='talent-description').get_text()				
-            mpD = "```" + tl4desc + "```"
 			
             embed = discord.Embed()
             embed.title = "{tl1name}".format(tl1name=tl1name)
-            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/c/c6/Elusive_Feet_Icon.png?version=27197cbcec3cef89257e52fac44c29af')
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/26/Gale_Force_Icon.png?version=b99adbfac7c6ece7a7a9c208d51bda9d')
             embed.add_field(name="Description", value=mpA)
 			
             embed1 = discord.Embed()
             embed1.title = "{tl2name}".format(tl2name=tl2name)
-            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/21/Hindering_Winds_Icon.png?version=4277315aa90331c86aa2bb737f817da7')
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/1a/Surging_Winds_Icon.png?version=843093ef7ee76ec48e6d0139c423ccd2')
             embed1.add_field(name="Description", value=mpB)
 			
             embed2 = discord.Embed()
             embed2.title = "{tl3name}".format(tl3name=tl3name)
-            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/1a/Surging_Winds_Icon.png?version=843093ef7ee76ec48e6d0139c423ccd2')
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/8/80/Mass_Vortex_Icon.png?version=c47eca249458cf3bc547835dfeb79467')
             embed2.add_field(name="Description", value=mpC)
-
-            embed3 = discord.Embed()
-            embed3.title = "{tl4name}".format(tl4name=tl4name)
-            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/7/79/Shrink_Ray_Icon.png?version=e6c716834b37be94b092e86d3224a74d')
-            embed3.add_field(name="Description", value=mpD)
 
             await self.bot.say(embed=embed)	
             await self.bot.say(embed=embed1)
-            await self.bot.say(embed=embed2)
-            await self.bot.say(embed=embed3)	
+            await self.bot.say(embed=embed2)	
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
@@ -30182,7 +30138,6 @@ class hots:
             tl1 = t6.find_all(class_='matched-height talent')[0]
             tl2 = t6.find_all(class_='matched-height talent')[1]
             tl3 = t6.find_all(class_='matched-height talent')[2]
-            tl4 = t6.find_all(class_='matched-height talent')[3]
 			
             tl1name = tl1.find(class_='talent-name').get_text()
             tl1desc = tl1.find(class_='talent-description').get_text()	
@@ -30195,35 +30150,25 @@ class hots:
             tl3name = tl3.find(class_='talent-name').get_text()
             tl3desc = tl3.find(class_='talent-description').get_text()				
             mpC = "```" + tl3desc + "```"
-
-            tl4name = tl4.find(class_='talent-name').get_text()
-            tl4desc = tl4.find(class_='talent-description').get_text()				
-            mpD = "```" + tl4desc + "```"
 			
             embed = discord.Embed()
             embed.title = "{tl1name}".format(tl1name=tl1name)
-            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/c/cc/Shake_It_Off_Icon.png?version=8410ee6d91c99d75b8d9ef8615f837a3')
+            embed.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/a/a6/Two_For_One_Icon.png?version=168666e6047082f3d7feca53335f3ada')
             embed.add_field(name="Description", value=mpA)
 			
             embed1 = discord.Embed()
             embed1.title = "{tl2name}".format(tl2name=tl2name)
-            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/2/2c/Safety_Sprint_Icon.png?version=b9b505a79890fd3f218475b7b6e05bf8')
+            embed1.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/e/e6/Pick_Me_Up_Icon.png?version=960ac62cbda3d423df7838a6c2de368c')
             embed1.add_field(name="Description", value=mpB)
 			
             embed2 = discord.Embed()
             embed2.title = "{tl3name}".format(tl3name=tl3name)
-            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/a/a6/Two_For_One_Icon.png?version=168666e6047082f3d7feca53335f3ada')
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/6/63/Blessings_of_Yu%27lon_Icon.png?version=07d5d87c2ec15e5182200c5b259d3a24')
             embed2.add_field(name="Description", value=mpC)
-
-            embed3 = discord.Embed()
-            embed3.title = "{tl4name}".format(tl4name=tl4name)
-            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/f/f1/Serpent_Sidekick_Icon.png?version=23a452fda0d9a0773b89825f415f8263')
-            embed3.add_field(name="Description", value=mpD)
 
             await self.bot.say(embed=embed)	
             await self.bot.say(embed=embed1)
-            await self.bot.say(embed=embed2)
-            await self.bot.say(embed=embed3)		
+            await self.bot.say(embed=embed2)	
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post character info....")
         except IndexError:
@@ -30274,12 +30219,12 @@ class hots:
 			
             embed2 = discord.Embed()
             embed2.title = "{tl3name}".format(tl3name=tl3name)
-            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/7/7b/Kung_Fu_Hustle_Icon.png?version=76b6fca82a3c08553e2c74ebe2985ecb')
+            embed2.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/9/95/Mistweaver_Icon.png?version=79a7c67e8727a46c661c2df4a48e7f6f')
             embed2.add_field(name="Description", value=mpC)
 			
             embed3 = discord.Embed()
             embed3.title = "{tl4name}".format(tl4name=tl4name)
-            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/1/1c/Storm_Shield_Icon.png?version=adb5fa6a00a106af5dc06485cda2d766')
+            embed3.set_thumbnail(url='https://heroesofthestorm.gamepedia.com/media/heroesofthestorm.gamepedia.com/c/cc/Shake_It_Off_Icon.png?version=8410ee6d91c99d75b8d9ef8615f837a3')
             embed3.add_field(name="Description", value=mpD)
 
             await self.bot.say(embed=embed)	
