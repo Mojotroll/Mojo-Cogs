@@ -19,7 +19,7 @@ class bbcf:
 
     def __init__(self, bot):
         self.bot = bot
-        self.version = "1.5.4"
+        self.version = "1.5.5"
 
     @commands.group(pass_context=True)
     async def am(self, ctx):
