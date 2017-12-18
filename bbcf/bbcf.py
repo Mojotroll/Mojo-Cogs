@@ -10598,7 +10598,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[2]
+            my_table = table[1]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[2]
@@ -10631,7 +10631,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[4]
+            my_table = table[3]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[2]
@@ -10664,7 +10664,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[6]
+            my_table = table[5]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[2]
@@ -10697,7 +10697,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[8]
+            my_table = table[7]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             movesp = table_body.find_all('tr')[2]
@@ -10730,7 +10730,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[10]
+            my_table = table[9]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             movesp = table_body.find_all('tr')[2]
@@ -10763,7 +10763,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[12]
+            my_table = table[11]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info =  table_body.find_all('tr')[2]
@@ -10798,7 +10798,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[14]
+            my_table = table[13]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info =  table_body.find_all('tr')[2]
@@ -10831,7 +10831,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[16]
+            my_table = table[15]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info =  table_body.find_all('tr')[2]
@@ -10866,7 +10866,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[18]
+            my_table = table[17]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info =  table_body.find_all('tr')[2]
@@ -10901,7 +10901,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[20]
+            my_table = table[19]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info =  table_body.find_all('tr')[2]
@@ -10934,7 +10934,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[22]
+            my_table = table[21]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info =  table_body.find_all('tr')[2]
@@ -10967,7 +10967,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[24]
+            my_table = table[23]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info =  table_body.find_all('tr')[2]
@@ -11000,7 +11000,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[26]
+            my_table = table[25]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info =  table_body.find_all('tr')[2]
@@ -11034,7 +11034,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[28]
+            my_table = table[27]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[4]
@@ -11093,7 +11093,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[30]
+            my_table = table[29]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[3]
@@ -11139,7 +11139,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[32]
+            my_table = table[31]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[3]
@@ -11185,7 +11185,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[34]
+            my_table = table[33]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[2]
@@ -11219,17 +11219,17 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[36]
+            my_table = table[35]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[2]
 
             Data = [head.get_text() for head in headers.find_all('td')]  	 
-            mp3 = info.find('li').get_text()	
+            mp3 = [op.get_text() for op in info.find_all('li')]		
             mp1 = info.find('p').get_text()			
 
             tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')			
-            mpB = "```" + "*" + mp3 + "\n" + "*" + mp1 + "```"
+            mpB = "```" + "*" + mp3[0] + "\n" + "*" + mp3[1] + "\n" + "*" + mp1 + "```"
 			
             embed = discord.Embed()
             embed.title = "Heal"
@@ -11253,7 +11253,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[38]
+            my_table = table[37]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info =  table_body.find_all('tr')[2]
@@ -11291,7 +11291,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[40]
+            my_table = table[39]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[2]
@@ -11329,7 +11329,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[42]
+            my_table = table[41]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[2]
@@ -11367,7 +11367,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[44]
+            my_table = table[43]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[2]
@@ -11400,7 +11400,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[46]
+            my_table = table[45]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             headers1 = table_body.find_all('tr')[2]
@@ -11439,7 +11439,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[48]
+            my_table = table[47]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[2]
@@ -11472,7 +11472,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[50]
+            my_table = table[49]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[2]
@@ -11481,7 +11481,7 @@ class bbcf:
             mp1 = [op.get_text() for op in info.find_all('li')]	
 		    
             tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mp = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "```"
+            mp = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "\n" + "*" + mp1[5] + "```"
 			
             embed = discord.Embed()
             embed.title = "Arc Griller"
@@ -11505,7 +11505,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[52]
+            my_table = table[51]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             headers1 = table_body.find_all('tr')[2]
@@ -11544,7 +11544,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[54]
+            my_table = table[53]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             headers1 = table_body.find_all('tr')[2]
@@ -11566,7 +11566,7 @@ class bbcf:
             tab1 = tabulate([["Version", vrs1], ["Damage", Data1[0]], ["Guard", Data1[1]], ["Startup", Data1[2]], ["Active", Data1[3]], ["Recovery", Data1[4]], ["Frame Adv.", Data1[5]], ["Attribute", Data1[6]]], tablefmt='simple', stralign='left')
             tab2 = tabulate([["Version", vrs2], ["Damage", Data2[0]], ["Guard", Data2[1]], ["Startup", Data2[2]], ["Active", Data2[3]], ["Recovery", Data2[4]], ["Frame Adv.", Data2[5]], ["Attribute", Data2[6]]], tablefmt='simple', stralign='left')
             tab3 = tabulate([["Version", vrs3], ["Damage", Data3[0]], ["Guard", Data3[1]], ["Startup", Data3[2]], ["Active", Data3[3]], ["Recovery", Data3[4]], ["Frame Adv.", Data3[5]], ["Attribute", Data3[6]]], tablefmt='simple', stralign='left')
-            mp = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "```"
+            mp = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp1[2] + "\n" + "*" + mp1[3] + "\n" + "*" + mp1[4] + "```"
 			
             embed = discord.Embed()
             embed.title = "Hache Rotir"
@@ -11593,7 +11593,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[56]
+            my_table = table[55]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             headers1 = table_body.find_all('tr')[2]
@@ -11632,17 +11632,17 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[58]
+            my_table = table[57]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[2]
 			
             Data = [head.get_text() for head in headers.find_all('td')]
-            mp1 = info.find('li').get_text()
+            mp1 = [fo.get_text() for fo in info.find_all('li')]
             mp2 = info.find('p').get_text()
        
             tab = tabulate([["Damage", Data[0]], ["Guard", Data[1]], ["Startup", Data[2]], ["Active", Data[3]], ["Recovery", Data[4]], ["Frame Adv.", Data[5]], ["Attribute", Data[6]]], tablefmt='simple', stralign='left')
-            mp = "```" + "*" + mp1 + "\n" + "*" + mp2 + "```"
+            mp = "```" + "*" + mp1[0] + "\n" + "*" + mp1[1] + "\n" + "*" + mp2 + "```"
 			
             embed = discord.Embed()
             embed.title = "Armure Sorbet"
@@ -11666,7 +11666,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[60]
+            my_table = table[59]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             headers1 = table_body.find_all('tr')[2]
@@ -11705,7 +11705,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[62]
+            my_table = table[61]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             headers1 = table_body.find_all('tr')[2]
@@ -11749,7 +11749,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[64]
+            my_table = table[63]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             headers1 = table_body.find_all('tr')[2]
@@ -11788,7 +11788,7 @@ class bbcf:
             soupObject = BeautifulSoup(await response.text(), "html.parser")
         try:
             table = soupObject.find_all('table', attrs={'class': 'wikitable'})
-            my_table = table[66]
+            my_table = table[65]
             table_body = my_table.find("table")
             headers = table_body.find_all('tr')[1]
             info = table_body.find_all('tr')[2]
@@ -11801,27 +11801,11 @@ class bbcf:
 			
             embed = discord.Embed()
             embed.title = "Atout Rillettes"
-            embed.set_image(url='http://www.dustloop.com/wiki/images/b/b1/BBCP_Celica_Atout_Rillettes1.png')
+            embed.set_image(url='http://www.dustloop.com/wiki/images/0/04/BBCP_Celica_Atout_Rillettes4.png')
             embed.add_field(name="Frame Data", value=tab)
-            embed.add_field(name="Attack Props:", value=mp, inline='true')
-			
-            embed1 = discord.Embed()
-            embed1.title = "Atout Rillettes Cont."
-            embed1.set_image(url='http://www.dustloop.com/wiki/images/4/41/BBCP_Celica_Atout_Rillettes2.png')
-			
-            embed2 = discord.Embed()
-            embed2.title = "Atout Rillettes Cont."
-            embed2.set_image(url='http://www.dustloop.com/wiki/images/f/fe/BBCP_Celica_Atout_Rillettes3.png')
-			
-            embed3 = discord.Embed()
-            embed3.title = "Atout Rillettes Cont."
-            embed3.set_image(url='http://www.dustloop.com/wiki/images/0/04/BBCP_Celica_Atout_Rillettes4.png')
-			
+            embed.add_field(name="Attack Props:", value=mp, inline='true')			
             
             await self.bot.say(embed=embed)
-            await self.bot.say(embed=embed1)
-            await self.bot.say(embed=embed2)
-            await self.bot.say(embed=embed3)
         except discord.errors.HTTPException:
             await self.bot.say("Character Limit reached, unable to post frame data....")
         except IndexError:
