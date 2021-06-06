@@ -15,9 +15,7 @@ In order to install the cogs in this repo, run the following command: [p]cog rep
 
 Secondly, I require library requirements for the following cogs:
 
-*BBCF - Tabulate and Beautifulsoup4
-
-*HoTS - Tabulate and Beautifulsoup4
+Nothing at this time!
 
 Finally, Installing a cog you want is as easy using: [p]cog install mojo-cogs (Insert Cog name here)
 
