@@ -14,4 +14,4 @@ class diomedes(commands.Cog):
         for x in message.content.split():
             if x.lower() == "captain diomedes":
                 warpSpider = random.choice(self.quotes)  
-                await self.bot.send_message(message.channel,warpSpider)
+                await self.bot.send(warpSpider)
