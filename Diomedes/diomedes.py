@@ -11,13 +11,6 @@ class diomedes(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self, ctx):
         """Captain Diomedes with another banger"""
-        if  await self.cog_disabled_in_guild(ctx.guild):
-            return
-        if ctx.channel.permissions_for(ctx.author).embed_links is False:
-            try:
-                return await ctx.delete()
-            except discord.Forbidden:
-                return
         for x in ctx.content.split():
             if x.lower() == "captain diomedes":
                 warpSpider = random.choice(self.quotes)
