@@ -11,9 +11,9 @@ class diomedes(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self, message):
         """Captain Diomedes with another banger"""
-        if message.guild is None:
+        if await message.guild is None:
             return
-        if message.author.bot:
+        if await message.author.bot:
             return
         if await self.bot.cog_disabled_in_guild(self, message.guild):
             return
