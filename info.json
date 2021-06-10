@@ -1,7 +1,9 @@
 {
-    "AUTHOR" : "Mojo's Cogs",
-    "INSTALL_MSG" : "A repository for RedBot Cogs by Mojotroll",
-    "NAME" : "Mojo-Cogs",
-    "SHORT" : "Gaming Cogs and Rage",
-    "DESCRIPTION" : "Various Gaming Realated Cogs, and off the wall projects for Redbot"
+    "author" : ["Mojotroll"],
+    "install_msg" : "Top of the Denny's at 3AM to ya, I am Mojotroll, just making cogs to pass the time",
+    "name" : "mojo-cogs",
+    "short" : "Once the number three, being the third number, reaached, then lobbest thou  thy Holy Hand Grenade of Antioch towards thy foe",
+    "description" : "Just out and about making cogs, hope you have a good day!",
+    "min_python_version": [3, 7, 2],
+	"tags": []
 }
