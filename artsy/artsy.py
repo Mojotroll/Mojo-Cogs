@@ -27,7 +27,7 @@ class artsy(commands.Cog):
             data = await response.read()
             data = data.decode("utf-8")
             data = json.loads(data)
-            date = data.get("data").get("date_display")
+            date = data.get("data")[0].get("date_display")
             print(date)
             artist = data.get("artist_display")
             print(artist)
