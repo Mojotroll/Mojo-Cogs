@@ -16,7 +16,7 @@ class artsy(commands.Cog):
         pass
     
     @artsy.command(name="search")
-    async def search(self, ctx, query):
+    async def search(self, ctx, *, query):
         """Search for a specific masterpiece"""
         cleanquery = urllib.parse.quote(query)
 
