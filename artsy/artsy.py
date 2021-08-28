@@ -29,7 +29,7 @@ class artsy(commands.Cog):
             data = json.loads(data)
             data = data.get("data")
             print(data)
-            date = data.get("date_display")
+            date = data["date_display"]
             print(date)
             artist = data.get("artist_display")
             print(artist)
