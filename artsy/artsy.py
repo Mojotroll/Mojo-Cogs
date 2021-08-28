@@ -4,7 +4,6 @@ import random
 import urllib.parse
 import aiohttp
 import json
-from tabulate import tabulate
 
 class artsy(commands.Cog):
     """Sipping Tea with your pinkie finger up!"""
@@ -16,7 +15,7 @@ class artsy(commands.Cog):
         """Commands for Artsy Cog"""
         pass
     
-    @artsy.group(name="search")
+    @artsy.command(name="search")
     async def search(self, ctx, query):
         """Search for a specific masterpiece"""
         cleanquery = urllib.parse.quote(query)
@@ -25,20 +24,27 @@ class artsy(commands.Cog):
 
         async with aiohttp.ClientSession().get(url) as response:
             data = await response.read()
-            print(data)
+            data = data.decode("utf-8")
             data = json.loads(data)
             data = data.get("data")
-            for list in data:
-                tab = tabulate(["Date", list["date_display"]], ["Artist(s)",list["artist_display"]])
+            date = result.get("date_display")
+            print(date)
+            artist = result.get("artist_display")
+            print(artist)
+            title = result.get("title")
+            print(title)
+            image_id = result.get("image_id")
+            print(image_id)
 
-                embed = discord.Embed()
-                embed.title = list["title"]
-                embed.set_image(url='https://www.artic.edu/iiif/2/' + list["image_id" + '/full/250,/0/default.jpg'])
-                embed.add_field(name="Information regarding " + list["title"], value=tab)
+            embed = discord.Embed()
+            embed.title = title
+            embed.set_image(url='https://www.artic.edu/iiif/2/' + image_id + '/full/250,/0/default.jpg')
+            embed.add_field(name="Artist", value=artist)
+            embed.add_field(name="Date:", value=date)
 
-                await ctx.send(embed=embed)
+            await ctx.send(embed=embed)
 
-    @artsy.group(name="random")
+    @artsy.command(name="random")
     async def random(self, ctx):
         """Search for a random piece of work to make your day"""
         page = random.choice(range(1,63,1))
@@ -47,11 +53,9 @@ class artsy(commands.Cog):
         print(url)
 
         async with aiohttp.ClientSession().get(url) as response:
-            #data = await json.loads(response.read())
             data = await response.read()
             data = data.decode("utf-8")
             data = json.loads(data)
-            print(data)
             data = data.get("data")
             result = random.choice(data)
             date = result.get("date_display")
@@ -62,14 +66,11 @@ class artsy(commands.Cog):
             print(title)
             image_id = result.get("image_id")
             print(image_id)
-            
-            tab = tabulate(["Date:", date], ["Artist(s):", artist])
 
             embed = discord.Embed()
             embed.title = title
             embed.set_image(url='https://www.artic.edu/iiif/2/' + image_id + '/full/250,/0/default.jpg')
             embed.add_field(name="Artist", value=artist)
             embed.add_field(name="Date:", value=date)
-
 
             await ctx.send(embed=embed)
