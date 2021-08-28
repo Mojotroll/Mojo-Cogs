@@ -47,6 +47,7 @@ class artsy(commands.Cog):
             #data = await json.loads(response.read())
             data = await response.read()
             print(data)
+            data = data.decode("utf-8")
             data = json.loads(data)
             data = data.get("data")
             result = random.choice(data)
