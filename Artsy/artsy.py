@@ -53,11 +53,11 @@ class artsy(commands.Cog):
             for item in result:
                 print(item["date_display"])
             
-            tab = tabulate(["Date", result["date_display"]], ["Artist(s)",result["artist_display"]])
+                tab = tabulate(["Date", result["date_display"]], ["Artist(s)",result["artist_display"]])
 
-            embed = discord.Embed()
-            embed.title = result["title"]
-            embed.set_image(url='https://www.artic.edu/iiif/2/' + result["image_id"] + '/full/250,/0/default.jpg')
-            embed.add_field(name="Information regarding " + result["title"], value=tab)
+                embed = discord.Embed()
+                embed.title = result["title"]
+                embed.set_image(url='https://www.artic.edu/iiif/2/' + result["image_id"] + '/full/250,/0/default.jpg')
+                embed.add_field(name="Information regarding " + result["title"], value=tab)
 
-            await ctx.send(embed=embed)
+                await ctx.send(embed=embed)
