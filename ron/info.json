@@ -1,0 +1,9 @@
+{
+    "author" : ["Mojotroll"],
+    "install_msg" : "Thanks for dowloading Ron, this is cog requires Aiohttp, urllib's parse, have fun",
+    "name" : "Ron",
+    "short" : "Ron Swanson Quotes using the https://github.com/jamesseanwright/ron-swanson-quotes#ron-swanson-quotes-api",
+    "description" : "Ron Swanson Quotes using the https://github.com/jamesseanwright/ron-swanson-quotes#ron-swanson-quotes-api",
+    "min_python_version": [3, 7, 2],
+	"tags": []
+}
