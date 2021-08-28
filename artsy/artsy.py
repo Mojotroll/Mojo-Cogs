@@ -38,7 +38,8 @@ class artsy(commands.Cog):
 
             embed = discord.Embed()
             embed.title = title
-            embed.set_image(url='https://www.artic.edu/iiif/2/' + image_id + '/full/250,/0/default.jpg')
+            if image_id is not None:
+                embed.set_image(url='https://www.artic.edu/iiif/2/' + image_id + '/full/250,/0/default.jpg')
             embed.add_field(name="Artist", value=artist)
             embed.add_field(name="Date:", value=date)
 
@@ -69,7 +70,8 @@ class artsy(commands.Cog):
 
             embed = discord.Embed()
             embed.title = title
-            embed.set_image(url='https://www.artic.edu/iiif/2/' + image_id + '/full/250,/0/default.jpg')
+            if image_id is not None:
+                embed.set_image(url='https://www.artic.edu/iiif/2/' + image_id + '/full/250,/0/default.jpg')
             embed.add_field(name="Artist", value=artist)
             embed.add_field(name="Date:", value=date)
 
