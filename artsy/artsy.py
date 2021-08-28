@@ -41,15 +41,17 @@ class artsy(commands.Cog):
     @artsy.group(name="random")
     async def random(self, ctx):
         """Search for a random piece of work to make your day"""
-        page = random.choice(range(1,1153,1))
+        page = random.choice(range(1,9608,1))
         page = str(page)
         url = "https://api.artic.edu/api/v1/artworks?page=" + page
+        print(url)
 
         async with aiohttp.ClientSession().get(url) as response:
             #data = await json.loads(response.read())
             data = await response.read()
             data = data.decode("utf-8")
             data = json.loads(data)
+            print(data)
             data = data.get("data")
             result = random.choice(data)
             date = result.get("date_display")
