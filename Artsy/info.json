@@ -1,9 +1,0 @@
-{
-    "author" : ["Mojotroll"],
-    "install_msg" : "Thanks for dowloading Artsy, this is cog requires Tabulate, Aiohttp, urllib's parse, and random for the magic",
-    "name" : "Artsy",
-    "short" : "Art search using Art Institute of Chicago's API for a basic search and random artwork search",
-    "description" : "Art search using Art Institute of Chicago's API for a basic search and random artwork search",
-    "min_python_version": [3, 7, 2],
-	"tags": []
-}
