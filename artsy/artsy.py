@@ -4,7 +4,7 @@ import random
 import urllib.parse
 import aiohttp
 import json
-import tabulate
+from tabulate import tabulate
 
 class artsy(commands.Cog):
     """Sipping Tea with your pinkie finger up!"""
