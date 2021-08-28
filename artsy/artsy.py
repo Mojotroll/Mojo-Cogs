@@ -20,7 +20,7 @@ class artsy(commands.Cog):
         """Search for a specific masterpiece"""
         cleanquery = urllib.parse.quote(query)
 
-        url = 'https://api.artic.edu/api/v1/artworks/search?q=' + cleanquery + '&limit=1&fields=title,date_display,artist_display,image_id'
+        url = 'https://api.artic.edu/api/v1/artworks/search?q=' + cleanquery + '&limit=1'
         print(url)
 
         async with aiohttp.ClientSession().get(url) as response:
@@ -29,7 +29,7 @@ class artsy(commands.Cog):
             data = json.loads(data)
             data = data.get("data")
             print(data)
-            date = data["date_display"]
+            date = data.get("date_display")
             print(date)
             artist = data.get("artist_display")
             print(artist)
