@@ -24,7 +24,7 @@ class artsy(commands.Cog):
         url = 'https://api.artic.edu/api/v1/artworks/search?q=' + cleanquery + '&limit=1&fields=title,date_display,artist_display,image_id'
 
         async with aiohttp.ClientSession().get(url) as response:
-            data = json.loads(response.read())
+            data = await json.loads(response.read())
             data = data.get("data")
             for list in data:
                 tab = tabulate(["Date", list["date_display"]], ["Artist(s)",list["artist_display"]])
@@ -42,7 +42,7 @@ class artsy(commands.Cog):
         url = "https://api.artic.edu/api/v1/artworks?limit=1000"
 
         async with aiohttp.ClientSession().get(url) as response:
-            data = json.loads(response.read())
+            data = await json.loads(response.read())
             data = data.get("data")
             result = random.choice(data)
             for list in result:
