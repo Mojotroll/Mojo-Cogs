@@ -28,6 +28,7 @@ class artsy(commands.Cog):
             data = data.decode("utf-8")
             data = json.loads(data)
             data = data.get("data")
+            print(data)
             date = data.get("date_display")
             print(date)
             artist = data.get("artist_display")
