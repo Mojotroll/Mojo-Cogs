@@ -51,6 +51,7 @@ class artsy(commands.Cog):
             data = json.loads(data)
             data = data.get("data")
             result = random.choice(data)
+            print(result)
             tab = tabulate(["Date", result["date_display"]], ["Artist(s)",result["artist_display"]])
 
             embed = discord.Embed()
