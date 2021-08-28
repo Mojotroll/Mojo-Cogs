@@ -52,7 +52,7 @@ class artsy(commands.Cog):
             result = random.choice(data)
             result = result.json
             for item in result:
-                print(item.date_display)
+                print(item["date_display"])
             
                 tab = tabulate(["Date", result["date_display"]], ["Artist(s)",result["artist_display"]])
 
