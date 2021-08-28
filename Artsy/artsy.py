@@ -50,6 +50,7 @@ class artsy(commands.Cog):
             data = json.loads(data)
             data = data.get("data")
             result = random.choice(data)
+            result = result.json
             for item in result:
                 print(item.date_display)
             
