@@ -44,6 +44,7 @@ class artsy(commands.Cog):
             embed.add_field(name="Date:", value=date)
 
             await ctx.send(embed=embed)
+            response.close()
 
     @artsy.command(name="random")
     async def random(self, ctx):
@@ -76,3 +77,4 @@ class artsy(commands.Cog):
             embed.add_field(name="Date:", value=date)
 
             await ctx.send(embed=embed)
+            response.close()
