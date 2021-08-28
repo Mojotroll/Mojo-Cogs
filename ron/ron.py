@@ -10,14 +10,14 @@ class ron(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def onwithron(self, ctx, query):
+    async def onwithron(self, ctx):
         """Get some fatherly advice from the big man himself"""
 
         url = "https://ron-swanson-quotes.herokuapp.com/v2/quotes"
 
         async with aiohttp.ClientSession().get(url) as response:
             data = await response.text()
-            await ctx.send(data)
+            await ctx.send(data + " - Ron Swanson")
             response.close()
 
     @commands.command()
@@ -28,7 +28,7 @@ class ron(commands.Cog):
 
         async with aiohttp.ClientSession().get(url) as response:
             data = await response.text()
-            if data.count < 3:
+            if len(data) < 3:
                 await ctx.send("No results found, please try again")
                 response.close()
             else:
