@@ -52,6 +52,8 @@ class artsy(commands.Cog):
             result = random.choice(data)
             for key, value in result.items():
                 print(key,value)
+                date = result.get("date_display")
+                print(date)
             
                 #tab = tabulate(["Date", result["date_display"]], ["Artist(s)",result["artist_display"]])
 
