@@ -21,6 +21,7 @@ class artsy(commands.Cog):
         cleanquery = urllib.parse.quote(query)
 
         url = 'https://api.artic.edu/api/v1/artworks/search?q=' + cleanquery + '&limit=1&fields=title,date_display,artist_display,image_id'
+        print(url)
 
         async with aiohttp.ClientSession().get(url) as response:
             data = await response.read()
