@@ -63,11 +63,13 @@ class artsy(commands.Cog):
             image_id = result.get("image_id")
             print(image_id)
             
-            tab = tabulate(["Date", date], ["Artist(s)", artist])
+            tab = tabulate(["Date:", date], ["Artist(s):", artist])
 
             embed = discord.Embed()
             embed.title = title
             embed.set_image(url='https://www.artic.edu/iiif/2/' + image_id + '/full/250,/0/default.jpg')
-            embed.add_field(name="Information regarding " + title, value=tab)
+            embed.add_field(name="Artist", value=artist)
+            embed.add_field(name="Date:", value=date)
+
 
             await ctx.send(embed=embed)
