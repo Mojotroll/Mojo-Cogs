@@ -11,7 +11,12 @@ class artsy(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.group()
+    async def artsy(self, ctx):
+        """Commands for Artsy Cog"""
+        pass
+    
+    @artsy.group(name="search")
     async def search(self, ctx, query):
         """Search for a specific masterpiece"""
         cleanquery = urllib.parse.quote(query)
@@ -31,7 +36,7 @@ class artsy(commands.Cog):
 
                 await ctx.send(embed=embed)
 
-    @commands.command()
+    @artsy.group(name="random")
     async def random(self, ctx):
         """Search for a random piece of work to make your day"""
         url = "https://api.artic.edu/api/v1/artworks?limit=1000"
