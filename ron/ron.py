@@ -19,7 +19,7 @@ class ron(commands.Cog):
             data = await response.read()
             data = data.decode("utf-8")
             data = json.loads(data)
-            return await data
+            return data
 
     @commands.command()
     async def onwithron(self, ctx):

@@ -21,7 +21,7 @@ class artsy(commands.Cog):
             data = await response.read()
             data = data.decode("utf-8")
             data = json.loads(data)
-            return await data
+            return data
 
     @commands.group()
     async def artsy(self, ctx):
