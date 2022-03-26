@@ -7,20 +7,11 @@ class ba(commands.Cog):
         self.bot = bot
         self.image = "images/ltd.png"
 
-
-    @commands.group()
-    async def ba(self, ctx):
-        """Commands for Burning Abyss Cog"""
-        pass
     
     
-    @ba.commands()
-    async def inspiration(self, message):
+    @commands.commands()
+    async def platinspiration(self, ctx):
         """Survive Plat One with Euphoric Inspiration"""
-
-        # Ignore messages from the bot itself
-        if message.author.id == self.bot.user.id:
-            return
 
         await self.bot.send(file=discord.File(self.image))
 
