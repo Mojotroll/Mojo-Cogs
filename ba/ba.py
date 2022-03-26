@@ -5,7 +5,6 @@ class ba(commands.Cog):
     """For the Suave Gentlemen of the Abyss"""
     def __init__(self, bot):
         self.bot = bot
-        self.image = "ltd.png"
 
     
     
@@ -13,7 +12,7 @@ class ba(commands.Cog):
     async def platinspiration(self, ctx):
         """Survive Plat One with Euphoric Inspiration"""
 
-        await ctx.send(file=discord.File(self.image))
+        await ctx.send(file=discord.File("ltd.png"))
 
 
 
