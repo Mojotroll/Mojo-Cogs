@@ -1,9 +1,0 @@
-{
-    "author" : ["Mojotroll"],
-    "install_msg" : "Thanks for dowloading BA, this is cog requires nothing, but a Burning Abyss Player to enjoy the rays",
-    "name" : "BA",
-    "short" : "Burning Abyss, posted the pinnacle of man's creations",
-    "description" : "Burning Abyss, posted the pinnacle of man's creations",
-    "min_python_version": [3, 7, 2],
-	"tags": []
-}
