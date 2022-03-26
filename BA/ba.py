@@ -22,21 +22,23 @@ class ba(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self, message):
         """Post the image to the selected channels"""
-        if (message.lower() == self.keyword):
 
-            # Attempt to load guild channel restrictions
-            try:
-                channels = await self.conf.guild(message.guild).channels()
-                if message.channel.id not in channels:
-                    return
-            except AttributeError:  # Not in a guild
-                pass
-
-            # Ignore messages from the bot itself
-            if message.author.id == self.bot.user.id:
+        # Attempt to load guild channel restrictions
+        try:
+            channels = await self.conf.guild(message.guild).channels()
+            if message.channel.id not in channels:
                 return
+        except AttributeError:  # Not in a guild
+            pass
 
+        # Ignore messages from the bot itself
+        if message.author.id == self.bot.user.id:
+            return
+
+        if (message.lower() == self.keyword):
             await self.bot.send(file=discord.File(self.image))
+        else:
+            pass
 
 
     @checks.admin_or_permissions(manage_guild=True)
