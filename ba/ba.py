@@ -5,7 +5,7 @@ class ba(commands.Cog):
     """For the Suave Gentlemen of the Abyss"""
     def __init__(self, bot):
         self.bot = bot
-        self.image = "/images/ltd.png"
+        self.image = "ltd.png"
 
     
     
